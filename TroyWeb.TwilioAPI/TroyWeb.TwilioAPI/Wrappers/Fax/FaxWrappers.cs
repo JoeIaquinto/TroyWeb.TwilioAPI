@@ -23,7 +23,7 @@
             return await FaxResource.CreateAsync(options, client);
         }
 
-        public static async Task<FaxResource> CancelFaxAsync(ITwilioRestClient client, string faxSid, string accountSid = null)
+        public static async Task<FaxResource> CancelFaxAsync(ITwilioRestClient client, string faxSid)
         {
             var options = new UpdateFaxOptions(faxSid)
             {
