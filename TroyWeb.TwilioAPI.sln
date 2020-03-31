@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29512.175
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TroyWeb.TwilioAPI", "TroyWeb.TwilioAPI", "{9C8BEBAC-492B-478A-B0F1-2C80AA43406D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TroyWeb.TwilioAPI", "TroyWeb.TwilioAPI\TroyWeb.TwilioAPI\TroyWeb.TwilioAPI.csproj", "{D4BB3A4B-0D62-43DD-BD7E-6252A27F2AC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TroyWeb.TwilioAPI.Activities", "TroyWeb.TwilioAPI\TroyWeb.TwilioAPI.Activities\TroyWeb.TwilioAPI.Activities.csproj", "{4D057F50-35DF-49D4-9B8C-9BA2FAF146DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TroyWeb.TwilioAPI.Activities.Design", "TroyWeb.TwilioAPI\TroyWeb.TwilioAPI.Activities.Design\TroyWeb.TwilioAPI.Activities.Design.csproj", "{8ACBDAE2-EC3F-4E92-A1D9-383C4D716876}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{BC51861D-8AD8-4829-9899-05F3A02C275F}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities", "Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.shproj", "{4546856D-EA50-45C6-9419-EEEACB5A80AA}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities.Design", "Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.shproj", "{DF9C43F0-ADD3-4FBF-995E-84B92F9CBF25}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems*{4546856d-ea50-45c6-9419-eeeacb5a80aa}*SharedItemsImports = 13
+		Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems*{df9c43f0-add3-4fbf-995e-84b92f9cbf25}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4BB3A4B-0D62-43DD-BD7E-6252A27F2AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4BB3A4B-0D62-43DD-BD7E-6252A27F2AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4BB3A4B-0D62-43DD-BD7E-6252A27F2AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4BB3A4B-0D62-43DD-BD7E-6252A27F2AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D057F50-35DF-49D4-9B8C-9BA2FAF146DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D057F50-35DF-49D4-9B8C-9BA2FAF146DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D057F50-35DF-49D4-9B8C-9BA2FAF146DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D057F50-35DF-49D4-9B8C-9BA2FAF146DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ACBDAE2-EC3F-4E92-A1D9-383C4D716876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ACBDAE2-EC3F-4E92-A1D9-383C4D716876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ACBDAE2-EC3F-4E92-A1D9-383C4D716876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ACBDAE2-EC3F-4E92-A1D9-383C4D716876}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D4BB3A4B-0D62-43DD-BD7E-6252A27F2AC5} = {9C8BEBAC-492B-478A-B0F1-2C80AA43406D}
+		{4D057F50-35DF-49D4-9B8C-9BA2FAF146DE} = {9C8BEBAC-492B-478A-B0F1-2C80AA43406D}
+		{8ACBDAE2-EC3F-4E92-A1D9-383C4D716876} = {9C8BEBAC-492B-478A-B0F1-2C80AA43406D}
+		{4546856D-EA50-45C6-9419-EEEACB5A80AA} = {BC51861D-8AD8-4829-9899-05F3A02C275F}
+		{DF9C43F0-ADD3-4FBF-995E-84B92F9CBF25} = {BC51861D-8AD8-4829-9899-05F3A02C275F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73A97E20-0F30-4869-8774-1EE150FD0ABE}
+	EndGlobalSection
+EndGlobal
