@@ -8,7 +8,7 @@
 
     public static class FaxWrappers
     {
-        public static async Task<FaxResource> SendFaxAsync(ITwilioRestClient client, string from, string to, , Uri mediaUrl, FaxResource.QualityEnum quality = null, string sipAuthUsername = null, string sipAuthPassword = null, Uri statusCallback = null, bool? storeMedia = null, int? minutesToSend = null)
+        public static async Task<FaxResource> SendFaxAsync(ITwilioRestClient client, string from, string to, Uri mediaUrl, FaxResource.QualityEnum quality = null, string sipAuthUsername = null, string sipAuthPassword = null, Uri statusCallback = null, bool? storeMedia = null, int? minutesToSend = null)
         {
             var options = new CreateFaxOptions(to, mediaUrl)
             {

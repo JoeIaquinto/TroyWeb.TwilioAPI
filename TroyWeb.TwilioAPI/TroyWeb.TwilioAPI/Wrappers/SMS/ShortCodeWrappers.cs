@@ -7,7 +7,7 @@
 
     public static class ShortCodeWrappers
     {
-        public static async Task<ShortCodeResource> UpdateShortCodeAsync(ITwilioRestClient client, string shortCodeSid, string accountSid = null)
+        public static async Task<ShortCodeResource> UpdateShortCodeAsync(ITwilioRestClient client, string shortCodeSid, string accountSid = null, string friendlyName = null, System.Uri smsUrl = null, Twilio.Http.HttpMethod smsMethod = null, System.Uri smsFallbackUrl = null, Twilio.Http.HttpMethod smsFallbackMethod = null)
         {
             var options = new UpdateShortCodeOptions(shortCodeSid)
             {
