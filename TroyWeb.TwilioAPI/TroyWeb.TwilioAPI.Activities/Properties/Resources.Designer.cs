@@ -8,11 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TroyWeb.TwilioAPI.Activities.Properties
-{
+namespace TroyWeb.TwilioAPI.Activities.Properties {
     using System;
-
-
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -23,126 +22,6250 @@ namespace TroyWeb.TwilioAPI.Activities.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Resources
-    {
-
+    public class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if (object.ReferenceEquals(resourceMan, null))
-                {
+        public static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TroyWeb.TwilioAPI.Activities.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        public static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
             }
         }
-
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Authentication.
+        /// </summary>
+        public static string Authentication_Category {
+            get {
+                return ResourceManager.GetString("Authentication_Category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancels a queued Fax.
+        /// </summary>
+        public static string CancelFax_Description {
+            get {
+                return ResourceManager.GetString("CancelFax_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CancelFax.
+        /// </summary>
+        public static string CancelFax_DisplayName {
+            get {
+                return ResourceManager.GetString("CancelFax_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The FaxResource information returned by the Twilio API..
+        /// </summary>
+        public static string CancelFax_Fax_Description {
+            get {
+                return ResourceManager.GetString("CancelFax_Fax_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fax.
+        /// </summary>
+        public static string CancelFax_Fax_DisplayName {
+            get {
+                return ResourceManager.GetString("CancelFax_Fax_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the fax to cancel..
+        /// </summary>
+        public static string CancelFax_FaxSid_Description {
+            get {
+                return ResourceManager.GetString("CancelFax_FaxSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxSid.
+        /// </summary>
+        public static string CancelFax_FaxSid_DisplayName {
+            get {
+                return ResourceManager.GetString("CancelFax_FaxSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the account containing the message to cancel..
+        /// </summary>
+        public static string CancelMessage_AccountSid_Description {
+            get {
+                return ResourceManager.GetString("CancelMessage_AccountSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountSid.
+        /// </summary>
+        public static string CancelMessage_AccountSid_DisplayName {
+            get {
+                return ResourceManager.GetString("CancelMessage_AccountSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancels a queued Message.
+        /// </summary>
+        public static string CancelMessage_Description {
+            get {
+                return ResourceManager.GetString("CancelMessage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CancelMessage.
+        /// </summary>
+        public static string CancelMessage_DisplayName {
+            get {
+                return ResourceManager.GetString("CancelMessage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The MessageResource information returned by the Twilio API..
+        /// </summary>
+        public static string CancelMessage_Message_Description {
+            get {
+                return ResourceManager.GetString("CancelMessage_Message_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message.
+        /// </summary>
+        public static string CancelMessage_Message_DisplayName {
+            get {
+                return ResourceManager.GetString("CancelMessage_Message_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the message to cancel..
+        /// </summary>
+        public static string CancelMessage_MessageSid_Description {
+            get {
+                return ResourceManager.GetString("CancelMessage_MessageSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessageSid.
+        /// </summary>
+        public static string CancelMessage_MessageSid_DisplayName {
+            get {
+                return ResourceManager.GetString("CancelMessage_MessageSid_DisplayName", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to Common.
         /// </summary>
-        public static string Common_Category
-        {
-            get
-            {
+        public static string Common_Category {
+            get {
                 return ResourceManager.GetString("Common_Category", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to If set, continue executing the remaining activities even if the current activity has failed..
         /// </summary>
-        public static string ContinueOnError_Description
-        {
-            get
-            {
+        public static string ContinueOnError_Description {
+            get {
                 return ResourceManager.GetString("ContinueOnError_Description", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to ContinueOnError.
         /// </summary>
-        public static string ContinueOnError_DisplayName
-        {
-            get
-            {
+        public static string ContinueOnError_DisplayName {
+            get {
                 return ResourceManager.GetString("ContinueOnError_DisplayName", resourceCulture);
             }
         }
-
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The created AccountResource.
+        /// </summary>
+        public static string CreateAccount_Account_Description {
+            get {
+                return ResourceManager.GetString("CreateAccount_Account_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Account.
+        /// </summary>
+        public static string CreateAccount_Account_DisplayName {
+            get {
+                return ResourceManager.GetString("CreateAccount_Account_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create a Twilio Account.
+        /// </summary>
+        public static string CreateAccount_Description {
+            get {
+                return ResourceManager.GetString("CreateAccount_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CreateAccount.
+        /// </summary>
+        public static string CreateAccount_DisplayName {
+            get {
+                return ResourceManager.GetString("CreateAccount_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The account name.
+        /// </summary>
+        public static string CreateAccount_FriendlyName_Description {
+            get {
+                return ResourceManager.GetString("CreateAccount_FriendlyName_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FriendlyName.
+        /// </summary>
+        public static string CreateAccount_FriendlyName_DisplayName {
+            get {
+                return ResourceManager.GetString("CreateAccount_FriendlyName_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deletes a Fax.
+        /// </summary>
+        public static string DeleteFax_Description {
+            get {
+                return ResourceManager.GetString("DeleteFax_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DeleteFax.
+        /// </summary>
+        public static string DeleteFax_DisplayName {
+            get {
+                return ResourceManager.GetString("DeleteFax_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the fax to delete..
+        /// </summary>
+        public static string DeleteFax_FaxSid_Description {
+            get {
+                return ResourceManager.GetString("DeleteFax_FaxSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxSid.
+        /// </summary>
+        public static string DeleteFax_FaxSid_DisplayName {
+            get {
+                return ResourceManager.GetString("DeleteFax_FaxSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether a fax was successfully deleted..
+        /// </summary>
+        public static string DeleteFax_Success_Description {
+            get {
+                return ResourceManager.GetString("DeleteFax_Success_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        public static string DeleteFax_Success_DisplayName {
+            get {
+                return ResourceManager.GetString("DeleteFax_Success_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deletes a FaxMedia.
+        /// </summary>
+        public static string DeleteFaxMedia_Description {
+            get {
+                return ResourceManager.GetString("DeleteFaxMedia_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DeleteFaxMedia.
+        /// </summary>
+        public static string DeleteFaxMedia_DisplayName {
+            get {
+                return ResourceManager.GetString("DeleteFaxMedia_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the fax media to delete..
+        /// </summary>
+        public static string DeleteFaxMedia_FaxMediaSid_Description {
+            get {
+                return ResourceManager.GetString("DeleteFaxMedia_FaxMediaSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxMediaSid.
+        /// </summary>
+        public static string DeleteFaxMedia_FaxMediaSid_DisplayName {
+            get {
+                return ResourceManager.GetString("DeleteFaxMedia_FaxMediaSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the fax containing the media to delete..
+        /// </summary>
+        public static string DeleteFaxMedia_FaxSid_Description {
+            get {
+                return ResourceManager.GetString("DeleteFaxMedia_FaxSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxSid.
+        /// </summary>
+        public static string DeleteFaxMedia_FaxSid_DisplayName {
+            get {
+                return ResourceManager.GetString("DeleteFaxMedia_FaxSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether a fax was successfully deleted..
+        /// </summary>
+        public static string DeleteFaxMedia_Success_Description {
+            get {
+                return ResourceManager.GetString("DeleteFaxMedia_Success_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        public static string DeleteFaxMedia_Success_DisplayName {
+            get {
+                return ResourceManager.GetString("DeleteFaxMedia_Success_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the account containing the message to cancel..
+        /// </summary>
+        public static string DeleteMessage_AccountSid_Description {
+            get {
+                return ResourceManager.GetString("DeleteMessage_AccountSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountSid.
+        /// </summary>
+        public static string DeleteMessage_AccountSid_DisplayName {
+            get {
+                return ResourceManager.GetString("DeleteMessage_AccountSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete a sent Message.
+        /// </summary>
+        public static string DeleteMessage_Description {
+            get {
+                return ResourceManager.GetString("DeleteMessage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DeleteMessage.
+        /// </summary>
+        public static string DeleteMessage_DisplayName {
+            get {
+                return ResourceManager.GetString("DeleteMessage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the message to cancel..
+        /// </summary>
+        public static string DeleteMessage_MessageSid_Description {
+            get {
+                return ResourceManager.GetString("DeleteMessage_MessageSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessageSid.
+        /// </summary>
+        public static string DeleteMessage_MessageSid_DisplayName {
+            get {
+                return ResourceManager.GetString("DeleteMessage_MessageSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the message was successfully deleted..
+        /// </summary>
+        public static string DeleteMessage_Success_Description {
+            get {
+                return ResourceManager.GetString("DeleteMessage_Success_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Success.
+        /// </summary>
+        public static string DeleteMessage_Success_DisplayName {
+            get {
+                return ResourceManager.GetString("DeleteMessage_Success_DisplayName", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to Do.
         /// </summary>
-        public static string Do
-        {
-            get
-            {
+        public static string Do {
+            get {
                 return ResourceManager.GetString("Do", resourceCulture);
             }
         }
-
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The AccountResource returned by the Twilio API..
+        /// </summary>
+        public static string GetAccount_Account_Description {
+            get {
+                return ResourceManager.GetString("GetAccount_Account_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Account.
+        /// </summary>
+        public static string GetAccount_Account_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAccount_Account_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID of the account to get..
+        /// </summary>
+        public static string GetAccount_AccountSid_Description {
+            get {
+                return ResourceManager.GetString("GetAccount_AccountSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountSid.
+        /// </summary>
+        public static string GetAccount_AccountSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAccount_AccountSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a Twilio Account.
+        /// </summary>
+        public static string GetAccount_Description {
+            get {
+                return ResourceManager.GetString("GetAccount_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetAccount.
+        /// </summary>
+        public static string GetAccount_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAccount_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AccountResources returned by the Twilio API..
+        /// </summary>
+        public static string GetAccountPage_AccountPage_Description {
+            get {
+                return ResourceManager.GetString("GetAccountPage_AccountPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountPage.
+        /// </summary>
+        public static string GetAccountPage_AccountPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAccountPage_AccountPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a page of Twilio Accounts.
+        /// </summary>
+        public static string GetAccountPage_Description {
+            get {
+                return ResourceManager.GetString("GetAccountPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetAccountPage.
+        /// </summary>
+        public static string GetAccountPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAccountPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The url of the page to get..
+        /// </summary>
+        public static string GetAccountPage_TargetUrl_Description {
+            get {
+                return ResourceManager.GetString("GetAccountPage_TargetUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TargetUrl.
+        /// </summary>
+        public static string GetAccountPage_TargetUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAccountPage_TargetUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The AccountResources returned by the Twilio API..
+        /// </summary>
+        public static string GetAccounts_Accounts_Description {
+            get {
+                return ResourceManager.GetString("GetAccounts_Accounts_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Accounts.
+        /// </summary>
+        public static string GetAccounts_Accounts_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAccounts_Accounts_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Twilio Accounts for this account.
+        /// </summary>
+        public static string GetAccounts_Description {
+            get {
+                return ResourceManager.GetString("GetAccounts_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetAccounts.
+        /// </summary>
+        public static string GetAccounts_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAccounts_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filter response by account name.
+        /// </summary>
+        public static string GetAccounts_FriendlyName_Description {
+            get {
+                return ResourceManager.GetString("GetAccounts_FriendlyName_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FriendlyName.
+        /// </summary>
+        public static string GetAccounts_FriendlyName_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAccounts_FriendlyName_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of accounts to return.
+        /// </summary>
+        public static string GetAccounts_Limit_Description {
+            get {
+                return ResourceManager.GetString("GetAccounts_Limit_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit.
+        /// </summary>
+        public static string GetAccounts_Limit_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAccounts_Limit_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filter response by account status.
+        /// </summary>
+        public static string GetAccounts_Status_Description {
+            get {
+                return ResourceManager.GetString("GetAccounts_Status_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status.
+        /// </summary>
+        public static string GetAccounts_Status_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAccounts_Status_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The AlphaSenderResource returned by the Twilio API..
+        /// </summary>
+        public static string GetAlphaSender_AlphaSender_Description {
+            get {
+                return ResourceManager.GetString("GetAlphaSender_AlphaSender_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AlphaSender.
+        /// </summary>
+        public static string GetAlphaSender_AlphaSender_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAlphaSender_AlphaSender_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID of the alpha sender to get..
+        /// </summary>
+        public static string GetAlphaSender_AlphaSenderSid_Description {
+            get {
+                return ResourceManager.GetString("GetAlphaSender_AlphaSenderSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AlphaSenderSid.
+        /// </summary>
+        public static string GetAlphaSender_AlphaSenderSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAlphaSender_AlphaSenderSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a Twilio AlphaSender.
+        /// </summary>
+        public static string GetAlphaSender_Description {
+            get {
+                return ResourceManager.GetString("GetAlphaSender_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetAlphaSender.
+        /// </summary>
+        public static string GetAlphaSender_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAlphaSender_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID of the service to get..
+        /// </summary>
+        public static string GetAlphaSender_ServiceSid_Description {
+            get {
+                return ResourceManager.GetString("GetAlphaSender_ServiceSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ServiceSid.
+        /// </summary>
+        public static string GetAlphaSender_ServiceSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAlphaSender_ServiceSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AlphaSenderResources returned by the Twilio API..
+        /// </summary>
+        public static string GetAlphaSenderPage_AlphaSenderPage_Description {
+            get {
+                return ResourceManager.GetString("GetAlphaSenderPage_AlphaSenderPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AlphaSenderPage.
+        /// </summary>
+        public static string GetAlphaSenderPage_AlphaSenderPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAlphaSenderPage_AlphaSenderPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a page of Twilio AlphaSenders.
+        /// </summary>
+        public static string GetAlphaSenderPage_Description {
+            get {
+                return ResourceManager.GetString("GetAlphaSenderPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetAlphaSenderPage.
+        /// </summary>
+        public static string GetAlphaSenderPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAlphaSenderPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The url of the page to get..
+        /// </summary>
+        public static string GetAlphaSenderPage_TargetUrl_Description {
+            get {
+                return ResourceManager.GetString("GetAlphaSenderPage_TargetUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TargetUrl.
+        /// </summary>
+        public static string GetAlphaSenderPage_TargetUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAlphaSenderPage_TargetUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AvailableLocalPhoneNumberResources returned by the Twilio API..
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AvailableLocalPhoneNumberPage.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a page of Twilio AvailableLocalPhoneNumbers.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetAvailableLocalPhoneNumberPage.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The url of the page to get..
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumberPage_TargetUrl_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumberPage_TargetUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TargetUrl.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumberPage_TargetUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumberPage_TargetUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The account to get available phone numbers for.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_AccountSid_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_AccountSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountSid.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_AccountSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_AccountSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The area code of the phone numbers to read..
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_AreaCode_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_AreaCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AreaCode.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_AreaCode_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_AreaCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether to read phone numbers new to the Twilio platform..
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_Beta_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_Beta_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Beta.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_Beta_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_Beta_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The pattern on which to match phone numbers..
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_Contains_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_Contains_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contains.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_Contains_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_Contains_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country Code to get phone numbers for..
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_CountryCode_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_CountryCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountryCode.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_CountryCode_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_CountryCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Twilio available local phone numbers filtered by a variety of parameters..
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetAvailableLocalPhoneNumbers.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The search radius, in miles, for a near_ query. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_Distance_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_Distance_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Distance.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_Distance_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_Distance_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether to exclude phone numbers that require an Address.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_ExcludeAllAddressRequired_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_ExcludeAllAddressRequired_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ExcludeAllAddressRequired.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_ExcludeAllAddressRequired_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_ExcludeAllAddressRequired_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether to exclude phone numbers that require a foreign Address.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_ExcludeForeignAddressRequired_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_ExcludeForeignAddressRequired_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ExcludeForeignAddressRequired.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_ExcludeForeignAddressRequired_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_ExcludeForeignAddressRequired_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether to exclude phone numbers that require a local Address.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_ExcludeLocalAddressRequired_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_ExcludeLocalAddressRequired_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ExcludeLocalAddressRequired.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_ExcludeLocalAddressRequired_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_ExcludeLocalAddressRequired_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the phone numbers can receive faxes..
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_FaxEnabled_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_FaxEnabled_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxEnabled.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_FaxEnabled_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_FaxEnabled_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit results to a specific local access and transport area. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_InLata_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_InLata_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InLata.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_InLata_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_InLata_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit results to a particular locality.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_InLocality_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_InLocality_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InLocality.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_InLocality_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_InLocality_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit results to a particular postal code. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_InPostalCode_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_InPostalCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InPostalCode.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_InPostalCode_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_InPostalCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit results to a specific rate center, or given a phone number search within the same rate center as that number. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_InRateCenter_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_InRateCenter_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InRateCenter.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_InRateCenter_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_InRateCenter_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit results to a particular region. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_InRegion_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_InRegion_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InRegion.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_InRegion_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_InRegion_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of available phone numbers to return.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_Limit_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_Limit_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_Limit_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_Limit_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the phone numbers can receive MMS messages..
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_MmsEnabled_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_MmsEnabled_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MmsEnabled.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_MmsEnabled_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_MmsEnabled_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Given a latitude and longitude pair, find a geographically close number within distance miles. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_NearLatLong_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_NearLatLong_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NearLatLong.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_NearLatLong_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_NearLatLong_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Given a phone number, find a geographically close number within distance miles. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_NearNumber_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_NearNumber_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NearNumber.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_NearNumber_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_NearNumber_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The PhoneNumbers returned by the Twilio API..
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_PhoneNumbers_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_PhoneNumbers_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PhoneNumbers.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_PhoneNumbers_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_PhoneNumbers_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the phone numbers can receive text messages..
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_SmsEnabled_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_SmsEnabled_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SmsEnabled.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_SmsEnabled_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_SmsEnabled_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the phone numbers can receive calls..
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_VoiceEnabled_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_VoiceEnabled_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VoiceEnabled.
+        /// </summary>
+        public static string GetAvailableLocalPhoneNumbers_VoiceEnabled_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableLocalPhoneNumbers_VoiceEnabled_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AvailableMobilePhoneNumberResources returned by the Twilio API..
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AvailableMobilePhoneNumberPage.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a page of Twilio AvailableMobilePhoneNumbers.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetAvailableMobilePhoneNumberPage.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The url of the page to get..
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumberPage_TargetUrl_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumberPage_TargetUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TargetUrl.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumberPage_TargetUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumberPage_TargetUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The account to get available phone numbers for.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_AccountSid_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_AccountSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountSid.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_AccountSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_AccountSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The area code of the phone numbers to read..
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_AreaCode_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_AreaCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AreaCode.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_AreaCode_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_AreaCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether to read phone numbers new to the Twilio platform..
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_Beta_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_Beta_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Beta.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_Beta_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_Beta_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The pattern on which to match phone numbers..
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_Contains_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_Contains_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contains.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_Contains_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_Contains_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country Code to get phone numbers for..
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_CountryCode_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_CountryCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountryCode.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_CountryCode_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_CountryCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Twilio available mobile phone numbers filtered by a variety of parameters..
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetAvailableMobilePhoneNumbers.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The search radius, in miles, for a near_ query. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_Distance_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_Distance_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Distance.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_Distance_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_Distance_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether to exclude phone numbers that require an Address.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_ExcludeAllAddressRequired_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_ExcludeAllAddressRequired_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ExcludeAllAddressRequired.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_ExcludeAllAddressRequired_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_ExcludeAllAddressRequired_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether to exclude phone numbers that require a foreign Address.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_ExcludeForeignAddressRequired_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_ExcludeForeignAddressRequired_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ExcludeForeignAddressRequired.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_ExcludeForeignAddressRequired_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_ExcludeForeignAddressRequired_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether to exclude phone numbers that require a local Address.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_ExcludeLocalAddressRequired_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_ExcludeLocalAddressRequired_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ExcludeLocalAddressRequired.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_ExcludeLocalAddressRequired_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_ExcludeLocalAddressRequired_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the phone numbers can receive faxes..
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_FaxEnabled_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_FaxEnabled_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxEnabled.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_FaxEnabled_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_FaxEnabled_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit results to a specific local access and transport area. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_InLata_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_InLata_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InLata.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_InLata_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_InLata_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit results to a particular locality.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_InLocality_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_InLocality_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InLocality.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_InLocality_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_InLocality_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit results to a particular postal code. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_InPostalCode_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_InPostalCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InPostalCode.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_InPostalCode_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_InPostalCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit results to a specific rate center, or given a phone number search within the same rate center as that number. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_InRateCenter_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_InRateCenter_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InRateCenter.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_InRateCenter_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_InRateCenter_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit results to a particular region. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_InRegion_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_InRegion_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InRegion.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_InRegion_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_InRegion_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of available phone numbers to return.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_Limit_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_Limit_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_Limit_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_Limit_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the phone numbers can receive MMS messages..
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_MmsEnabled_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_MmsEnabled_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MmsEnabled.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_MmsEnabled_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_MmsEnabled_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Given a latitude and longitude pair, find a geographically close number within distance miles. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_NearLatLong_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_NearLatLong_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NearLatLong.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_NearLatLong_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_NearLatLong_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Given a phone number, find a geographically close number within distance miles. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_NearNumber_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_NearNumber_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NearNumber.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_NearNumber_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_NearNumber_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The PhoneNumbers returned by the Twilio API..
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_PhoneNumbers_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_PhoneNumbers_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PhoneNumbers.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_PhoneNumbers_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_PhoneNumbers_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the phone numbers can receive text messages..
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_SmsEnabled_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_SmsEnabled_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SmsEnabled.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_SmsEnabled_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_SmsEnabled_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the phone numbers can receive calls..
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_VoiceEnabled_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_VoiceEnabled_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VoiceEnabled.
+        /// </summary>
+        public static string GetAvailableMobilePhoneNumbers_VoiceEnabled_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableMobilePhoneNumbers_VoiceEnabled_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AvailablePhoneNumberResources returned by the Twilio API..
+        /// </summary>
+        public static string GetAvailablePhoneNumberPage_AvailablePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumberPage_AvailablePhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AvailablePhoneNumberPage.
+        /// </summary>
+        public static string GetAvailablePhoneNumberPage_AvailablePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumberPage_AvailablePhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a page of Twilio AvailablePhoneNumbers.
+        /// </summary>
+        public static string GetAvailablePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetAvailablePhoneNumberPage.
+        /// </summary>
+        public static string GetAvailablePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The url of the page to get..
+        /// </summary>
+        public static string GetAvailablePhoneNumberPage_TargetUrl_Description {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumberPage_TargetUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TargetUrl.
+        /// </summary>
+        public static string GetAvailablePhoneNumberPage_TargetUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumberPage_TargetUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country Code to get phone numbers for..
+        /// </summary>
+        public static string GetAvailablePhoneNumbers_CountryCode_Description {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumbers_CountryCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountryCode.
+        /// </summary>
+        public static string GetAvailablePhoneNumbers_CountryCode_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumbers_CountryCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Twilio available phone numbers for a country..
+        /// </summary>
+        public static string GetAvailablePhoneNumbers_Description {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumbers_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetAvailablePhoneNumbers.
+        /// </summary>
+        public static string GetAvailablePhoneNumbers_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumbers_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The PhoneNumbers returned by the Twilio API..
+        /// </summary>
+        public static string GetAvailablePhoneNumbers_PhoneNumbers_Description {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumbers_PhoneNumbers_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PhoneNumbers.
+        /// </summary>
+        public static string GetAvailablePhoneNumbers_PhoneNumbers_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumbers_PhoneNumbers_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The account to get available phone numbers for.
+        /// </summary>
+        public static string GetAvailablePhoneNumbersForAccount_AccountSid_Description {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumbersForAccount_AccountSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountSid.
+        /// </summary>
+        public static string GetAvailablePhoneNumbersForAccount_AccountSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumbersForAccount_AccountSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Twilio Available Phone Numbers for an account..
+        /// </summary>
+        public static string GetAvailablePhoneNumbersForAccount_Description {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumbersForAccount_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetAvailablePhoneNumbersForAccount.
+        /// </summary>
+        public static string GetAvailablePhoneNumbersForAccount_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumbersForAccount_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of available phone numbers to return.
+        /// </summary>
+        public static string GetAvailablePhoneNumbersForAccount_Limit_Description {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumbersForAccount_Limit_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit.
+        /// </summary>
+        public static string GetAvailablePhoneNumbersForAccount_Limit_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumbersForAccount_Limit_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The PhoneNumber containing pricing info returned by the Twilio API..
+        /// </summary>
+        public static string GetAvailablePhoneNumbersForAccount_PhoneNumbers_Description {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumbersForAccount_PhoneNumbers_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PhoneNumbers.
+        /// </summary>
+        public static string GetAvailablePhoneNumbersForAccount_PhoneNumbers_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailablePhoneNumbersForAccount_PhoneNumbers_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AvailableTollFreePhoneNumberResources returned by the Twilio API..
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AvailableTollFreePhoneNumberPage.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a page of Twilio AvailableTollFreePhoneNumbers.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetAvailableTollFreePhoneNumberPage.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The url of the page to get..
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumberPage_TargetUrl_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumberPage_TargetUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TargetUrl.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumberPage_TargetUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumberPage_TargetUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The account to get available phone numbers for.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_AccountSid_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_AccountSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountSid.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_AccountSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_AccountSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The area code of the phone numbers to read..
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_AreaCode_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_AreaCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AreaCode.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_AreaCode_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_AreaCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether to read phone numbers new to the Twilio platform..
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_Beta_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_Beta_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Beta.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_Beta_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_Beta_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The pattern on which to match phone numbers..
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_Contains_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_Contains_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contains.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_Contains_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_Contains_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country Code to get phone numbers for..
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_CountryCode_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_CountryCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountryCode.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_CountryCode_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_CountryCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Twilio available Toll Free phone numbers filtered by a variety of parameters..
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetAvailableTollFreePhoneNumbers.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The search radius, in miles, for a near_ query. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_Distance_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_Distance_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Distance.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_Distance_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_Distance_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether to exclude phone numbers that require an Address.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_ExcludeAllAddressRequired_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_ExcludeAllAddressRequired_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ExcludeAllAddressRequired.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_ExcludeAllAddressRequired_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_ExcludeAllAddressRequired_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether to exclude phone numbers that require a foreign Address.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_ExcludeForeignAddressRequired_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_ExcludeForeignAddressRequired_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ExcludeForeignAddressRequired.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_ExcludeForeignAddressRequired_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_ExcludeForeignAddressRequired_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether to exclude phone numbers that require a local Address.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_ExcludeLocalAddressRequired_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_ExcludeLocalAddressRequired_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ExcludeLocalAddressRequired.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_ExcludeLocalAddressRequired_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_ExcludeLocalAddressRequired_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the phone numbers can receive faxes..
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_FaxEnabled_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_FaxEnabled_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxEnabled.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_FaxEnabled_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_FaxEnabled_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit results to a specific local access and transport area. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_InLata_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_InLata_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InLata.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_InLata_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_InLata_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit results to a particular locality.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_InLocality_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_InLocality_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InLocality.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_InLocality_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_InLocality_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit results to a particular postal code. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_InPostalCode_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_InPostalCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InPostalCode.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_InPostalCode_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_InPostalCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit results to a specific rate center, or given a phone number search within the same rate center as that number. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_InRateCenter_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_InRateCenter_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InRateCenter.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_InRateCenter_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_InRateCenter_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit results to a particular region. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_InRegion_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_InRegion_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to InRegion.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_InRegion_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_InRegion_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of available phone numbers to return.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_Limit_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_Limit_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_Limit_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_Limit_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the phone numbers can receive MMS messages..
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_MmsEnabled_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_MmsEnabled_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MmsEnabled.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_MmsEnabled_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_MmsEnabled_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Given a latitude and longitude pair, find a geographically close number within distance miles. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_NearLatLong_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_NearLatLong_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NearLatLong.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_NearLatLong_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_NearLatLong_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Given a phone number, find a geographically close number within distance miles. (US/Canada only).
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_NearNumber_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_NearNumber_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NearNumber.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_NearNumber_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_NearNumber_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The PhoneNumbers returned by the Twilio API..
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_PhoneNumbers_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_PhoneNumbers_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PhoneNumbers.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_PhoneNumbers_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_PhoneNumbers_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the phone numbers can receive text messages..
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_SmsEnabled_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_SmsEnabled_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SmsEnabled.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_SmsEnabled_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_SmsEnabled_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the phone numbers can receive calls..
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_VoiceEnabled_Description {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_VoiceEnabled_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VoiceEnabled.
+        /// </summary>
+        public static string GetAvailableTollFreePhoneNumbers_VoiceEnabled_DisplayName {
+            get {
+                return ResourceManager.GetString("GetAvailableTollFreePhoneNumbers_VoiceEnabled_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fetches a Fax from Twilio.
+        /// </summary>
+        public static string GetFax_Description {
+            get {
+                return ResourceManager.GetString("GetFax_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetFax.
+        /// </summary>
+        public static string GetFax_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFax_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The retrieved fax..
+        /// </summary>
+        public static string GetFax_Fax_Description {
+            get {
+                return ResourceManager.GetString("GetFax_Fax_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fax.
+        /// </summary>
+        public static string GetFax_Fax_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFax_Fax_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the fax..
+        /// </summary>
+        public static string GetFax_FaxSid_Description {
+            get {
+                return ResourceManager.GetString("GetFax_FaxSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxSid.
+        /// </summary>
+        public static string GetFax_FaxSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFax_FaxSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Retrieve only faxes created after this date..
+        /// </summary>
+        public static string GetFaxes_DateCreatedAfter_Description {
+            get {
+                return ResourceManager.GetString("GetFaxes_DateCreatedAfter_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DateCreatedAfter.
+        /// </summary>
+        public static string GetFaxes_DateCreatedAfter_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxes_DateCreatedAfter_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Retrieve only faxes created on or before this date..
+        /// </summary>
+        public static string GetFaxes_DateCreatedOnOrBefore_Description {
+            get {
+                return ResourceManager.GetString("GetFaxes_DateCreatedOnOrBefore_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DateCreatedOnOrBefore.
+        /// </summary>
+        public static string GetFaxes_DateCreatedOnOrBefore_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxes_DateCreatedOnOrBefore_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fetches Faxes from Twilio.
+        /// </summary>
+        public static string GetFaxes_Description {
+            get {
+                return ResourceManager.GetString("GetFaxes_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetFaxes.
+        /// </summary>
+        public static string GetFaxes_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxes_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The retrieved faxes..
+        /// </summary>
+        public static string GetFaxes_Faxes_Description {
+            get {
+                return ResourceManager.GetString("GetFaxes_Faxes_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Faxes.
+        /// </summary>
+        public static string GetFaxes_Faxes_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxes_Faxes_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Retrieve only those faxes sent from this phone number..
+        /// </summary>
+        public static string GetFaxes_From_Description {
+            get {
+                return ResourceManager.GetString("GetFaxes_From_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From.
+        /// </summary>
+        public static string GetFaxes_From_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxes_From_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of available phone numbers to return.
+        /// </summary>
+        public static string GetFaxes_Limit_Description {
+            get {
+                return ResourceManager.GetString("GetFaxes_Limit_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit.
+        /// </summary>
+        public static string GetFaxes_Limit_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxes_Limit_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Retrieve only those faxes sent to this phone number..
+        /// </summary>
+        public static string GetFaxes_To_Description {
+            get {
+                return ResourceManager.GetString("GetFaxes_To_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To.
+        /// </summary>
+        public static string GetFaxes_To_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxes_To_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fetches multiple FaxMedia for a fax from Twilio.
+        /// </summary>
+        public static string GetFaxMedia_Description {
+            get {
+                return ResourceManager.GetString("GetFaxMedia_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetFaxMedia.
+        /// </summary>
+        public static string GetFaxMedia_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxMedia_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The retrieved fax media..
+        /// </summary>
+        public static string GetFaxMedia_FaxMedia_Description {
+            get {
+                return ResourceManager.GetString("GetFaxMedia_FaxMedia_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxMedia.
+        /// </summary>
+        public static string GetFaxMedia_FaxMedia_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxMedia_FaxMedia_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the fax media to retrieve..
+        /// </summary>
+        public static string GetFaxMedia_FaxMediaSid_Description {
+            get {
+                return ResourceManager.GetString("GetFaxMedia_FaxMediaSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxMediaSid.
+        /// </summary>
+        public static string GetFaxMedia_FaxMediaSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxMedia_FaxMediaSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the fax containing the media..
+        /// </summary>
+        public static string GetFaxMedia_FaxSid_Description {
+            get {
+                return ResourceManager.GetString("GetFaxMedia_FaxSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxSid.
+        /// </summary>
+        public static string GetFaxMedia_FaxSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxMedia_FaxSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of available phone numbers to return.
+        /// </summary>
+        public static string GetFaxMedia_Limit_Description {
+            get {
+                return ResourceManager.GetString("GetFaxMedia_Limit_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit.
+        /// </summary>
+        public static string GetFaxMedia_Limit_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxMedia_Limit_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a page of Twilio FaxMedias.
+        /// </summary>
+        public static string GetFaxMediaPage_Description {
+            get {
+                return ResourceManager.GetString("GetFaxMediaPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetFaxMediaPage.
+        /// </summary>
+        public static string GetFaxMediaPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxMediaPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of FaxMediaResources returned by the Twilio API..
+        /// </summary>
+        public static string GetFaxMediaPage_FaxMediaPage_Description {
+            get {
+                return ResourceManager.GetString("GetFaxMediaPage_FaxMediaPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxMediaPage.
+        /// </summary>
+        public static string GetFaxMediaPage_FaxMediaPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxMediaPage_FaxMediaPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The url of the page to get..
+        /// </summary>
+        public static string GetFaxMediaPage_TargetUrl_Description {
+            get {
+                return ResourceManager.GetString("GetFaxMediaPage_TargetUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TargetUrl.
+        /// </summary>
+        public static string GetFaxMediaPage_TargetUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxMediaPage_TargetUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a page of Twilio Faxes.
+        /// </summary>
+        public static string GetFaxPage_Description {
+            get {
+                return ResourceManager.GetString("GetFaxPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetFaxPage.
+        /// </summary>
+        public static string GetFaxPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of FaxResources returned by the Twilio API..
+        /// </summary>
+        public static string GetFaxPage_FaxPage_Description {
+            get {
+                return ResourceManager.GetString("GetFaxPage_FaxPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxPage.
+        /// </summary>
+        public static string GetFaxPage_FaxPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxPage_FaxPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The url of the page to get..
+        /// </summary>
+        public static string GetFaxPage_TargetUrl_Description {
+            get {
+                return ResourceManager.GetString("GetFaxPage_TargetUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TargetUrl.
+        /// </summary>
+        public static string GetFaxPage_TargetUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxPage_TargetUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the account containing the message to retrieve..
+        /// </summary>
+        public static string GetMessage_AccountSid_Description {
+            get {
+                return ResourceManager.GetString("GetMessage_AccountSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountSid.
+        /// </summary>
+        public static string GetMessage_AccountSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessage_AccountSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fetches a Message from Twilio.
+        /// </summary>
+        public static string GetMessage_Description {
+            get {
+                return ResourceManager.GetString("GetMessage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetMessage.
+        /// </summary>
+        public static string GetMessage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The retrieved message..
+        /// </summary>
+        public static string GetMessage_Message_Description {
+            get {
+                return ResourceManager.GetString("GetMessage_Message_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message.
+        /// </summary>
+        public static string GetMessage_Message_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessage_Message_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the message.
+        /// </summary>
+        public static string GetMessage_MessageSid_Description {
+            get {
+                return ResourceManager.GetString("GetMessage_MessageSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessageSid.
+        /// </summary>
+        public static string GetMessage_MessageSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessage_MessageSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a Twilio MessageMedia.
+        /// </summary>
+        public static string GetMessageMedia_Description {
+            get {
+                return ResourceManager.GetString("GetMessageMedia_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetMessageMedia.
+        /// </summary>
+        public static string GetMessageMedia_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessageMedia_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The MessageMediaResource returned by the Twilio API..
+        /// </summary>
+        public static string GetMessageMedia_MessageMedia_Description {
+            get {
+                return ResourceManager.GetString("GetMessageMedia_MessageMedia_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessageMedia.
+        /// </summary>
+        public static string GetMessageMedia_MessageMedia_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessageMedia_MessageMedia_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID of the message media to get..
+        /// </summary>
+        public static string GetMessageMedia_MessageMediaSid_Description {
+            get {
+                return ResourceManager.GetString("GetMessageMedia_MessageMediaSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessageMediaSid.
+        /// </summary>
+        public static string GetMessageMedia_MessageMediaSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessageMedia_MessageMediaSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID of the message to get..
+        /// </summary>
+        public static string GetMessageMedia_MessageSid_Description {
+            get {
+                return ResourceManager.GetString("GetMessageMedia_MessageSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessageSid.
+        /// </summary>
+        public static string GetMessageMedia_MessageSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessageMedia_MessageSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a page of Twilio MessageMedias.
+        /// </summary>
+        public static string GetMessageMediaPage_Description {
+            get {
+                return ResourceManager.GetString("GetMessageMediaPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetMessageMediaPage.
+        /// </summary>
+        public static string GetMessageMediaPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessageMediaPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of MessageMediaResources returned by the Twilio API..
+        /// </summary>
+        public static string GetMessageMediaPage_MessageMediaPage_Description {
+            get {
+                return ResourceManager.GetString("GetMessageMediaPage_MessageMediaPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessageMediaPage.
+        /// </summary>
+        public static string GetMessageMediaPage_MessageMediaPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessageMediaPage_MessageMediaPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The url of the page to get..
+        /// </summary>
+        public static string GetMessageMediaPage_TargetUrl_Description {
+            get {
+                return ResourceManager.GetString("GetMessageMediaPage_TargetUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TargetUrl.
+        /// </summary>
+        public static string GetMessageMediaPage_TargetUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessageMediaPage_TargetUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a page of Twilio Messages.
+        /// </summary>
+        public static string GetMessagePage_Description {
+            get {
+                return ResourceManager.GetString("GetMessagePage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetMessagePage.
+        /// </summary>
+        public static string GetMessagePage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessagePage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of MessageResources returned by the Twilio API..
+        /// </summary>
+        public static string GetMessagePage_MessagePage_Description {
+            get {
+                return ResourceManager.GetString("GetMessagePage_MessagePage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessagePage.
+        /// </summary>
+        public static string GetMessagePage_MessagePage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessagePage_MessagePage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The url of the page to get..
+        /// </summary>
+        public static string GetMessagePage_TargetUrl_Description {
+            get {
+                return ResourceManager.GetString("GetMessagePage_TargetUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TargetUrl.
+        /// </summary>
+        public static string GetMessagePage_TargetUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessagePage_TargetUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The SID of the Account that created the resources to read .
+        /// </summary>
+        public static string GetMessages_AccountSid_Description {
+            get {
+                return ResourceManager.GetString("GetMessages_AccountSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountSid.
+        /// </summary>
+        public static string GetMessages_AccountSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessages_AccountSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Retrieve only messagees created on this date..
+        /// </summary>
+        public static string GetMessages_DateSent_Description {
+            get {
+                return ResourceManager.GetString("GetMessages_DateSent_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DateSent.
+        /// </summary>
+        public static string GetMessages_DateSent_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessages_DateSent_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Retrieve only messagees created after this date..
+        /// </summary>
+        public static string GetMessages_DateSentAfter_Description {
+            get {
+                return ResourceManager.GetString("GetMessages_DateSentAfter_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DateSentAfter.
+        /// </summary>
+        public static string GetMessages_DateSentAfter_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessages_DateSentAfter_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Retrieve only messagees created before this date..
+        /// </summary>
+        public static string GetMessages_DateSentBefore_Description {
+            get {
+                return ResourceManager.GetString("GetMessages_DateSentBefore_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DateSentBefore.
+        /// </summary>
+        public static string GetMessages_DateSentBefore_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessages_DateSentBefore_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fetches Messages from Twilio.
+        /// </summary>
+        public static string GetMessages_Description {
+            get {
+                return ResourceManager.GetString("GetMessages_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetMessages.
+        /// </summary>
+        public static string GetMessages_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessages_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Retrieve only those messagees sent from this phone number..
+        /// </summary>
+        public static string GetMessages_From_Description {
+            get {
+                return ResourceManager.GetString("GetMessages_From_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From.
+        /// </summary>
+        public static string GetMessages_From_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessages_From_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of available phone numbers to return.
+        /// </summary>
+        public static string GetMessages_Limit_Description {
+            get {
+                return ResourceManager.GetString("GetMessages_Limit_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit.
+        /// </summary>
+        public static string GetMessages_Limit_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessages_Limit_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The retrieved messagees..
+        /// </summary>
+        public static string GetMessages_Messages_Description {
+            get {
+                return ResourceManager.GetString("GetMessages_Messages_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Messages.
+        /// </summary>
+        public static string GetMessages_Messages_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessages_Messages_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Retrieve only those messagees sent to this phone number..
+        /// </summary>
+        public static string GetMessages_To_Description {
+            get {
+                return ResourceManager.GetString("GetMessages_To_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To.
+        /// </summary>
+        public static string GetMessages_To_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessages_To_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country Code to get pricing for.
+        /// </summary>
+        public static string GetMessagingPricing_CountryCode_Description {
+            get {
+                return ResourceManager.GetString("GetMessagingPricing_CountryCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountryCode.
+        /// </summary>
+        public static string GetMessagingPricing_CountryCode_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessagingPricing_CountryCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The CountryResource containing pricing info returned by the Twilio API..
+        /// </summary>
+        public static string GetMessagingPricing_CountryResource_Description {
+            get {
+                return ResourceManager.GetString("GetMessagingPricing_CountryResource_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountryResource.
+        /// </summary>
+        public static string GetMessagingPricing_CountryResource_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessagingPricing_CountryResource_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Twilio Messaging Pricing for a country..
+        /// </summary>
+        public static string GetMessagingPricing_Description {
+            get {
+                return ResourceManager.GetString("GetMessagingPricing_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetMessagingPricing.
+        /// </summary>
+        public static string GetMessagingPricing_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessagingPricing_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a page of Twilio MessagingPricings.
+        /// </summary>
+        public static string GetMessagingPricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetMessagingPricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetMessagingPricingPage.
+        /// </summary>
+        public static string GetMessagingPricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessagingPricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of MessagingPricingResources returned by the Twilio API..
+        /// </summary>
+        public static string GetMessagingPricingPage_MessagingPricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetMessagingPricingPage_MessagingPricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessagingPricingPage.
+        /// </summary>
+        public static string GetMessagingPricingPage_MessagingPricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessagingPricingPage_MessagingPricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The url of the page to get..
+        /// </summary>
+        public static string GetMessagingPricingPage_TargetUrl_Description {
+            get {
+                return ResourceManager.GetString("GetMessagingPricingPage_TargetUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TargetUrl.
+        /// </summary>
+        public static string GetMessagingPricingPage_TargetUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessagingPricingPage_TargetUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The CountryResources containing pricing info returned by the Twilio API..
+        /// </summary>
+        public static string GetMessagingPricings_CountryResources_Description {
+            get {
+                return ResourceManager.GetString("GetMessagingPricings_CountryResources_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountryResources.
+        /// </summary>
+        public static string GetMessagingPricings_CountryResources_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessagingPricings_CountryResources_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Twilio Messaging Pricings..
+        /// </summary>
+        public static string GetMessagingPricings_Description {
+            get {
+                return ResourceManager.GetString("GetMessagingPricings_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetMessagingPricings.
+        /// </summary>
+        public static string GetMessagingPricings_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessagingPricings_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of country pricings to return.
+        /// </summary>
+        public static string GetMessagingPricings_Limit_Description {
+            get {
+                return ResourceManager.GetString("GetMessagingPricings_Limit_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit.
+        /// </summary>
+        public static string GetMessagingPricings_Limit_DisplayName {
+            get {
+                return ResourceManager.GetString("GetMessagingPricings_Limit_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AccountResources returned by the Twilio API..
+        /// </summary>
+        public static string GetNextAccountPage_AccountPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextAccountPage_AccountPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountPage.
+        /// </summary>
+        public static string GetNextAccountPage_AccountPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAccountPage_AccountPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the next page of Twilio Accounts.
+        /// </summary>
+        public static string GetNextAccountPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextAccountPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetNextAccountPage.
+        /// </summary>
+        public static string GetNextAccountPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAccountPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of accounts to get the next page of..
+        /// </summary>
+        public static string GetNextAccountPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetNextAccountPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetNextAccountPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAccountPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AlphaSenderResources returned by the Twilio API..
+        /// </summary>
+        public static string GetNextAlphaSenderPage_AlphaSenderPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextAlphaSenderPage_AlphaSenderPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AlphaSenderPage.
+        /// </summary>
+        public static string GetNextAlphaSenderPage_AlphaSenderPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAlphaSenderPage_AlphaSenderPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the next page of Twilio AlphaSenders.
+        /// </summary>
+        public static string GetNextAlphaSenderPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextAlphaSenderPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetNextAlphaSenderPage.
+        /// </summary>
+        public static string GetNextAlphaSenderPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAlphaSenderPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of alphaSenders to get the next page of..
+        /// </summary>
+        public static string GetNextAlphaSenderPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetNextAlphaSenderPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetNextAlphaSenderPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAlphaSenderPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AvailableLocalPhoneNumberResources returned by the Twilio API..
+        /// </summary>
+        public static string GetNextAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AvailableLocalPhoneNumberPage.
+        /// </summary>
+        public static string GetNextAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the next page of Twilio AvailableLocalPhoneNumbers.
+        /// </summary>
+        public static string GetNextAvailableLocalPhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextAvailableLocalPhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetNextAvailableLocalPhoneNumberPage.
+        /// </summary>
+        public static string GetNextAvailableLocalPhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAvailableLocalPhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of availableLocalPhoneNumbers to get the next page of..
+        /// </summary>
+        public static string GetNextAvailableLocalPhoneNumberPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetNextAvailableLocalPhoneNumberPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetNextAvailableLocalPhoneNumberPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAvailableLocalPhoneNumberPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AvailableMobilePhoneNumberResources returned by the Twilio API..
+        /// </summary>
+        public static string GetNextAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AvailableMobilePhoneNumberPage.
+        /// </summary>
+        public static string GetNextAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the next page of Twilio AvailableMobilePhoneNumbers.
+        /// </summary>
+        public static string GetNextAvailableMobilePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextAvailableMobilePhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetNextAvailableMobilePhoneNumberPage.
+        /// </summary>
+        public static string GetNextAvailableMobilePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAvailableMobilePhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of availableMobilePhoneNumbers to get the next page of..
+        /// </summary>
+        public static string GetNextAvailableMobilePhoneNumberPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetNextAvailableMobilePhoneNumberPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetNextAvailableMobilePhoneNumberPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAvailableMobilePhoneNumberPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AvailablePhoneNumberResources returned by the Twilio API..
+        /// </summary>
+        public static string GetNextAvailablePhoneNumberPage_AvailablePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextAvailablePhoneNumberPage_AvailablePhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AvailablePhoneNumberPage.
+        /// </summary>
+        public static string GetNextAvailablePhoneNumberPage_AvailablePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAvailablePhoneNumberPage_AvailablePhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the next page of Twilio AvailablePhoneNumbers.
+        /// </summary>
+        public static string GetNextAvailablePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextAvailablePhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetNextAvailablePhoneNumberPage.
+        /// </summary>
+        public static string GetNextAvailablePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAvailablePhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of availablePhoneNumbers to get the next page of..
+        /// </summary>
+        public static string GetNextAvailablePhoneNumberPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetNextAvailablePhoneNumberPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetNextAvailablePhoneNumberPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAvailablePhoneNumberPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AvailableTollFreePhoneNumberResources returned by the Twilio API..
+        /// </summary>
+        public static string GetNextAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_Descript" +
+                        "ion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AvailableTollFreePhoneNumberPage.
+        /// </summary>
+        public static string GetNextAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_DisplayN" +
+                        "ame", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the next page of Twilio AvailableTollFreePhoneNumbers.
+        /// </summary>
+        public static string GetNextAvailableTollFreePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextAvailableTollFreePhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetNextAvailableTollFreePhoneNumberPage.
+        /// </summary>
+        public static string GetNextAvailableTollFreePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAvailableTollFreePhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of availableTollFreePhoneNumbers to get the next page of..
+        /// </summary>
+        public static string GetNextAvailableTollFreePhoneNumberPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetNextAvailableTollFreePhoneNumberPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetNextAvailableTollFreePhoneNumberPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextAvailableTollFreePhoneNumberPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the next page of Twilio FaxMedias.
+        /// </summary>
+        public static string GetNextFaxMediaPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextFaxMediaPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetNextFaxMediaPage.
+        /// </summary>
+        public static string GetNextFaxMediaPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextFaxMediaPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of FaxMediaResources returned by the Twilio API..
+        /// </summary>
+        public static string GetNextFaxMediaPage_FaxMediaPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextFaxMediaPage_FaxMediaPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxMediaPage.
+        /// </summary>
+        public static string GetNextFaxMediaPage_FaxMediaPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextFaxMediaPage_FaxMediaPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of faxMedias to get the next page of..
+        /// </summary>
+        public static string GetNextFaxMediaPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetNextFaxMediaPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetNextFaxMediaPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextFaxMediaPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the next page of Twilio Faxes.
+        /// </summary>
+        public static string GetNextFaxPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextFaxPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetNextFaxPage.
+        /// </summary>
+        public static string GetNextFaxPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextFaxPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of FaxResources returned by the Twilio API..
+        /// </summary>
+        public static string GetNextFaxPage_FaxPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextFaxPage_FaxPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxPage.
+        /// </summary>
+        public static string GetNextFaxPage_FaxPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextFaxPage_FaxPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of faxs to get the next page of..
+        /// </summary>
+        public static string GetNextFaxPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetNextFaxPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetNextFaxPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextFaxPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the next page of Twilio MessageMedias.
+        /// </summary>
+        public static string GetNextMessageMediaPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextMessageMediaPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetNextMessageMediaPage.
+        /// </summary>
+        public static string GetNextMessageMediaPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextMessageMediaPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of MessageMediaResources returned by the Twilio API..
+        /// </summary>
+        public static string GetNextMessageMediaPage_MessageMediaPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextMessageMediaPage_MessageMediaPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessageMediaPage.
+        /// </summary>
+        public static string GetNextMessageMediaPage_MessageMediaPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextMessageMediaPage_MessageMediaPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of messageMedias to get the next page of..
+        /// </summary>
+        public static string GetNextMessageMediaPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetNextMessageMediaPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetNextMessageMediaPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextMessageMediaPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the next page of Twilio Messages.
+        /// </summary>
+        public static string GetNextMessagePage_Description {
+            get {
+                return ResourceManager.GetString("GetNextMessagePage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetNextMessagePage.
+        /// </summary>
+        public static string GetNextMessagePage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextMessagePage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of MessageResources returned by the Twilio API..
+        /// </summary>
+        public static string GetNextMessagePage_MessagePage_Description {
+            get {
+                return ResourceManager.GetString("GetNextMessagePage_MessagePage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessagePage.
+        /// </summary>
+        public static string GetNextMessagePage_MessagePage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextMessagePage_MessagePage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of messages to get the next page of..
+        /// </summary>
+        public static string GetNextMessagePage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetNextMessagePage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetNextMessagePage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextMessagePage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the next page of Twilio MessagingPricings.
+        /// </summary>
+        public static string GetNextMessagingPricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextMessagingPricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetNextMessagingPricingPage.
+        /// </summary>
+        public static string GetNextMessagingPricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextMessagingPricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of MessagingPricingResources returned by the Twilio API..
+        /// </summary>
+        public static string GetNextMessagingPricingPage_MessagingPricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextMessagingPricingPage_MessagingPricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessagingPricingPage.
+        /// </summary>
+        public static string GetNextMessagingPricingPage_MessagingPricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextMessagingPricingPage_MessagingPricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of messagingPricings to get the next page of..
+        /// </summary>
+        public static string GetNextMessagingPricingPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetNextMessagingPricingPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetNextMessagingPricingPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextMessagingPricingPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the next page of Twilio PhoneNumberPricings.
+        /// </summary>
+        public static string GetNextPhoneNumberPricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextPhoneNumberPricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetNextPhoneNumberPricingPage.
+        /// </summary>
+        public static string GetNextPhoneNumberPricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextPhoneNumberPricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of phoneNumberPricings to get the next page of..
+        /// </summary>
+        public static string GetNextPhoneNumberPricingPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetNextPhoneNumberPricingPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetNextPhoneNumberPricingPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextPhoneNumberPricingPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of PhoneNumberPricingResources returned by the Twilio API..
+        /// </summary>
+        public static string GetNextPhoneNumberPricingPage_PhoneNumberPricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextPhoneNumberPricingPage_PhoneNumberPricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PhoneNumberPricingPage.
+        /// </summary>
+        public static string GetNextPhoneNumberPricingPage_PhoneNumberPricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextPhoneNumberPricingPage_PhoneNumberPricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the next page of Twilio ShortCodes.
+        /// </summary>
+        public static string GetNextShortCodePage_Description {
+            get {
+                return ResourceManager.GetString("GetNextShortCodePage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetNextShortCodePage.
+        /// </summary>
+        public static string GetNextShortCodePage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextShortCodePage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of shortCodes to get the next page of..
+        /// </summary>
+        public static string GetNextShortCodePage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetNextShortCodePage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetNextShortCodePage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextShortCodePage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of ShortCodeResources returned by the Twilio API..
+        /// </summary>
+        public static string GetNextShortCodePage_ShortCodePage_Description {
+            get {
+                return ResourceManager.GetString("GetNextShortCodePage_ShortCodePage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ShortCodePage.
+        /// </summary>
+        public static string GetNextShortCodePage_ShortCodePage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextShortCodePage_ShortCodePage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the next page of Twilio VoicePricings.
+        /// </summary>
+        public static string GetNextVoicePricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextVoicePricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetNextVoicePricingPage.
+        /// </summary>
+        public static string GetNextVoicePricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextVoicePricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of voicePricings to get the next page of..
+        /// </summary>
+        public static string GetNextVoicePricingPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetNextVoicePricingPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetNextVoicePricingPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextVoicePricingPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of VoicePricingResources returned by the Twilio API..
+        /// </summary>
+        public static string GetNextVoicePricingPage_VoicePricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetNextVoicePricingPage_VoicePricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VoicePricingPage.
+        /// </summary>
+        public static string GetNextVoicePricingPage_VoicePricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetNextVoicePricingPage_VoicePricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country Code to get pricing for.
+        /// </summary>
+        public static string GetPhoneNumberPricing_CountryCode_Description {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricing_CountryCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountryCode.
+        /// </summary>
+        public static string GetPhoneNumberPricing_CountryCode_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricing_CountryCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The CountryResource containing pricing info returned by the Twilio API..
+        /// </summary>
+        public static string GetPhoneNumberPricing_CountryResource_Description {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricing_CountryResource_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountryResource.
+        /// </summary>
+        public static string GetPhoneNumberPricing_CountryResource_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricing_CountryResource_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Twilio Phone Number Pricing for a country..
+        /// </summary>
+        public static string GetPhoneNumberPricing_Description {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricing_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPhoneNumberPricing.
+        /// </summary>
+        public static string GetPhoneNumberPricing_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricing_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a page of Twilio PhoneNumberPricings.
+        /// </summary>
+        public static string GetPhoneNumberPricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPhoneNumberPricingPage.
+        /// </summary>
+        public static string GetPhoneNumberPricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of PhoneNumberPricingResources returned by the Twilio API..
+        /// </summary>
+        public static string GetPhoneNumberPricingPage_PhoneNumberPricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricingPage_PhoneNumberPricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PhoneNumberPricingPage.
+        /// </summary>
+        public static string GetPhoneNumberPricingPage_PhoneNumberPricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricingPage_PhoneNumberPricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The url of the page to get..
+        /// </summary>
+        public static string GetPhoneNumberPricingPage_TargetUrl_Description {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricingPage_TargetUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TargetUrl.
+        /// </summary>
+        public static string GetPhoneNumberPricingPage_TargetUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricingPage_TargetUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The CountryResources containing pricing info returned by the Twilio API..
+        /// </summary>
+        public static string GetPhoneNumberPricings_CountryResources_Description {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricings_CountryResources_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountryResources.
+        /// </summary>
+        public static string GetPhoneNumberPricings_CountryResources_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricings_CountryResources_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Twilio Phone Number Pricings..
+        /// </summary>
+        public static string GetPhoneNumberPricings_Description {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricings_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPhoneNumberPricings.
+        /// </summary>
+        public static string GetPhoneNumberPricings_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricings_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of country pricings to return.
+        /// </summary>
+        public static string GetPhoneNumberPricings_Limit_Description {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricings_Limit_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit.
+        /// </summary>
+        public static string GetPhoneNumberPricings_Limit_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPhoneNumberPricings_Limit_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AccountResources returned by the Twilio API..
+        /// </summary>
+        public static string GetPreviousAccountPage_AccountPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAccountPage_AccountPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountPage.
+        /// </summary>
+        public static string GetPreviousAccountPage_AccountPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAccountPage_AccountPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the previous page of Twilio Accounts..
+        /// </summary>
+        public static string GetPreviousAccountPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAccountPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPreviousAccountPage.
+        /// </summary>
+        public static string GetPreviousAccountPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAccountPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of accounts to get the previous page of..
+        /// </summary>
+        public static string GetPreviousAccountPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAccountPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetPreviousAccountPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAccountPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AlphaSenderResources returned by the Twilio API..
+        /// </summary>
+        public static string GetPreviousAlphaSenderPage_AlphaSenderPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAlphaSenderPage_AlphaSenderPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AlphaSenderPage.
+        /// </summary>
+        public static string GetPreviousAlphaSenderPage_AlphaSenderPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAlphaSenderPage_AlphaSenderPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the previous page of Twilio AlphaSenders..
+        /// </summary>
+        public static string GetPreviousAlphaSenderPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAlphaSenderPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPreviousAlphaSenderPage.
+        /// </summary>
+        public static string GetPreviousAlphaSenderPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAlphaSenderPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of alphaSenders to get the previous page of..
+        /// </summary>
+        public static string GetPreviousAlphaSenderPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAlphaSenderPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetPreviousAlphaSenderPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAlphaSenderPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AvailableLocalPhoneNumberResources returned by the Twilio API..
+        /// </summary>
+        public static string GetPreviousAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_Descriptio" +
+                        "n", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AvailableLocalPhoneNumberPage.
+        /// </summary>
+        public static string GetPreviousAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_DisplayNam" +
+                        "e", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the previous page of Twilio AvailableLocalPhoneNumbers..
+        /// </summary>
+        public static string GetPreviousAvailableLocalPhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableLocalPhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPreviousAvailableLocalPhoneNumberPage.
+        /// </summary>
+        public static string GetPreviousAvailableLocalPhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableLocalPhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of availableLocalPhoneNumbers to get the previous page of..
+        /// </summary>
+        public static string GetPreviousAvailableLocalPhoneNumberPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableLocalPhoneNumberPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetPreviousAvailableLocalPhoneNumberPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableLocalPhoneNumberPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AvailableMobilePhoneNumberResources returned by the Twilio API..
+        /// </summary>
+        public static string GetPreviousAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_Descript" +
+                        "ion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AvailableMobilePhoneNumberPage.
+        /// </summary>
+        public static string GetPreviousAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_DisplayN" +
+                        "ame", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the previous page of Twilio AvailableMobilePhoneNumbers..
+        /// </summary>
+        public static string GetPreviousAvailableMobilePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableMobilePhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPreviousAvailableMobilePhoneNumberPage.
+        /// </summary>
+        public static string GetPreviousAvailableMobilePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableMobilePhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of availableMobilePhoneNumbers to get the previous page of..
+        /// </summary>
+        public static string GetPreviousAvailableMobilePhoneNumberPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableMobilePhoneNumberPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetPreviousAvailableMobilePhoneNumberPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableMobilePhoneNumberPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AvailablePhoneNumberResources returned by the Twilio API..
+        /// </summary>
+        public static string GetPreviousAvailablePhoneNumberPage_AvailablePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailablePhoneNumberPage_AvailablePhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AvailablePhoneNumberPage.
+        /// </summary>
+        public static string GetPreviousAvailablePhoneNumberPage_AvailablePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailablePhoneNumberPage_AvailablePhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the previous page of Twilio AvailablePhoneNumbers..
+        /// </summary>
+        public static string GetPreviousAvailablePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailablePhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPreviousAvailablePhoneNumberPage.
+        /// </summary>
+        public static string GetPreviousAvailablePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailablePhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of availablePhoneNumbers to get the previous page of..
+        /// </summary>
+        public static string GetPreviousAvailablePhoneNumberPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailablePhoneNumberPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetPreviousAvailablePhoneNumberPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailablePhoneNumberPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of AvailableTollFreePhoneNumberResources returned by the Twilio API..
+        /// </summary>
+        public static string GetPreviousAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_Desc" +
+                        "ription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AvailableTollFreePhoneNumberPage.
+        /// </summary>
+        public static string GetPreviousAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_Disp" +
+                        "layName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the previous page of Twilio AvailableTollFreePhoneNumbers..
+        /// </summary>
+        public static string GetPreviousAvailableTollFreePhoneNumberPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableTollFreePhoneNumberPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPreviousAvailableTollFreePhoneNumberPage.
+        /// </summary>
+        public static string GetPreviousAvailableTollFreePhoneNumberPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableTollFreePhoneNumberPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of availableTollFreePhoneNumbers to get the previous page of..
+        /// </summary>
+        public static string GetPreviousAvailableTollFreePhoneNumberPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableTollFreePhoneNumberPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetPreviousAvailableTollFreePhoneNumberPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousAvailableTollFreePhoneNumberPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the previous page of Twilio FaxMedias..
+        /// </summary>
+        public static string GetPreviousFaxMediaPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousFaxMediaPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPreviousFaxMediaPage.
+        /// </summary>
+        public static string GetPreviousFaxMediaPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousFaxMediaPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of FaxMediaResources returned by the Twilio API..
+        /// </summary>
+        public static string GetPreviousFaxMediaPage_FaxMediaPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousFaxMediaPage_FaxMediaPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxMediaPage.
+        /// </summary>
+        public static string GetPreviousFaxMediaPage_FaxMediaPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousFaxMediaPage_FaxMediaPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of faxMedias to get the previous page of..
+        /// </summary>
+        public static string GetPreviousFaxMediaPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousFaxMediaPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetPreviousFaxMediaPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousFaxMediaPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the previous page of Twilio Faxes..
+        /// </summary>
+        public static string GetPreviousFaxPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousFaxPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPreviousFaxPage.
+        /// </summary>
+        public static string GetPreviousFaxPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousFaxPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of FaxResources returned by the Twilio API..
+        /// </summary>
+        public static string GetPreviousFaxPage_FaxPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousFaxPage_FaxPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxPage.
+        /// </summary>
+        public static string GetPreviousFaxPage_FaxPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousFaxPage_FaxPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of faxs to get the previous page of..
+        /// </summary>
+        public static string GetPreviousFaxPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousFaxPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetPreviousFaxPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousFaxPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the previous page of Twilio MessageMedias..
+        /// </summary>
+        public static string GetPreviousMessageMediaPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousMessageMediaPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPreviousMessageMediaPage.
+        /// </summary>
+        public static string GetPreviousMessageMediaPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousMessageMediaPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of MessageMediaResources returned by the Twilio API..
+        /// </summary>
+        public static string GetPreviousMessageMediaPage_MessageMediaPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousMessageMediaPage_MessageMediaPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessageMediaPage.
+        /// </summary>
+        public static string GetPreviousMessageMediaPage_MessageMediaPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousMessageMediaPage_MessageMediaPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of messageMedias to get the previous page of..
+        /// </summary>
+        public static string GetPreviousMessageMediaPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousMessageMediaPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetPreviousMessageMediaPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousMessageMediaPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the previous page of Twilio Messages..
+        /// </summary>
+        public static string GetPreviousMessagePage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousMessagePage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPreviousMessagePage.
+        /// </summary>
+        public static string GetPreviousMessagePage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousMessagePage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of MessageResources returned by the Twilio API..
+        /// </summary>
+        public static string GetPreviousMessagePage_MessagePage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousMessagePage_MessagePage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessagePage.
+        /// </summary>
+        public static string GetPreviousMessagePage_MessagePage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousMessagePage_MessagePage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of messages to get the previous page of..
+        /// </summary>
+        public static string GetPreviousMessagePage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousMessagePage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetPreviousMessagePage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousMessagePage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the previous page of Twilio MessagingPricings..
+        /// </summary>
+        public static string GetPreviousMessagingPricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousMessagingPricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPreviousMessagingPricingPage.
+        /// </summary>
+        public static string GetPreviousMessagingPricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousMessagingPricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of MessagingPricingResources returned by the Twilio API..
+        /// </summary>
+        public static string GetPreviousMessagingPricingPage_MessagingPricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousMessagingPricingPage_MessagingPricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessagingPricingPage.
+        /// </summary>
+        public static string GetPreviousMessagingPricingPage_MessagingPricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousMessagingPricingPage_MessagingPricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of messagingPricings to get the previous page of..
+        /// </summary>
+        public static string GetPreviousMessagingPricingPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousMessagingPricingPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetPreviousMessagingPricingPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousMessagingPricingPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the previous page of Twilio PhoneNumberPricings..
+        /// </summary>
+        public static string GetPreviousPhoneNumberPricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousPhoneNumberPricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPreviousPhoneNumberPricingPage.
+        /// </summary>
+        public static string GetPreviousPhoneNumberPricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousPhoneNumberPricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of phoneNumberPricings to get the previous page of..
+        /// </summary>
+        public static string GetPreviousPhoneNumberPricingPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousPhoneNumberPricingPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetPreviousPhoneNumberPricingPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousPhoneNumberPricingPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of PhoneNumberPricingResources returned by the Twilio API..
+        /// </summary>
+        public static string GetPreviousPhoneNumberPricingPage_PhoneNumberPricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousPhoneNumberPricingPage_PhoneNumberPricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PhoneNumberPricingPage.
+        /// </summary>
+        public static string GetPreviousPhoneNumberPricingPage_PhoneNumberPricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousPhoneNumberPricingPage_PhoneNumberPricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the previous page of Twilio ShortCodes..
+        /// </summary>
+        public static string GetPreviousShortCodePage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousShortCodePage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPreviousShortCodePage.
+        /// </summary>
+        public static string GetPreviousShortCodePage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousShortCodePage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of shortCodes to get the previous page of..
+        /// </summary>
+        public static string GetPreviousShortCodePage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousShortCodePage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetPreviousShortCodePage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousShortCodePage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of ShortCodeResources returned by the Twilio API..
+        /// </summary>
+        public static string GetPreviousShortCodePage_ShortCodePage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousShortCodePage_ShortCodePage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ShortCodePage.
+        /// </summary>
+        public static string GetPreviousShortCodePage_ShortCodePage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousShortCodePage_ShortCodePage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get the previous page of Twilio VoicePricings..
+        /// </summary>
+        public static string GetPreviousVoicePricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousVoicePricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetPreviousVoicePricingPage.
+        /// </summary>
+        public static string GetPreviousVoicePricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousVoicePricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of voicePricings to get the previous page of..
+        /// </summary>
+        public static string GetPreviousVoicePricingPage_Page_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousVoicePricingPage_Page_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page.
+        /// </summary>
+        public static string GetPreviousVoicePricingPage_Page_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousVoicePricingPage_Page_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of VoicePricingResources returned by the Twilio API..
+        /// </summary>
+        public static string GetPreviousVoicePricingPage_VoicePricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetPreviousVoicePricingPage_VoicePricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VoicePricingPage.
+        /// </summary>
+        public static string GetPreviousVoicePricingPage_VoicePricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetPreviousVoicePricingPage_VoicePricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID of the account to get..
+        /// </summary>
+        public static string GetShortCode_AccountSid_Description {
+            get {
+                return ResourceManager.GetString("GetShortCode_AccountSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountSid.
+        /// </summary>
+        public static string GetShortCode_AccountSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetShortCode_AccountSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a Twilio ShortCode.
+        /// </summary>
+        public static string GetShortCode_Description {
+            get {
+                return ResourceManager.GetString("GetShortCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetShortCode.
+        /// </summary>
+        public static string GetShortCode_DisplayName {
+            get {
+                return ResourceManager.GetString("GetShortCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ShortCodeResource returned by the Twilio API..
+        /// </summary>
+        public static string GetShortCode_ShortCode_Description {
+            get {
+                return ResourceManager.GetString("GetShortCode_ShortCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ShortCode.
+        /// </summary>
+        public static string GetShortCode_ShortCode_DisplayName {
+            get {
+                return ResourceManager.GetString("GetShortCode_ShortCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID of the short code to get..
+        /// </summary>
+        public static string GetShortCode_ShortCodeSid_Description {
+            get {
+                return ResourceManager.GetString("GetShortCode_ShortCodeSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ShortCodeSid.
+        /// </summary>
+        public static string GetShortCode_ShortCodeSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetShortCode_ShortCodeSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a page of Twilio ShortCodes.
+        /// </summary>
+        public static string GetShortCodePage_Description {
+            get {
+                return ResourceManager.GetString("GetShortCodePage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetShortCodePage.
+        /// </summary>
+        public static string GetShortCodePage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetShortCodePage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of ShortCodeResources returned by the Twilio API..
+        /// </summary>
+        public static string GetShortCodePage_ShortCodePage_Description {
+            get {
+                return ResourceManager.GetString("GetShortCodePage_ShortCodePage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ShortCodePage.
+        /// </summary>
+        public static string GetShortCodePage_ShortCodePage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetShortCodePage_ShortCodePage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The url of the page to get..
+        /// </summary>
+        public static string GetShortCodePage_TargetUrl_Description {
+            get {
+                return ResourceManager.GetString("GetShortCodePage_TargetUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TargetUrl.
+        /// </summary>
+        public static string GetShortCodePage_TargetUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("GetShortCodePage_TargetUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country Code to get pricing for.
+        /// </summary>
+        public static string GetVoicePricing_CountryCode_Description {
+            get {
+                return ResourceManager.GetString("GetVoicePricing_CountryCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountryCode.
+        /// </summary>
+        public static string GetVoicePricing_CountryCode_DisplayName {
+            get {
+                return ResourceManager.GetString("GetVoicePricing_CountryCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The CountryResource containing pricing info returned by the Twilio API..
+        /// </summary>
+        public static string GetVoicePricing_CountryResource_Description {
+            get {
+                return ResourceManager.GetString("GetVoicePricing_CountryResource_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountryResource.
+        /// </summary>
+        public static string GetVoicePricing_CountryResource_DisplayName {
+            get {
+                return ResourceManager.GetString("GetVoicePricing_CountryResource_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Twilio Voice Pricing for a country..
+        /// </summary>
+        public static string GetVoicePricing_Description {
+            get {
+                return ResourceManager.GetString("GetVoicePricing_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetVoicePricing.
+        /// </summary>
+        public static string GetVoicePricing_DisplayName {
+            get {
+                return ResourceManager.GetString("GetVoicePricing_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a page of Twilio VoicePricings.
+        /// </summary>
+        public static string GetVoicePricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetVoicePricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetVoicePricingPage.
+        /// </summary>
+        public static string GetVoicePricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetVoicePricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The url of the page to get..
+        /// </summary>
+        public static string GetVoicePricingPage_TargetUrl_Description {
+            get {
+                return ResourceManager.GetString("GetVoicePricingPage_TargetUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TargetUrl.
+        /// </summary>
+        public static string GetVoicePricingPage_TargetUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("GetVoicePricingPage_TargetUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The page of VoicePricingResources returned by the Twilio API..
+        /// </summary>
+        public static string GetVoicePricingPage_VoicePricingPage_Description {
+            get {
+                return ResourceManager.GetString("GetVoicePricingPage_VoicePricingPage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VoicePricingPage.
+        /// </summary>
+        public static string GetVoicePricingPage_VoicePricingPage_DisplayName {
+            get {
+                return ResourceManager.GetString("GetVoicePricingPage_VoicePricingPage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The CountryResources containing pricing info returned by the Twilio API..
+        /// </summary>
+        public static string GetVoicePricings_CountryResources_Description {
+            get {
+                return ResourceManager.GetString("GetVoicePricings_CountryResources_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountryResources.
+        /// </summary>
+        public static string GetVoicePricings_CountryResources_DisplayName {
+            get {
+                return ResourceManager.GetString("GetVoicePricings_CountryResources_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Twilio Voice Pricings..
+        /// </summary>
+        public static string GetVoicePricings_Description {
+            get {
+                return ResourceManager.GetString("GetVoicePricings_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetVoicePricings.
+        /// </summary>
+        public static string GetVoicePricings_DisplayName {
+            get {
+                return ResourceManager.GetString("GetVoicePricings_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of country pricings to return.
+        /// </summary>
+        public static string GetVoicePricings_Limit_Description {
+            get {
+                return ResourceManager.GetString("GetVoicePricings_Limit_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit.
+        /// </summary>
+        public static string GetVoicePricings_Limit_DisplayName {
+            get {
+                return ResourceManager.GetString("GetVoicePricings_Limit_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Input.
+        /// </summary>
+        public static string Input_Category {
+            get {
+                return ResourceManager.GetString("Input_Category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add on names to use with this lookup.
+        /// </summary>
+        public static string LookupPhoneNumber_AddOns_Description {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_AddOns_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AddOns.
+        /// </summary>
+        public static string LookupPhoneNumber_AddOns_DisplayName {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_AddOns_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add on data to use with this lookup.
+        /// </summary>
+        public static string LookupPhoneNumber_AddOnsData_Description {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_AddOnsData_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AddOnsData.
+        /// </summary>
+        public static string LookupPhoneNumber_AddOnsData_DisplayName {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_AddOnsData_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country Code to look up phone number..
+        /// </summary>
+        public static string LookupPhoneNumber_CountryCode_Description {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_CountryCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountryCode.
+        /// </summary>
+        public static string LookupPhoneNumber_CountryCode_DisplayName {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_CountryCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get phone number information like caller name and carrier, optionally using Twilio lookup AddOns.
+        /// </summary>
+        public static string LookupPhoneNumber_Description {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LookupPhoneNumber.
+        /// </summary>
+        public static string LookupPhoneNumber_DisplayName {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether or not to look up caller name.
+        /// </summary>
+        public static string LookupPhoneNumber_IncludeCallerName_Description {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_IncludeCallerName_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IncludeCallerName.
+        /// </summary>
+        public static string LookupPhoneNumber_IncludeCallerName_DisplayName {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_IncludeCallerName_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether or not to look up phone carrier.
+        /// </summary>
+        public static string LookupPhoneNumber_IncludeCarrier_Description {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_IncludeCarrier_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IncludeCarrier.
+        /// </summary>
+        public static string LookupPhoneNumber_IncludeCarrier_DisplayName {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_IncludeCarrier_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The phone number to look up.
+        /// </summary>
+        public static string LookupPhoneNumber_Number_Description {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_Number_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number.
+        /// </summary>
+        public static string LookupPhoneNumber_Number_DisplayName {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_Number_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The PhoneNumber Lookup information returned by the Twilio API..
+        /// </summary>
+        public static string LookupPhoneNumber_PhoneNumber_Description {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_PhoneNumber_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PhoneNumber.
+        /// </summary>
+        public static string LookupPhoneNumber_PhoneNumber_DisplayName {
+            get {
+                return ResourceManager.GetString("LookupPhoneNumber_PhoneNumber_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Options.
+        /// </summary>
+        public static string Options_Category {
+            get {
+                return ResourceManager.GetString("Options_Category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Output.
+        /// </summary>
+        public static string Output_Category {
+            get {
+                return ResourceManager.GetString("Output_Category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Creates a fax and sends it with Twilio.
+        /// </summary>
+        public static string SendFax_Description {
+            get {
+                return ResourceManager.GetString("SendFax_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SendFax.
+        /// </summary>
+        public static string SendFax_DisplayName {
+            get {
+                return ResourceManager.GetString("SendFax_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The FaxResource information returned by the Twilio API..
+        /// </summary>
+        public static string SendFax_Fax_Description {
+            get {
+                return ResourceManager.GetString("SendFax_Fax_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fax.
+        /// </summary>
+        public static string SendFax_Fax_DisplayName {
+            get {
+                return ResourceManager.GetString("SendFax_Fax_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Twilio fax phone number to send a fax from..
+        /// </summary>
+        public static string SendFax_From_Description {
+            get {
+                return ResourceManager.GetString("SendFax_From_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From.
+        /// </summary>
+        public static string SendFax_From_DisplayName {
+            get {
+                return ResourceManager.GetString("SendFax_From_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The publicly accessible URL of a PDF file to fax..
+        /// </summary>
+        public static string SendFax_MediaUrl_Description {
+            get {
+                return ResourceManager.GetString("SendFax_MediaUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MediaUrl.
+        /// </summary>
+        public static string SendFax_MediaUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("SendFax_MediaUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The amount of time Twilio should attempt to send the fax for..
+        /// </summary>
+        public static string SendFax_MinutesToSend_Description {
+            get {
+                return ResourceManager.GetString("SendFax_MinutesToSend_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MinutesToSend.
+        /// </summary>
+        public static string SendFax_MinutesToSend_DisplayName {
+            get {
+                return ResourceManager.GetString("SendFax_MinutesToSend_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The fax quality enum that the fax should be sent as..
+        /// </summary>
+        public static string SendFax_Quality_Description {
+            get {
+                return ResourceManager.GetString("SendFax_Quality_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quality.
+        /// </summary>
+        public static string SendFax_Quality_DisplayName {
+            get {
+                return ResourceManager.GetString("SendFax_Quality_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The password for SIP authentication..
+        /// </summary>
+        public static string SendFax_SipAuthPassword_Description {
+            get {
+                return ResourceManager.GetString("SendFax_SipAuthPassword_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SipAuthPassword.
+        /// </summary>
+        public static string SendFax_SipAuthPassword_DisplayName {
+            get {
+                return ResourceManager.GetString("SendFax_SipAuthPassword_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The username for SIP authentication..
+        /// </summary>
+        public static string SendFax_SipAuthUsername_Description {
+            get {
+                return ResourceManager.GetString("SendFax_SipAuthUsername_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SipAuthUsername.
+        /// </summary>
+        public static string SendFax_SipAuthUsername_DisplayName {
+            get {
+                return ResourceManager.GetString("SendFax_SipAuthUsername_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The URL Twilio should call to send status information to your application..
+        /// </summary>
+        public static string SendFax_StatusCallback_Description {
+            get {
+                return ResourceManager.GetString("SendFax_StatusCallback_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StatusCallback.
+        /// </summary>
+        public static string SendFax_StatusCallback_DisplayName {
+            get {
+                return ResourceManager.GetString("SendFax_StatusCallback_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether Twilio should save a copy of the faxed media..
+        /// </summary>
+        public static string SendFax_StoreMedia_Description {
+            get {
+                return ResourceManager.GetString("SendFax_StoreMedia_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StoreMedia.
+        /// </summary>
+        public static string SendFax_StoreMedia_DisplayName {
+            get {
+                return ResourceManager.GetString("SendFax_StoreMedia_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The fax phone number to send a fax to..
+        /// </summary>
+        public static string SendFax_To_Description {
+            get {
+                return ResourceManager.GetString("SendFax_To_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To.
+        /// </summary>
+        public static string SendFax_To_DisplayName {
+            get {
+                return ResourceManager.GetString("SendFax_To_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The SID of the Account that will create the resource.
+        /// </summary>
+        public static string SendMessage_AccountSid_Description {
+            get {
+                return ResourceManager.GetString("SendMessage_AccountSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountSid.
+        /// </summary>
+        public static string SendMessage_AccountSid_DisplayName {
+            get {
+                return ResourceManager.GetString("SendMessage_AccountSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The application to use for callbacks.
+        /// </summary>
+        public static string SendMessage_ApplicationSid_Description {
+            get {
+                return ResourceManager.GetString("SendMessage_ApplicationSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ApplicationSid.
+        /// </summary>
+        public static string SendMessage_ApplicationSid_DisplayName {
+            get {
+                return ResourceManager.GetString("SendMessage_ApplicationSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The SMS Body.
+        /// </summary>
+        public static string SendMessage_Body_Description {
+            get {
+                return ResourceManager.GetString("SendMessage_Body_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Body.
+        /// </summary>
+        public static string SendMessage_Body_DisplayName {
+            get {
+                return ResourceManager.GetString("SendMessage_Body_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Creates a message and sends it with Twilio.
+        /// </summary>
+        public static string SendMessage_Description {
+            get {
+                return ResourceManager.GetString("SendMessage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SendMessage.
+        /// </summary>
+        public static string SendMessage_DisplayName {
+            get {
+                return ResourceManager.GetString("SendMessage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Twilio message phone number to send a message from..
+        /// </summary>
+        public static string SendMessage_From_Description {
+            get {
+                return ResourceManager.GetString("SendMessage_From_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From.
+        /// </summary>
+        public static string SendMessage_From_DisplayName {
+            get {
+                return ResourceManager.GetString("SendMessage_From_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The total maximum price up to 4 decimal places in US dollars acceptable for the message to be delivered.
+        /// </summary>
+        public static string SendMessage_MaxPrice_Description {
+            get {
+                return ResourceManager.GetString("SendMessage_MaxPrice_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MaxPrice.
+        /// </summary>
+        public static string SendMessage_MaxPrice_DisplayName {
+            get {
+                return ResourceManager.GetString("SendMessage_MaxPrice_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The publicly accessible URLs of a file to message..
+        /// </summary>
+        public static string SendMessage_MediaUrl_Description {
+            get {
+                return ResourceManager.GetString("SendMessage_MediaUrl_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MediaUrls.
+        /// </summary>
+        public static string SendMessage_MediaUrl_DisplayName {
+            get {
+                return ResourceManager.GetString("SendMessage_MediaUrl_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The MessageResource information returned by the Twilio API..
+        /// </summary>
+        public static string SendMessage_Message_Description {
+            get {
+                return ResourceManager.GetString("SendMessage_Message_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message.
+        /// </summary>
+        public static string SendMessage_Message_DisplayName {
+            get {
+                return ResourceManager.GetString("SendMessage_Message_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The SID of the Messaging Service you want to associate with the message..
+        /// </summary>
+        public static string SendMessage_MessagingServiceSid_Description {
+            get {
+                return ResourceManager.GetString("SendMessage_MessagingServiceSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessagingServiceSid.
+        /// </summary>
+        public static string SendMessage_MessagingServiceSid_DisplayName {
+            get {
+                return ResourceManager.GetString("SendMessage_MessagingServiceSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether to confirm delivery of the message.
+        /// </summary>
+        public static string SendMessage_ProvideFeedback_Description {
+            get {
+                return ResourceManager.GetString("SendMessage_ProvideFeedback_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ProvideFeedback.
+        /// </summary>
+        public static string SendMessage_ProvideFeedback_DisplayName {
+            get {
+                return ResourceManager.GetString("SendMessage_ProvideFeedback_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether to detect Unicode characters that have a similar GSM-7 character and replace them .
+        /// </summary>
+        public static string SendMessage_SmartEncoded_Description {
+            get {
+                return ResourceManager.GetString("SendMessage_SmartEncoded_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SmartEncoded.
+        /// </summary>
+        public static string SendMessage_SmartEncoded_DisplayName {
+            get {
+                return ResourceManager.GetString("SendMessage_SmartEncoded_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The URL Twilio should call to send status information to your application.
+        /// </summary>
+        public static string SendMessage_StatusCallback_Description {
+            get {
+                return ResourceManager.GetString("SendMessage_StatusCallback_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to StatusCallback.
+        /// </summary>
+        public static string SendMessage_StatusCallback_DisplayName {
+            get {
+                return ResourceManager.GetString("SendMessage_StatusCallback_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The message phone number to send a message to..
+        /// </summary>
+        public static string SendMessage_To_Description {
+            get {
+                return ResourceManager.GetString("SendMessage_To_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To.
+        /// </summary>
+        public static string SendMessage_To_DisplayName {
+            get {
+                return ResourceManager.GetString("SendMessage_To_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of seconds that the message can remain in the Twilio outgoing queue..
+        /// </summary>
+        public static string SendMessage_ValidityPeriod_Description {
+            get {
+                return ResourceManager.GetString("SendMessage_ValidityPeriod_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ValidityPeriod.
+        /// </summary>
+        public static string SendMessage_ValidityPeriod_DisplayName {
+            get {
+                return ResourceManager.GetString("SendMessage_ValidityPeriod_DisplayName", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to Specifies the amount of time (in milliseconds) to wait for the activity to run before an error is thrown. The default value is 60000 (1 minute)..
         /// </summary>
-        public static string Timeout_Description
-        {
-            get
-            {
+        public static string Timeout_Description {
+            get {
                 return ResourceManager.GetString("Timeout_Description", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Timeout (milliseconds).
         /// </summary>
-        public static string Timeout_DisplayName
-        {
-            get
-            {
+        public static string Timeout_DisplayName {
+            get {
                 return ResourceManager.GetString("Timeout_DisplayName", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to The activity timed out and was canceled..
         /// </summary>
-        public static string Timeout_Error
-        {
-            get
-            {
+        public static string Timeout_Error {
+            get {
                 return ResourceManager.GetString("Timeout_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Twilio Account Id.
+        /// </summary>
+        public static string TwilioApiScope_AccountSid_Description {
+            get {
+                return ResourceManager.GetString("TwilioApiScope_AccountSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountSid.
+        /// </summary>
+        public static string TwilioApiScope_AccountSid_DisplayName {
+            get {
+                return ResourceManager.GetString("TwilioApiScope_AccountSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Twilio Authorization Token.
+        /// </summary>
+        public static string TwilioApiScope_AuthToken_Description {
+            get {
+                return ResourceManager.GetString("TwilioApiScope_AuthToken_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AuthToken.
+        /// </summary>
+        public static string TwilioApiScope_AuthToken_DisplayName {
+            get {
+                return ResourceManager.GetString("TwilioApiScope_AuthToken_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A Twilio API Scope.
+        /// </summary>
+        public static string TwilioApiScope_Description {
+            get {
+                return ResourceManager.GetString("TwilioApiScope_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TwilioApiScope.
+        /// </summary>
+        public static string TwilioApiScope_DisplayName {
+            get {
+                return ResourceManager.GetString("TwilioApiScope_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Twilio API Region.
+        /// </summary>
+        public static string TwilioApiScope_Region_Description {
+            get {
+                return ResourceManager.GetString("TwilioApiScope_Region_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Region.
+        /// </summary>
+        public static string TwilioApiScope_Region_DisplayName {
+            get {
+                return ResourceManager.GetString("TwilioApiScope_Region_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to API Request Timeout.
+        /// </summary>
+        public static string TwilioApiScope_Timeout_Description {
+            get {
+                return ResourceManager.GetString("TwilioApiScope_Timeout_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Timeout.
+        /// </summary>
+        public static string TwilioApiScope_Timeout_DisplayName {
+            get {
+                return ResourceManager.GetString("TwilioApiScope_Timeout_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The updated AccountResource.
+        /// </summary>
+        public static string UpdateAccount_Account_Description {
+            get {
+                return ResourceManager.GetString("UpdateAccount_Account_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Account.
+        /// </summary>
+        public static string UpdateAccount_Account_DisplayName {
+            get {
+                return ResourceManager.GetString("UpdateAccount_Account_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The account ID.
+        /// </summary>
+        public static string UpdateAccount_AccountSid_Description {
+            get {
+                return ResourceManager.GetString("UpdateAccount_AccountSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountSid.
+        /// </summary>
+        public static string UpdateAccount_AccountSid_DisplayName {
+            get {
+                return ResourceManager.GetString("UpdateAccount_AccountSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update a Twilio Account.
+        /// </summary>
+        public static string UpdateAccount_Description {
+            get {
+                return ResourceManager.GetString("UpdateAccount_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UpdateAccount.
+        /// </summary>
+        public static string UpdateAccount_DisplayName {
+            get {
+                return ResourceManager.GetString("UpdateAccount_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The account name.
+        /// </summary>
+        public static string UpdateAccount_FriendlyName_Description {
+            get {
+                return ResourceManager.GetString("UpdateAccount_FriendlyName_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FriendlyName.
+        /// </summary>
+        public static string UpdateAccount_FriendlyName_DisplayName {
+            get {
+                return ResourceManager.GetString("UpdateAccount_FriendlyName_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The status to set the account to..
+        /// </summary>
+        public static string UpdateAccount_Status_Description {
+            get {
+                return ResourceManager.GetString("UpdateAccount_Status_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status.
+        /// </summary>
+        public static string UpdateAccount_Status_DisplayName {
+            get {
+                return ResourceManager.GetString("UpdateAccount_Status_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the account containing the message to cancel..
+        /// </summary>
+        public static string UpdateMessage_AccountSid_Description {
+            get {
+                return ResourceManager.GetString("UpdateMessage_AccountSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AccountSid.
+        /// </summary>
+        public static string UpdateMessage_AccountSid_DisplayName {
+            get {
+                return ResourceManager.GetString("UpdateMessage_AccountSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The new message body. String.Empty cancels the message..
+        /// </summary>
+        public static string UpdateMessage_Body_Description {
+            get {
+                return ResourceManager.GetString("UpdateMessage_Body_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Body.
+        /// </summary>
+        public static string UpdateMessage_Body_DisplayName {
+            get {
+                return ResourceManager.GetString("UpdateMessage_Body_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update a queued Message.
+        /// </summary>
+        public static string UpdateMessage_Description {
+            get {
+                return ResourceManager.GetString("UpdateMessage_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UpdateMessage.
+        /// </summary>
+        public static string UpdateMessage_DisplayName {
+            get {
+                return ResourceManager.GetString("UpdateMessage_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The MessageResource information returned by the Twilio API..
+        /// </summary>
+        public static string UpdateMessage_Message_Description {
+            get {
+                return ResourceManager.GetString("UpdateMessage_Message_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message.
+        /// </summary>
+        public static string UpdateMessage_Message_DisplayName {
+            get {
+                return ResourceManager.GetString("UpdateMessage_Message_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the message to cancel..
+        /// </summary>
+        public static string UpdateMessage_MessageSid_Description {
+            get {
+                return ResourceManager.GetString("UpdateMessage_MessageSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MessageSid.
+        /// </summary>
+        public static string UpdateMessage_MessageSid_DisplayName {
+            get {
+                return ResourceManager.GetString("UpdateMessage_MessageSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please provide a value either for {0} or {1}, but not both..
+        /// </summary>
+        public static string ValidationExclusiveProperties_Error {
+            get {
+                return ResourceManager.GetString("ValidationExclusiveProperties_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please provide values for both {0} and {1}..
+        /// </summary>
+        public static string ValidationOverloadGroup_Error {
+            get {
+                return ResourceManager.GetString("ValidationOverloadGroup_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot be used outside of a {0}..
+        /// </summary>
+        public static string ValidationScope_Error {
+            get {
+                return ResourceManager.GetString("ValidationScope_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please provide a value for {0}..
+        /// </summary>
+        public static string ValidationValue_Error {
+            get {
+                return ResourceManager.GetString("ValidationValue_Error", resourceCulture);
             }
         }
     }

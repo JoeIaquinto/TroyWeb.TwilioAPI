@@ -117,6 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AccountCategory" xml:space="preserve">
+    <value>Account</value>
+    <comment>category</comment>
+  </data>
+  <data name="AlphaSenderCategory" xml:space="preserve">
+    <value>Alpha Senders</value>
+    <comment>category</comment>
+  </data>
   <data name="Category" xml:space="preserve">
     <value>TroyWeb.TwilioAPI</value>
     <comment>category</comment>
@@ -140,5 +148,49 @@
   <data name="Editing" xml:space="preserve">
     <value>Editing</value>
     <comment>label</comment>
+  </data>
+  <data name="FaxCategory" xml:space="preserve">
+    <value>Fax</value>
+    <comment>category</comment>
+  </data>
+  <data name="LocalPhoneCategory" xml:space="preserve">
+    <value>Local</value>
+    <comment>category</comment>
+  </data>
+  <data name="MediaCategory" xml:space="preserve">
+    <value>Media</value>
+    <comment>category</comment>
+  </data>
+  <data name="MessagingCategory" xml:space="preserve">
+    <value>Messaging</value>
+    <comment>category</comment>
+  </data>
+  <data name="MobilePhoneCategory" xml:space="preserve">
+    <value>Mobile</value>
+    <comment>category</comment>
+  </data>
+  <data name="PhoneCategory" xml:space="preserve">
+    <value>Phone Number</value>
+    <comment>category</comment>
+  </data>
+  <data name="PricingCategory" xml:space="preserve">
+    <value>Pricing</value>
+    <comment>category</comment>
+  </data>
+  <data name="ShortCodeCategory" xml:space="preserve">
+    <value>Short Code</value>
+    <comment>category</comment>
+  </data>
+  <data name="SMSCategory" xml:space="preserve">
+    <value>SMS</value>
+    <comment>category</comment>
+  </data>
+  <data name="TollFreePhoneCategory" xml:space="preserve">
+    <value>Toll-Free</value>
+    <comment>category</comment>
+  </data>
+  <data name="VoiceCategory" xml:space="preserve">
+    <value>Voice</value>
+    <comment>category</comment>
   </data>
 </root>

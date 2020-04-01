@@ -145,4 +145,2732 @@
     <value>Common</value>
     <comment>category</comment>
   </data>
+  <data name="Authentication_Category" xml:space="preserve">
+    <value>Authentication</value>
+    <comment>category</comment>
+  </data>
+  <data name="Input_Category" xml:space="preserve">
+    <value>Input</value>
+    <comment>category</comment>
+  </data>
+  <data name="Output_Category" xml:space="preserve">
+    <value>Output</value>
+    <comment>category</comment>
+  </data>
+  <data name="Options_Category" xml:space="preserve">
+    <value>Options</value>
+    <comment>category</comment>
+  </data>
+  <data name="ValidationScope_Error" xml:space="preserve">
+    <value>Cannot be used outside of a {0}.</value>
+    <comment>error message; {0} is a container activity (e.g. a scope)</comment>
+  </data>
+  <data name="ValidationValue_Error" xml:space="preserve">
+    <value>Please provide a value for {0}.</value>
+    <comment>error message; {0} is the name of a missing property</comment>
+  </data>
+  <data name="ValidationExclusiveProperties_Error" xml:space="preserve">
+    <value>Please provide a value either for {0} or {1}, but not both.</value>
+    <comment>error message; {0} &amp; {1} are mutually exclusive activities</comment>
+  </data>
+  <data name="ValidationOverloadGroup_Error" xml:space="preserve">
+    <value>Please provide values for both {0} and {1}.</value>
+    <comment>error message; {0} &amp; {1} are complementary properties</comment>
+  </data>
+  <data name="TwilioApiScope_DisplayName" xml:space="preserve">
+    <value>TwilioApiScope</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="TwilioApiScope_Description" xml:space="preserve">
+    <value>A Twilio API Scope</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="TwilioApiScope_AccountSid_DisplayName" xml:space="preserve">
+    <value>AccountSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="TwilioApiScope_AccountSid_Description" xml:space="preserve">
+    <value>Twilio Account Id</value>
+    <comment>property description</comment>
+  </data>
+  <data name="TwilioApiScope_AuthToken_DisplayName" xml:space="preserve">
+    <value>AuthToken</value>
+    <comment>property name</comment>
+  </data>
+  <data name="TwilioApiScope_AuthToken_Description" xml:space="preserve">
+    <value>Twilio Authorization Token</value>
+    <comment>property description</comment>
+  </data>
+  <data name="TwilioApiScope_Region_DisplayName" xml:space="preserve">
+    <value>Region</value>
+    <comment>property name</comment>
+  </data>
+  <data name="TwilioApiScope_Region_Description" xml:space="preserve">
+    <value>Twilio API Region</value>
+    <comment>property description</comment>
+  </data>
+  <data name="TwilioApiScope_Timeout_DisplayName" xml:space="preserve">
+    <value>Timeout</value>
+    <comment>property name</comment>
+  </data>
+  <data name="TwilioApiScope_Timeout_Description" xml:space="preserve">
+    <value>API Request Timeout</value>
+    <comment>property description</comment>
+  </data>
+  <data name="CreateAccount_DisplayName" xml:space="preserve">
+    <value>CreateAccount</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="CreateAccount_Description" xml:space="preserve">
+    <value>Create a Twilio Account</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="CreateAccount_FriendlyName_DisplayName" xml:space="preserve">
+    <value>FriendlyName</value>
+    <comment>property name</comment>
+  </data>
+  <data name="CreateAccount_FriendlyName_Description" xml:space="preserve">
+    <value>The account name</value>
+    <comment>property description</comment>
+  </data>
+  <data name="CreateAccount_Account_DisplayName" xml:space="preserve">
+    <value>Account</value>
+    <comment>property name</comment>
+  </data>
+  <data name="CreateAccount_Account_Description" xml:space="preserve">
+    <value>The created AccountResource</value>
+    <comment>property description</comment>
+  </data>
+  <data name="UpdateAccount_DisplayName" xml:space="preserve">
+    <value>UpdateAccount</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="UpdateAccount_Description" xml:space="preserve">
+    <value>Update a Twilio Account</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="UpdateAccount_AccountSid_DisplayName" xml:space="preserve">
+    <value>AccountSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateAccount_AccountSid_Description" xml:space="preserve">
+    <value>The account ID</value>
+    <comment>property description</comment>
+  </data>
+  <data name="UpdateAccount_FriendlyName_DisplayName" xml:space="preserve">
+    <value>FriendlyName</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateAccount_FriendlyName_Description" xml:space="preserve">
+    <value>The account name</value>
+    <comment>property description</comment>
+  </data>
+  <data name="UpdateAccount_Status_DisplayName" xml:space="preserve">
+    <value>Status</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateAccount_Status_Description" xml:space="preserve">
+    <value>The status to set the account to.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="UpdateAccount_Account_DisplayName" xml:space="preserve">
+    <value>Account</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateAccount_Account_Description" xml:space="preserve">
+    <value>The updated AccountResource</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAccounts_DisplayName" xml:space="preserve">
+    <value>GetAccounts</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetAccounts_Description" xml:space="preserve">
+    <value>Get Twilio Accounts for this account</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetAccounts_FriendlyName_DisplayName" xml:space="preserve">
+    <value>FriendlyName</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAccounts_FriendlyName_Description" xml:space="preserve">
+    <value>Filter response by account name</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAccounts_Status_DisplayName" xml:space="preserve">
+    <value>Status</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAccounts_Status_Description" xml:space="preserve">
+    <value>Filter response by account status</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAccounts_Limit_DisplayName" xml:space="preserve">
+    <value>Limit</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAccounts_Limit_Description" xml:space="preserve">
+    <value>The number of accounts to return</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAccounts_Accounts_DisplayName" xml:space="preserve">
+    <value>Accounts</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAccounts_Accounts_Description" xml:space="preserve">
+    <value>The AccountResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAccount_DisplayName" xml:space="preserve">
+    <value>GetAccount</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetAccount_Description" xml:space="preserve">
+    <value>Get a Twilio Account</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetAccount_AccountSid_DisplayName" xml:space="preserve">
+    <value>AccountSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAccount_AccountSid_Description" xml:space="preserve">
+    <value>ID of the account to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAccount_Account_DisplayName" xml:space="preserve">
+    <value>Account</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAccount_Account_Description" xml:space="preserve">
+    <value>The AccountResource returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAccountPage_DisplayName" xml:space="preserve">
+    <value>GetAccountPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetAccountPage_Description" xml:space="preserve">
+    <value>Get a page of Twilio Accounts</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetAccountPage_TargetUrl_DisplayName" xml:space="preserve">
+    <value>TargetUrl</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAccountPage_TargetUrl_Description" xml:space="preserve">
+    <value>The url of the page to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAccountPage_AccountPage_DisplayName" xml:space="preserve">
+    <value>AccountPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAccountPage_AccountPage_Description" xml:space="preserve">
+    <value>The page of AccountResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextAccountPage_DisplayName" xml:space="preserve">
+    <value>GetNextAccountPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetNextAccountPage_Description" xml:space="preserve">
+    <value>Get the next page of Twilio Accounts</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetNextAccountPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextAccountPage_Page_Description" xml:space="preserve">
+    <value>The page of accounts to get the next page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextAccountPage_AccountPage_DisplayName" xml:space="preserve">
+    <value>AccountPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextAccountPage_AccountPage_Description" xml:space="preserve">
+    <value>The page of AccountResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousAccountPage_DisplayName" xml:space="preserve">
+    <value>GetPreviousAccountPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPreviousAccountPage_Description" xml:space="preserve">
+    <value>Get the previous page of Twilio Accounts.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPreviousAccountPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousAccountPage_Page_Description" xml:space="preserve">
+    <value>The page of accounts to get the previous page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousAccountPage_AccountPage_DisplayName" xml:space="preserve">
+    <value>AccountPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousAccountPage_AccountPage_Description" xml:space="preserve">
+    <value>The page of AccountResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessagePage_DisplayName" xml:space="preserve">
+    <value>GetMessagePage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetMessagePage_Description" xml:space="preserve">
+    <value>Get a page of Twilio Messages</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetMessagePage_TargetUrl_DisplayName" xml:space="preserve">
+    <value>TargetUrl</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessagePage_TargetUrl_Description" xml:space="preserve">
+    <value>The url of the page to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessagePage_MessagePage_DisplayName" xml:space="preserve">
+    <value>MessagePage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessagePage_MessagePage_Description" xml:space="preserve">
+    <value>The page of MessageResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextMessagePage_DisplayName" xml:space="preserve">
+    <value>GetNextMessagePage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetNextMessagePage_Description" xml:space="preserve">
+    <value>Get the next page of Twilio Messages</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetNextMessagePage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextMessagePage_Page_Description" xml:space="preserve">
+    <value>The page of messages to get the next page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextMessagePage_MessagePage_DisplayName" xml:space="preserve">
+    <value>MessagePage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextMessagePage_MessagePage_Description" xml:space="preserve">
+    <value>The page of MessageResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousMessagePage_DisplayName" xml:space="preserve">
+    <value>GetPreviousMessagePage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPreviousMessagePage_Description" xml:space="preserve">
+    <value>Get the previous page of Twilio Messages.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPreviousMessagePage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousMessagePage_Page_Description" xml:space="preserve">
+    <value>The page of messages to get the previous page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousMessagePage_MessagePage_DisplayName" xml:space="preserve">
+    <value>MessagePage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousMessagePage_MessagePage_Description" xml:space="preserve">
+    <value>The page of MessageResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessageMediaPage_DisplayName" xml:space="preserve">
+    <value>GetMessageMediaPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetMessageMediaPage_Description" xml:space="preserve">
+    <value>Get a page of Twilio MessageMedias</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetMessageMediaPage_TargetUrl_DisplayName" xml:space="preserve">
+    <value>TargetUrl</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessageMediaPage_TargetUrl_Description" xml:space="preserve">
+    <value>The url of the page to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessageMediaPage_MessageMediaPage_DisplayName" xml:space="preserve">
+    <value>MessageMediaPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessageMediaPage_MessageMediaPage_Description" xml:space="preserve">
+    <value>The page of MessageMediaResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextMessageMediaPage_DisplayName" xml:space="preserve">
+    <value>GetNextMessageMediaPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetNextMessageMediaPage_Description" xml:space="preserve">
+    <value>Get the next page of Twilio MessageMedias</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetNextMessageMediaPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextMessageMediaPage_Page_Description" xml:space="preserve">
+    <value>The page of messageMedias to get the next page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextMessageMediaPage_MessageMediaPage_DisplayName" xml:space="preserve">
+    <value>MessageMediaPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextMessageMediaPage_MessageMediaPage_Description" xml:space="preserve">
+    <value>The page of MessageMediaResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousMessageMediaPage_DisplayName" xml:space="preserve">
+    <value>GetPreviousMessageMediaPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPreviousMessageMediaPage_Description" xml:space="preserve">
+    <value>Get the previous page of Twilio MessageMedias.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPreviousMessageMediaPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousMessageMediaPage_Page_Description" xml:space="preserve">
+    <value>The page of messageMedias to get the previous page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousMessageMediaPage_MessageMediaPage_DisplayName" xml:space="preserve">
+    <value>MessageMediaPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousMessageMediaPage_MessageMediaPage_Description" xml:space="preserve">
+    <value>The page of MessageMediaResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAlphaSenderPage_DisplayName" xml:space="preserve">
+    <value>GetAlphaSenderPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetAlphaSenderPage_Description" xml:space="preserve">
+    <value>Get a page of Twilio AlphaSenders</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetAlphaSenderPage_TargetUrl_DisplayName" xml:space="preserve">
+    <value>TargetUrl</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAlphaSenderPage_TargetUrl_Description" xml:space="preserve">
+    <value>The url of the page to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAlphaSenderPage_AlphaSenderPage_DisplayName" xml:space="preserve">
+    <value>AlphaSenderPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAlphaSenderPage_AlphaSenderPage_Description" xml:space="preserve">
+    <value>The page of AlphaSenderResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextAlphaSenderPage_DisplayName" xml:space="preserve">
+    <value>GetNextAlphaSenderPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetNextAlphaSenderPage_Description" xml:space="preserve">
+    <value>Get the next page of Twilio AlphaSenders</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetNextAlphaSenderPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextAlphaSenderPage_Page_Description" xml:space="preserve">
+    <value>The page of alphaSenders to get the next page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextAlphaSenderPage_AlphaSenderPage_DisplayName" xml:space="preserve">
+    <value>AlphaSenderPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextAlphaSenderPage_AlphaSenderPage_Description" xml:space="preserve">
+    <value>The page of AlphaSenderResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousAlphaSenderPage_DisplayName" xml:space="preserve">
+    <value>GetPreviousAlphaSenderPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPreviousAlphaSenderPage_Description" xml:space="preserve">
+    <value>Get the previous page of Twilio AlphaSenders.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPreviousAlphaSenderPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousAlphaSenderPage_Page_Description" xml:space="preserve">
+    <value>The page of alphaSenders to get the previous page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousAlphaSenderPage_AlphaSenderPage_DisplayName" xml:space="preserve">
+    <value>AlphaSenderPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousAlphaSenderPage_AlphaSenderPage_Description" xml:space="preserve">
+    <value>The page of AlphaSenderResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetShortCodePage_DisplayName" xml:space="preserve">
+    <value>GetShortCodePage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetShortCodePage_Description" xml:space="preserve">
+    <value>Get a page of Twilio ShortCodes</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetShortCodePage_TargetUrl_DisplayName" xml:space="preserve">
+    <value>TargetUrl</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetShortCodePage_TargetUrl_Description" xml:space="preserve">
+    <value>The url of the page to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetShortCodePage_ShortCodePage_DisplayName" xml:space="preserve">
+    <value>ShortCodePage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetShortCodePage_ShortCodePage_Description" xml:space="preserve">
+    <value>The page of ShortCodeResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextShortCodePage_DisplayName" xml:space="preserve">
+    <value>GetNextShortCodePage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetNextShortCodePage_Description" xml:space="preserve">
+    <value>Get the next page of Twilio ShortCodes</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetNextShortCodePage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextShortCodePage_Page_Description" xml:space="preserve">
+    <value>The page of shortCodes to get the next page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextShortCodePage_ShortCodePage_DisplayName" xml:space="preserve">
+    <value>ShortCodePage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextShortCodePage_ShortCodePage_Description" xml:space="preserve">
+    <value>The page of ShortCodeResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousShortCodePage_DisplayName" xml:space="preserve">
+    <value>GetPreviousShortCodePage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPreviousShortCodePage_Description" xml:space="preserve">
+    <value>Get the previous page of Twilio ShortCodes.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPreviousShortCodePage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousShortCodePage_Page_Description" xml:space="preserve">
+    <value>The page of shortCodes to get the previous page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousShortCodePage_ShortCodePage_DisplayName" xml:space="preserve">
+    <value>ShortCodePage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousShortCodePage_ShortCodePage_Description" xml:space="preserve">
+    <value>The page of ShortCodeResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetVoicePricingPage_DisplayName" xml:space="preserve">
+    <value>GetVoicePricingPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetVoicePricingPage_Description" xml:space="preserve">
+    <value>Get a page of Twilio VoicePricings</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetVoicePricingPage_TargetUrl_DisplayName" xml:space="preserve">
+    <value>TargetUrl</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetVoicePricingPage_TargetUrl_Description" xml:space="preserve">
+    <value>The url of the page to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetVoicePricingPage_VoicePricingPage_DisplayName" xml:space="preserve">
+    <value>VoicePricingPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetVoicePricingPage_VoicePricingPage_Description" xml:space="preserve">
+    <value>The page of VoicePricingResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextVoicePricingPage_DisplayName" xml:space="preserve">
+    <value>GetNextVoicePricingPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetNextVoicePricingPage_Description" xml:space="preserve">
+    <value>Get the next page of Twilio VoicePricings</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetNextVoicePricingPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextVoicePricingPage_Page_Description" xml:space="preserve">
+    <value>The page of voicePricings to get the next page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextVoicePricingPage_VoicePricingPage_DisplayName" xml:space="preserve">
+    <value>VoicePricingPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextVoicePricingPage_VoicePricingPage_Description" xml:space="preserve">
+    <value>The page of VoicePricingResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousVoicePricingPage_DisplayName" xml:space="preserve">
+    <value>GetPreviousVoicePricingPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPreviousVoicePricingPage_Description" xml:space="preserve">
+    <value>Get the previous page of Twilio VoicePricings.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPreviousVoicePricingPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousVoicePricingPage_Page_Description" xml:space="preserve">
+    <value>The page of voicePricings to get the previous page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousVoicePricingPage_VoicePricingPage_DisplayName" xml:space="preserve">
+    <value>VoicePricingPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousVoicePricingPage_VoicePricingPage_Description" xml:space="preserve">
+    <value>The page of VoicePricingResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPhoneNumberPricingPage_DisplayName" xml:space="preserve">
+    <value>GetPhoneNumberPricingPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPhoneNumberPricingPage_Description" xml:space="preserve">
+    <value>Get a page of Twilio PhoneNumberPricings</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPhoneNumberPricingPage_TargetUrl_DisplayName" xml:space="preserve">
+    <value>TargetUrl</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPhoneNumberPricingPage_TargetUrl_Description" xml:space="preserve">
+    <value>The url of the page to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPhoneNumberPricingPage_PhoneNumberPricingPage_DisplayName" xml:space="preserve">
+    <value>PhoneNumberPricingPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPhoneNumberPricingPage_PhoneNumberPricingPage_Description" xml:space="preserve">
+    <value>The page of PhoneNumberPricingResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextPhoneNumberPricingPage_DisplayName" xml:space="preserve">
+    <value>GetNextPhoneNumberPricingPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetNextPhoneNumberPricingPage_Description" xml:space="preserve">
+    <value>Get the next page of Twilio PhoneNumberPricings</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetNextPhoneNumberPricingPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextPhoneNumberPricingPage_Page_Description" xml:space="preserve">
+    <value>The page of phoneNumberPricings to get the next page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextPhoneNumberPricingPage_PhoneNumberPricingPage_DisplayName" xml:space="preserve">
+    <value>PhoneNumberPricingPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextPhoneNumberPricingPage_PhoneNumberPricingPage_Description" xml:space="preserve">
+    <value>The page of PhoneNumberPricingResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousPhoneNumberPricingPage_DisplayName" xml:space="preserve">
+    <value>GetPreviousPhoneNumberPricingPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPreviousPhoneNumberPricingPage_Description" xml:space="preserve">
+    <value>Get the previous page of Twilio PhoneNumberPricings.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPreviousPhoneNumberPricingPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousPhoneNumberPricingPage_Page_Description" xml:space="preserve">
+    <value>The page of phoneNumberPricings to get the previous page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousPhoneNumberPricingPage_PhoneNumberPricingPage_DisplayName" xml:space="preserve">
+    <value>PhoneNumberPricingPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousPhoneNumberPricingPage_PhoneNumberPricingPage_Description" xml:space="preserve">
+    <value>The page of PhoneNumberPricingResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessagingPricingPage_DisplayName" xml:space="preserve">
+    <value>GetMessagingPricingPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetMessagingPricingPage_Description" xml:space="preserve">
+    <value>Get a page of Twilio MessagingPricings</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetMessagingPricingPage_TargetUrl_DisplayName" xml:space="preserve">
+    <value>TargetUrl</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessagingPricingPage_TargetUrl_Description" xml:space="preserve">
+    <value>The url of the page to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessagingPricingPage_MessagingPricingPage_DisplayName" xml:space="preserve">
+    <value>MessagingPricingPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessagingPricingPage_MessagingPricingPage_Description" xml:space="preserve">
+    <value>The page of MessagingPricingResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextMessagingPricingPage_DisplayName" xml:space="preserve">
+    <value>GetNextMessagingPricingPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetNextMessagingPricingPage_Description" xml:space="preserve">
+    <value>Get the next page of Twilio MessagingPricings</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetNextMessagingPricingPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextMessagingPricingPage_Page_Description" xml:space="preserve">
+    <value>The page of messagingPricings to get the next page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextMessagingPricingPage_MessagingPricingPage_DisplayName" xml:space="preserve">
+    <value>MessagingPricingPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextMessagingPricingPage_MessagingPricingPage_Description" xml:space="preserve">
+    <value>The page of MessagingPricingResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousMessagingPricingPage_DisplayName" xml:space="preserve">
+    <value>GetPreviousMessagingPricingPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPreviousMessagingPricingPage_Description" xml:space="preserve">
+    <value>Get the previous page of Twilio MessagingPricings.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPreviousMessagingPricingPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousMessagingPricingPage_Page_Description" xml:space="preserve">
+    <value>The page of messagingPricings to get the previous page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousMessagingPricingPage_MessagingPricingPage_DisplayName" xml:space="preserve">
+    <value>MessagingPricingPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousMessagingPricingPage_MessagingPricingPage_Description" xml:space="preserve">
+    <value>The page of MessagingPricingResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>GetAvailableTollFreePhoneNumberPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumberPage_Description" xml:space="preserve">
+    <value>Get a page of Twilio AvailableTollFreePhoneNumbers</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumberPage_TargetUrl_DisplayName" xml:space="preserve">
+    <value>TargetUrl</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumberPage_TargetUrl_Description" xml:space="preserve">
+    <value>The url of the page to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>AvailableTollFreePhoneNumberPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_Description" xml:space="preserve">
+    <value>The page of AvailableTollFreePhoneNumberResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextAvailableTollFreePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>GetNextAvailableTollFreePhoneNumberPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetNextAvailableTollFreePhoneNumberPage_Description" xml:space="preserve">
+    <value>Get the next page of Twilio AvailableTollFreePhoneNumbers</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetNextAvailableTollFreePhoneNumberPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextAvailableTollFreePhoneNumberPage_Page_Description" xml:space="preserve">
+    <value>The page of availableTollFreePhoneNumbers to get the next page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>AvailableTollFreePhoneNumberPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_Description" xml:space="preserve">
+    <value>The page of AvailableTollFreePhoneNumberResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousAvailableTollFreePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>GetPreviousAvailableTollFreePhoneNumberPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPreviousAvailableTollFreePhoneNumberPage_Description" xml:space="preserve">
+    <value>Get the previous page of Twilio AvailableTollFreePhoneNumbers.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPreviousAvailableTollFreePhoneNumberPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousAvailableTollFreePhoneNumberPage_Page_Description" xml:space="preserve">
+    <value>The page of availableTollFreePhoneNumbers to get the previous page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>AvailableTollFreePhoneNumberPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_Description" xml:space="preserve">
+    <value>The page of AvailableTollFreePhoneNumberResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailablePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>GetAvailablePhoneNumberPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetAvailablePhoneNumberPage_Description" xml:space="preserve">
+    <value>Get a page of Twilio AvailablePhoneNumbers</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetAvailablePhoneNumberPage_TargetUrl_DisplayName" xml:space="preserve">
+    <value>TargetUrl</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailablePhoneNumberPage_TargetUrl_Description" xml:space="preserve">
+    <value>The url of the page to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailablePhoneNumberPage_AvailablePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>AvailablePhoneNumberPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailablePhoneNumberPage_AvailablePhoneNumberPage_Description" xml:space="preserve">
+    <value>The page of AvailablePhoneNumberResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextAvailablePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>GetNextAvailablePhoneNumberPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetNextAvailablePhoneNumberPage_Description" xml:space="preserve">
+    <value>Get the next page of Twilio AvailablePhoneNumbers</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetNextAvailablePhoneNumberPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextAvailablePhoneNumberPage_Page_Description" xml:space="preserve">
+    <value>The page of availablePhoneNumbers to get the next page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextAvailablePhoneNumberPage_AvailablePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>AvailablePhoneNumberPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextAvailablePhoneNumberPage_AvailablePhoneNumberPage_Description" xml:space="preserve">
+    <value>The page of AvailablePhoneNumberResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousAvailablePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>GetPreviousAvailablePhoneNumberPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPreviousAvailablePhoneNumberPage_Description" xml:space="preserve">
+    <value>Get the previous page of Twilio AvailablePhoneNumbers.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPreviousAvailablePhoneNumberPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousAvailablePhoneNumberPage_Page_Description" xml:space="preserve">
+    <value>The page of availablePhoneNumbers to get the previous page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousAvailablePhoneNumberPage_AvailablePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>AvailablePhoneNumberPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousAvailablePhoneNumberPage_AvailablePhoneNumberPage_Description" xml:space="preserve">
+    <value>The page of AvailablePhoneNumberResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>GetAvailableMobilePhoneNumberPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumberPage_Description" xml:space="preserve">
+    <value>Get a page of Twilio AvailableMobilePhoneNumbers</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumberPage_TargetUrl_DisplayName" xml:space="preserve">
+    <value>TargetUrl</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumberPage_TargetUrl_Description" xml:space="preserve">
+    <value>The url of the page to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>AvailableMobilePhoneNumberPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_Description" xml:space="preserve">
+    <value>The page of AvailableMobilePhoneNumberResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextAvailableMobilePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>GetNextAvailableMobilePhoneNumberPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetNextAvailableMobilePhoneNumberPage_Description" xml:space="preserve">
+    <value>Get the next page of Twilio AvailableMobilePhoneNumbers</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetNextAvailableMobilePhoneNumberPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextAvailableMobilePhoneNumberPage_Page_Description" xml:space="preserve">
+    <value>The page of availableMobilePhoneNumbers to get the next page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>AvailableMobilePhoneNumberPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_Description" xml:space="preserve">
+    <value>The page of AvailableMobilePhoneNumberResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousAvailableMobilePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>GetPreviousAvailableMobilePhoneNumberPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPreviousAvailableMobilePhoneNumberPage_Description" xml:space="preserve">
+    <value>Get the previous page of Twilio AvailableMobilePhoneNumbers.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPreviousAvailableMobilePhoneNumberPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousAvailableMobilePhoneNumberPage_Page_Description" xml:space="preserve">
+    <value>The page of availableMobilePhoneNumbers to get the previous page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>AvailableMobilePhoneNumberPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_Description" xml:space="preserve">
+    <value>The page of AvailableMobilePhoneNumberResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>GetAvailableLocalPhoneNumberPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumberPage_Description" xml:space="preserve">
+    <value>Get a page of Twilio AvailableLocalPhoneNumbers</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumberPage_TargetUrl_DisplayName" xml:space="preserve">
+    <value>TargetUrl</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumberPage_TargetUrl_Description" xml:space="preserve">
+    <value>The url of the page to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>AvailableLocalPhoneNumberPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_Description" xml:space="preserve">
+    <value>The page of AvailableLocalPhoneNumberResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextAvailableLocalPhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>GetNextAvailableLocalPhoneNumberPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetNextAvailableLocalPhoneNumberPage_Description" xml:space="preserve">
+    <value>Get the next page of Twilio AvailableLocalPhoneNumbers</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetNextAvailableLocalPhoneNumberPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextAvailableLocalPhoneNumberPage_Page_Description" xml:space="preserve">
+    <value>The page of availableLocalPhoneNumbers to get the next page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>AvailableLocalPhoneNumberPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_Description" xml:space="preserve">
+    <value>The page of AvailableLocalPhoneNumberResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousAvailableLocalPhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>GetPreviousAvailableLocalPhoneNumberPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPreviousAvailableLocalPhoneNumberPage_Description" xml:space="preserve">
+    <value>Get the previous page of Twilio AvailableLocalPhoneNumbers.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPreviousAvailableLocalPhoneNumberPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousAvailableLocalPhoneNumberPage_Page_Description" xml:space="preserve">
+    <value>The page of availableLocalPhoneNumbers to get the previous page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_DisplayName" xml:space="preserve">
+    <value>AvailableLocalPhoneNumberPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_Description" xml:space="preserve">
+    <value>The page of AvailableLocalPhoneNumberResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxPage_DisplayName" xml:space="preserve">
+    <value>GetFaxPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetFaxPage_Description" xml:space="preserve">
+    <value>Get a page of Twilio Faxes</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetFaxPage_TargetUrl_DisplayName" xml:space="preserve">
+    <value>TargetUrl</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxPage_TargetUrl_Description" xml:space="preserve">
+    <value>The url of the page to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxPage_FaxPage_DisplayName" xml:space="preserve">
+    <value>FaxPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxPage_FaxPage_Description" xml:space="preserve">
+    <value>The page of FaxResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextFaxPage_DisplayName" xml:space="preserve">
+    <value>GetNextFaxPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetNextFaxPage_Description" xml:space="preserve">
+    <value>Get the next page of Twilio Faxes</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetNextFaxPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextFaxPage_Page_Description" xml:space="preserve">
+    <value>The page of faxs to get the next page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextFaxPage_FaxPage_DisplayName" xml:space="preserve">
+    <value>FaxPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextFaxPage_FaxPage_Description" xml:space="preserve">
+    <value>The page of FaxResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousFaxPage_DisplayName" xml:space="preserve">
+    <value>GetPreviousFaxPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPreviousFaxPage_Description" xml:space="preserve">
+    <value>Get the previous page of Twilio Faxes.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPreviousFaxPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousFaxPage_Page_Description" xml:space="preserve">
+    <value>The page of faxs to get the previous page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousFaxPage_FaxPage_DisplayName" xml:space="preserve">
+    <value>FaxPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousFaxPage_FaxPage_Description" xml:space="preserve">
+    <value>The page of FaxResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxMediaPage_DisplayName" xml:space="preserve">
+    <value>GetFaxMediaPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetFaxMediaPage_Description" xml:space="preserve">
+    <value>Get a page of Twilio FaxMedias</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetFaxMediaPage_TargetUrl_DisplayName" xml:space="preserve">
+    <value>TargetUrl</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxMediaPage_TargetUrl_Description" xml:space="preserve">
+    <value>The url of the page to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxMediaPage_FaxMediaPage_DisplayName" xml:space="preserve">
+    <value>FaxMediaPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxMediaPage_FaxMediaPage_Description" xml:space="preserve">
+    <value>The page of FaxMediaResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextFaxMediaPage_DisplayName" xml:space="preserve">
+    <value>GetNextFaxMediaPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetNextFaxMediaPage_Description" xml:space="preserve">
+    <value>Get the next page of Twilio FaxMedias</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetNextFaxMediaPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextFaxMediaPage_Page_Description" xml:space="preserve">
+    <value>The page of faxMedias to get the next page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetNextFaxMediaPage_FaxMediaPage_DisplayName" xml:space="preserve">
+    <value>FaxMediaPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetNextFaxMediaPage_FaxMediaPage_Description" xml:space="preserve">
+    <value>The page of FaxMediaResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousFaxMediaPage_DisplayName" xml:space="preserve">
+    <value>GetPreviousFaxMediaPage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPreviousFaxMediaPage_Description" xml:space="preserve">
+    <value>Get the previous page of Twilio FaxMedias.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPreviousFaxMediaPage_Page_DisplayName" xml:space="preserve">
+    <value>Page</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousFaxMediaPage_Page_Description" xml:space="preserve">
+    <value>The page of faxMedias to get the previous page of.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPreviousFaxMediaPage_FaxMediaPage_DisplayName" xml:space="preserve">
+    <value>FaxMediaPage</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPreviousFaxMediaPage_FaxMediaPage_Description" xml:space="preserve">
+    <value>The page of FaxMediaResources returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFax_DisplayName" xml:space="preserve">
+    <value>GetFax</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetFax_Description" xml:space="preserve">
+    <value>Fetches a Fax from Twilio</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetFax_FaxSid_DisplayName" xml:space="preserve">
+    <value>FaxSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFax_FaxSid_Description" xml:space="preserve">
+    <value>The ID of the fax.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFax_Fax_DisplayName" xml:space="preserve">
+    <value>Fax</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFax_Fax_Description" xml:space="preserve">
+    <value>The retrieved fax.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxMedia_DisplayName" xml:space="preserve">
+    <value>GetFaxMedia</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetFaxMedia_Description" xml:space="preserve">
+    <value>Fetches multiple FaxMedia for a fax from Twilio</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetFaxMedia_FaxSid_DisplayName" xml:space="preserve">
+    <value>FaxSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxMedia_FaxSid_Description" xml:space="preserve">
+    <value>The ID of the fax containing the media.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxMedia_FaxMediaSid_DisplayName" xml:space="preserve">
+    <value>FaxMediaSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxMedia_FaxMediaSid_Description" xml:space="preserve">
+    <value>The ID of the fax media to retrieve.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxMedia_FaxMedia_DisplayName" xml:space="preserve">
+    <value>FaxMedia</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxMedia_FaxMedia_Description" xml:space="preserve">
+    <value>The retrieved fax media.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessage_DisplayName" xml:space="preserve">
+    <value>GetMessage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetMessage_Description" xml:space="preserve">
+    <value>Fetches a Message from Twilio</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetMessage_MessageSid_DisplayName" xml:space="preserve">
+    <value>MessageSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessage_MessageSid_Description" xml:space="preserve">
+    <value>The ID of the message</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessage_Message_DisplayName" xml:space="preserve">
+    <value>Message</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessage_Message_Description" xml:space="preserve">
+    <value>The retrieved message.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessageMedia_DisplayName" xml:space="preserve">
+    <value>GetMessageMedia</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetMessageMedia_Description" xml:space="preserve">
+    <value>Get a Twilio MessageMedia</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetMessageMedia_MessageSid_DisplayName" xml:space="preserve">
+    <value>MessageSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessageMedia_MessageSid_Description" xml:space="preserve">
+    <value>ID of the message to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessageMedia_MessageMediaSid_DisplayName" xml:space="preserve">
+    <value>MessageMediaSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessageMedia_MessageMediaSid_Description" xml:space="preserve">
+    <value>ID of the message media to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessageMedia_MessageMedia_DisplayName" xml:space="preserve">
+    <value>MessageMedia</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessageMedia_MessageMedia_Description" xml:space="preserve">
+    <value>The MessageMediaResource returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAlphaSender_DisplayName" xml:space="preserve">
+    <value>GetAlphaSender</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetAlphaSender_Description" xml:space="preserve">
+    <value>Get a Twilio AlphaSender</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetAlphaSender_ServiceSid_DisplayName" xml:space="preserve">
+    <value>ServiceSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAlphaSender_ServiceSid_Description" xml:space="preserve">
+    <value>ID of the service to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAlphaSender_AlphaSenderSid_DisplayName" xml:space="preserve">
+    <value>AlphaSenderSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAlphaSender_AlphaSenderSid_Description" xml:space="preserve">
+    <value>ID of the alpha sender to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAlphaSender_AlphaSender_DisplayName" xml:space="preserve">
+    <value>AlphaSender</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAlphaSender_AlphaSender_Description" xml:space="preserve">
+    <value>The AlphaSenderResource returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetShortCode_DisplayName" xml:space="preserve">
+    <value>GetShortCode</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetShortCode_Description" xml:space="preserve">
+    <value>Get a Twilio ShortCode</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetShortCode_AccountSid_DisplayName" xml:space="preserve">
+    <value>AccountSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetShortCode_AccountSid_Description" xml:space="preserve">
+    <value>ID of the account to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetShortCode_ShortCodeSid_DisplayName" xml:space="preserve">
+    <value>ShortCodeSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetShortCode_ShortCodeSid_Description" xml:space="preserve">
+    <value>ID of the short code to get.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetShortCode_ShortCode_DisplayName" xml:space="preserve">
+    <value>ShortCode</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetShortCode_ShortCode_Description" xml:space="preserve">
+    <value>The ShortCodeResource returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetVoicePricing_DisplayName" xml:space="preserve">
+    <value>GetVoicePricing</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetVoicePricing_Description" xml:space="preserve">
+    <value>Get Twilio Voice Pricing for a country.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetVoicePricing_CountryCode_DisplayName" xml:space="preserve">
+    <value>CountryCode</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetVoicePricing_CountryCode_Description" xml:space="preserve">
+    <value>Country Code to get pricing for</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetVoicePricing_CountryResource_DisplayName" xml:space="preserve">
+    <value>CountryResource</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetVoicePricing_CountryResource_Description" xml:space="preserve">
+    <value>The CountryResource containing pricing info returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessagingPricing_DisplayName" xml:space="preserve">
+    <value>GetMessagingPricing</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetMessagingPricing_Description" xml:space="preserve">
+    <value>Get Twilio Messaging Pricing for a country.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetMessagingPricing_CountryCode_DisplayName" xml:space="preserve">
+    <value>CountryCode</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessagingPricing_CountryCode_Description" xml:space="preserve">
+    <value>Country Code to get pricing for</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessagingPricing_CountryResource_DisplayName" xml:space="preserve">
+    <value>CountryResource</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessagingPricing_CountryResource_Description" xml:space="preserve">
+    <value>The CountryResource containing pricing info returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPhoneNumberPricing_DisplayName" xml:space="preserve">
+    <value>GetPhoneNumberPricing</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPhoneNumberPricing_Description" xml:space="preserve">
+    <value>Get Twilio Phone Number Pricing for a country.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPhoneNumberPricing_CountryCode_DisplayName" xml:space="preserve">
+    <value>CountryCode</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPhoneNumberPricing_CountryCode_Description" xml:space="preserve">
+    <value>Country Code to get pricing for</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPhoneNumberPricing_CountryResource_DisplayName" xml:space="preserve">
+    <value>CountryResource</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPhoneNumberPricing_CountryResource_Description" xml:space="preserve">
+    <value>The CountryResource containing pricing info returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPhoneNumberPricings_DisplayName" xml:space="preserve">
+    <value>GetPhoneNumberPricings</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetPhoneNumberPricings_Description" xml:space="preserve">
+    <value>Get Twilio Phone Number Pricings.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetPhoneNumberPricings_Limit_DisplayName" xml:space="preserve">
+    <value>Limit</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPhoneNumberPricings_Limit_Description" xml:space="preserve">
+    <value>The number of country pricings to return</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetPhoneNumberPricings_CountryResources_DisplayName" xml:space="preserve">
+    <value>CountryResources</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetPhoneNumberPricings_CountryResources_Description" xml:space="preserve">
+    <value>The CountryResources containing pricing info returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessagingPricings_DisplayName" xml:space="preserve">
+    <value>GetMessagingPricings</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetMessagingPricings_Description" xml:space="preserve">
+    <value>Get Twilio Messaging Pricings.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetMessagingPricings_Limit_DisplayName" xml:space="preserve">
+    <value>Limit</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessagingPricings_Limit_Description" xml:space="preserve">
+    <value>The number of country pricings to return</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessagingPricings_CountryResources_DisplayName" xml:space="preserve">
+    <value>CountryResources</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessagingPricings_CountryResources_Description" xml:space="preserve">
+    <value>The CountryResources containing pricing info returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetVoicePricings_DisplayName" xml:space="preserve">
+    <value>GetVoicePricings</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetVoicePricings_Description" xml:space="preserve">
+    <value>Get Twilio Voice Pricings.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetVoicePricings_Limit_DisplayName" xml:space="preserve">
+    <value>Limit</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetVoicePricings_Limit_Description" xml:space="preserve">
+    <value>The number of country pricings to return</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetVoicePricings_CountryResources_DisplayName" xml:space="preserve">
+    <value>CountryResources</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetVoicePricings_CountryResources_Description" xml:space="preserve">
+    <value>The CountryResources containing pricing info returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailablePhoneNumbers_DisplayName" xml:space="preserve">
+    <value>GetAvailablePhoneNumbers</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetAvailablePhoneNumbers_Description" xml:space="preserve">
+    <value>Get Twilio available phone numbers for a country.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetAvailablePhoneNumbers_CountryCode_DisplayName" xml:space="preserve">
+    <value>CountryCode</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailablePhoneNumbers_CountryCode_Description" xml:space="preserve">
+    <value>Country Code to get phone numbers for.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailablePhoneNumbers_PhoneNumbers_DisplayName" xml:space="preserve">
+    <value>PhoneNumbers</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailablePhoneNumbers_PhoneNumbers_Description" xml:space="preserve">
+    <value>The PhoneNumbers returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailablePhoneNumbersForAccount_DisplayName" xml:space="preserve">
+    <value>GetAvailablePhoneNumbersForAccount</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetAvailablePhoneNumbersForAccount_Description" xml:space="preserve">
+    <value>Get Twilio Available Phone Numbers for an account.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetAvailablePhoneNumbersForAccount_AccountSid_DisplayName" xml:space="preserve">
+    <value>AccountSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailablePhoneNumbersForAccount_AccountSid_Description" xml:space="preserve">
+    <value>The account to get available phone numbers for</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailablePhoneNumbersForAccount_Limit_DisplayName" xml:space="preserve">
+    <value>Limit</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailablePhoneNumbersForAccount_Limit_Description" xml:space="preserve">
+    <value>The number of available phone numbers to return</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailablePhoneNumbersForAccount_PhoneNumbers_DisplayName" xml:space="preserve">
+    <value>PhoneNumbers</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailablePhoneNumbersForAccount_PhoneNumbers_Description" xml:space="preserve">
+    <value>The PhoneNumber containing pricing info returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_DisplayName" xml:space="preserve">
+    <value>GetAvailableLocalPhoneNumbers</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_Description" xml:space="preserve">
+    <value>Get Twilio available local phone numbers filtered by a variety of parameters.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_CountryCode_DisplayName" xml:space="preserve">
+    <value>CountryCode</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_CountryCode_Description" xml:space="preserve">
+    <value>Country Code to get phone numbers for.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_AccountSid_DisplayName" xml:space="preserve">
+    <value>AccountSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_AccountSid_Description" xml:space="preserve">
+    <value>The account to get available phone numbers for</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_AreaCode_DisplayName" xml:space="preserve">
+    <value>AreaCode</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_AreaCode_Description" xml:space="preserve">
+    <value>The area code of the phone numbers to read.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_SmsEnabled_DisplayName" xml:space="preserve">
+    <value>SmsEnabled</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_SmsEnabled_Description" xml:space="preserve">
+    <value>Whether the phone numbers can receive text messages.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_MmsEnabled_DisplayName" xml:space="preserve">
+    <value>MmsEnabled</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_MmsEnabled_Description" xml:space="preserve">
+    <value>Whether the phone numbers can receive MMS messages.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_VoiceEnabled_DisplayName" xml:space="preserve">
+    <value>VoiceEnabled</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_VoiceEnabled_Description" xml:space="preserve">
+    <value>Whether the phone numbers can receive calls.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_FaxEnabled_DisplayName" xml:space="preserve">
+    <value>FaxEnabled</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_FaxEnabled_Description" xml:space="preserve">
+    <value>Whether the phone numbers can receive faxes.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_Contains_DisplayName" xml:space="preserve">
+    <value>Contains</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_Contains_Description" xml:space="preserve">
+    <value>The pattern on which to match phone numbers.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_Beta_DisplayName" xml:space="preserve">
+    <value>Beta</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_Beta_Description" xml:space="preserve">
+    <value>Whether to read phone numbers new to the Twilio platform.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_NearNumber_DisplayName" xml:space="preserve">
+    <value>NearNumber</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_NearNumber_Description" xml:space="preserve">
+    <value>Given a phone number, find a geographically close number within distance miles. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_NearLatLong_DisplayName" xml:space="preserve">
+    <value>NearLatLong</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_NearLatLong_Description" xml:space="preserve">
+    <value>Given a latitude and longitude pair, find a geographically close number within distance miles. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_Distance_DisplayName" xml:space="preserve">
+    <value>Distance</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_Distance_Description" xml:space="preserve">
+    <value>The search radius, in miles, for a near_ query. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_InPostalCode_DisplayName" xml:space="preserve">
+    <value>InPostalCode</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_InPostalCode_Description" xml:space="preserve">
+    <value>Limit results to a particular postal code. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_InRegion_DisplayName" xml:space="preserve">
+    <value>InRegion</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_InRegion_Description" xml:space="preserve">
+    <value>Limit results to a particular region. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_InRateCenter_DisplayName" xml:space="preserve">
+    <value>InRateCenter</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_InRateCenter_Description" xml:space="preserve">
+    <value>Limit results to a specific rate center, or given a phone number search within the same rate center as that number. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_InLata_DisplayName" xml:space="preserve">
+    <value>InLata</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_InLata_Description" xml:space="preserve">
+    <value>Limit results to a specific local access and transport area. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_InLocality_DisplayName" xml:space="preserve">
+    <value>InLocality</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_InLocality_Description" xml:space="preserve">
+    <value>Limit results to a particular locality</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_ExcludeAllAddressRequired_DisplayName" xml:space="preserve">
+    <value>ExcludeAllAddressRequired</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_ExcludeAllAddressRequired_Description" xml:space="preserve">
+    <value>Whether to exclude phone numbers that require an Address</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_ExcludeLocalAddressRequired_DisplayName" xml:space="preserve">
+    <value>ExcludeLocalAddressRequired</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_ExcludeLocalAddressRequired_Description" xml:space="preserve">
+    <value>Whether to exclude phone numbers that require a local Address</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_ExcludeForeignAddressRequired_DisplayName" xml:space="preserve">
+    <value>ExcludeForeignAddressRequired</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_ExcludeForeignAddressRequired_Description" xml:space="preserve">
+    <value>Whether to exclude phone numbers that require a foreign Address</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_Limit_DisplayName" xml:space="preserve">
+    <value>Limit</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_Limit_Description" xml:space="preserve">
+    <value>The number of available phone numbers to return</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_PhoneNumbers_DisplayName" xml:space="preserve">
+    <value>PhoneNumbers</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableLocalPhoneNumbers_PhoneNumbers_Description" xml:space="preserve">
+    <value>The PhoneNumbers returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_DisplayName" xml:space="preserve">
+    <value>GetAvailableMobilePhoneNumbers</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_Description" xml:space="preserve">
+    <value>Get Twilio available mobile phone numbers filtered by a variety of parameters.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_CountryCode_DisplayName" xml:space="preserve">
+    <value>CountryCode</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_CountryCode_Description" xml:space="preserve">
+    <value>Country Code to get phone numbers for.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_AccountSid_DisplayName" xml:space="preserve">
+    <value>AccountSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_AccountSid_Description" xml:space="preserve">
+    <value>The account to get available phone numbers for</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_AreaCode_DisplayName" xml:space="preserve">
+    <value>AreaCode</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_AreaCode_Description" xml:space="preserve">
+    <value>The area code of the phone numbers to read.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_SmsEnabled_DisplayName" xml:space="preserve">
+    <value>SmsEnabled</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_SmsEnabled_Description" xml:space="preserve">
+    <value>Whether the phone numbers can receive text messages.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_MmsEnabled_DisplayName" xml:space="preserve">
+    <value>MmsEnabled</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_MmsEnabled_Description" xml:space="preserve">
+    <value>Whether the phone numbers can receive MMS messages.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_VoiceEnabled_DisplayName" xml:space="preserve">
+    <value>VoiceEnabled</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_VoiceEnabled_Description" xml:space="preserve">
+    <value>Whether the phone numbers can receive calls.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_FaxEnabled_DisplayName" xml:space="preserve">
+    <value>FaxEnabled</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_FaxEnabled_Description" xml:space="preserve">
+    <value>Whether the phone numbers can receive faxes.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_Contains_DisplayName" xml:space="preserve">
+    <value>Contains</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_Contains_Description" xml:space="preserve">
+    <value>The pattern on which to match phone numbers.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_Beta_DisplayName" xml:space="preserve">
+    <value>Beta</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_Beta_Description" xml:space="preserve">
+    <value>Whether to read phone numbers new to the Twilio platform.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_NearNumber_DisplayName" xml:space="preserve">
+    <value>NearNumber</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_NearNumber_Description" xml:space="preserve">
+    <value>Given a phone number, find a geographically close number within distance miles. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_NearLatLong_DisplayName" xml:space="preserve">
+    <value>NearLatLong</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_NearLatLong_Description" xml:space="preserve">
+    <value>Given a latitude and longitude pair, find a geographically close number within distance miles. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_Distance_DisplayName" xml:space="preserve">
+    <value>Distance</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_Distance_Description" xml:space="preserve">
+    <value>The search radius, in miles, for a near_ query. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_InPostalCode_DisplayName" xml:space="preserve">
+    <value>InPostalCode</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_InPostalCode_Description" xml:space="preserve">
+    <value>Limit results to a particular postal code. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_InRegion_DisplayName" xml:space="preserve">
+    <value>InRegion</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_InRegion_Description" xml:space="preserve">
+    <value>Limit results to a particular region. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_InRateCenter_DisplayName" xml:space="preserve">
+    <value>InRateCenter</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_InRateCenter_Description" xml:space="preserve">
+    <value>Limit results to a specific rate center, or given a phone number search within the same rate center as that number. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_InLata_DisplayName" xml:space="preserve">
+    <value>InLata</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_InLata_Description" xml:space="preserve">
+    <value>Limit results to a specific local access and transport area. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_InLocality_DisplayName" xml:space="preserve">
+    <value>InLocality</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_InLocality_Description" xml:space="preserve">
+    <value>Limit results to a particular locality</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_ExcludeAllAddressRequired_DisplayName" xml:space="preserve">
+    <value>ExcludeAllAddressRequired</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_ExcludeAllAddressRequired_Description" xml:space="preserve">
+    <value>Whether to exclude phone numbers that require an Address</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_ExcludeLocalAddressRequired_DisplayName" xml:space="preserve">
+    <value>ExcludeLocalAddressRequired</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_ExcludeLocalAddressRequired_Description" xml:space="preserve">
+    <value>Whether to exclude phone numbers that require a local Address</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_ExcludeForeignAddressRequired_DisplayName" xml:space="preserve">
+    <value>ExcludeForeignAddressRequired</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_ExcludeForeignAddressRequired_Description" xml:space="preserve">
+    <value>Whether to exclude phone numbers that require a foreign Address</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_Limit_DisplayName" xml:space="preserve">
+    <value>Limit</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_Limit_Description" xml:space="preserve">
+    <value>The number of available phone numbers to return</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_PhoneNumbers_DisplayName" xml:space="preserve">
+    <value>PhoneNumbers</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableMobilePhoneNumbers_PhoneNumbers_Description" xml:space="preserve">
+    <value>The PhoneNumbers returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_DisplayName" xml:space="preserve">
+    <value>GetAvailableTollFreePhoneNumbers</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_Description" xml:space="preserve">
+    <value>Get Twilio available Toll Free phone numbers filtered by a variety of parameters.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_CountryCode_DisplayName" xml:space="preserve">
+    <value>CountryCode</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_CountryCode_Description" xml:space="preserve">
+    <value>Country Code to get phone numbers for.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_AccountSid_DisplayName" xml:space="preserve">
+    <value>AccountSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_AccountSid_Description" xml:space="preserve">
+    <value>The account to get available phone numbers for</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_AreaCode_DisplayName" xml:space="preserve">
+    <value>AreaCode</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_AreaCode_Description" xml:space="preserve">
+    <value>The area code of the phone numbers to read.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_SmsEnabled_DisplayName" xml:space="preserve">
+    <value>SmsEnabled</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_SmsEnabled_Description" xml:space="preserve">
+    <value>Whether the phone numbers can receive text messages.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_MmsEnabled_DisplayName" xml:space="preserve">
+    <value>MmsEnabled</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_MmsEnabled_Description" xml:space="preserve">
+    <value>Whether the phone numbers can receive MMS messages.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_VoiceEnabled_DisplayName" xml:space="preserve">
+    <value>VoiceEnabled</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_VoiceEnabled_Description" xml:space="preserve">
+    <value>Whether the phone numbers can receive calls.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_FaxEnabled_DisplayName" xml:space="preserve">
+    <value>FaxEnabled</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_FaxEnabled_Description" xml:space="preserve">
+    <value>Whether the phone numbers can receive faxes.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_Contains_DisplayName" xml:space="preserve">
+    <value>Contains</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_Contains_Description" xml:space="preserve">
+    <value>The pattern on which to match phone numbers.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_Beta_DisplayName" xml:space="preserve">
+    <value>Beta</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_Beta_Description" xml:space="preserve">
+    <value>Whether to read phone numbers new to the Twilio platform.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_NearNumber_DisplayName" xml:space="preserve">
+    <value>NearNumber</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_NearNumber_Description" xml:space="preserve">
+    <value>Given a phone number, find a geographically close number within distance miles. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_NearLatLong_DisplayName" xml:space="preserve">
+    <value>NearLatLong</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_NearLatLong_Description" xml:space="preserve">
+    <value>Given a latitude and longitude pair, find a geographically close number within distance miles. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_Distance_DisplayName" xml:space="preserve">
+    <value>Distance</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_Distance_Description" xml:space="preserve">
+    <value>The search radius, in miles, for a near_ query. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_InPostalCode_DisplayName" xml:space="preserve">
+    <value>InPostalCode</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_InPostalCode_Description" xml:space="preserve">
+    <value>Limit results to a particular postal code. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_InRegion_DisplayName" xml:space="preserve">
+    <value>InRegion</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_InRegion_Description" xml:space="preserve">
+    <value>Limit results to a particular region. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_InRateCenter_DisplayName" xml:space="preserve">
+    <value>InRateCenter</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_InRateCenter_Description" xml:space="preserve">
+    <value>Limit results to a specific rate center, or given a phone number search within the same rate center as that number. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_InLata_DisplayName" xml:space="preserve">
+    <value>InLata</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_InLata_Description" xml:space="preserve">
+    <value>Limit results to a specific local access and transport area. (US/Canada only)</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_InLocality_DisplayName" xml:space="preserve">
+    <value>InLocality</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_InLocality_Description" xml:space="preserve">
+    <value>Limit results to a particular locality</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_ExcludeAllAddressRequired_DisplayName" xml:space="preserve">
+    <value>ExcludeAllAddressRequired</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_ExcludeAllAddressRequired_Description" xml:space="preserve">
+    <value>Whether to exclude phone numbers that require an Address</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_ExcludeLocalAddressRequired_DisplayName" xml:space="preserve">
+    <value>ExcludeLocalAddressRequired</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_ExcludeLocalAddressRequired_Description" xml:space="preserve">
+    <value>Whether to exclude phone numbers that require a local Address</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_ExcludeForeignAddressRequired_DisplayName" xml:space="preserve">
+    <value>ExcludeForeignAddressRequired</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_ExcludeForeignAddressRequired_Description" xml:space="preserve">
+    <value>Whether to exclude phone numbers that require a foreign Address</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_Limit_DisplayName" xml:space="preserve">
+    <value>Limit</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_Limit_Description" xml:space="preserve">
+    <value>The number of available phone numbers to return</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_PhoneNumbers_DisplayName" xml:space="preserve">
+    <value>PhoneNumbers</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetAvailableTollFreePhoneNumbers_PhoneNumbers_Description" xml:space="preserve">
+    <value>The PhoneNumbers returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="LookupPhoneNumber_DisplayName" xml:space="preserve">
+    <value>LookupPhoneNumber</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="LookupPhoneNumber_Description" xml:space="preserve">
+    <value>Get phone number information like caller name and carrier, optionally using Twilio lookup AddOns</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="LookupPhoneNumber_Number_DisplayName" xml:space="preserve">
+    <value>Number</value>
+    <comment>property name</comment>
+  </data>
+  <data name="LookupPhoneNumber_Number_Description" xml:space="preserve">
+    <value>The phone number to look up</value>
+    <comment>property description</comment>
+  </data>
+  <data name="LookupPhoneNumber_CountryCode_DisplayName" xml:space="preserve">
+    <value>CountryCode</value>
+    <comment>property name</comment>
+  </data>
+  <data name="LookupPhoneNumber_CountryCode_Description" xml:space="preserve">
+    <value>Country Code to look up phone number.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="LookupPhoneNumber_IncludeCallerName_DisplayName" xml:space="preserve">
+    <value>IncludeCallerName</value>
+    <comment>property name</comment>
+  </data>
+  <data name="LookupPhoneNumber_IncludeCallerName_Description" xml:space="preserve">
+    <value>Whether or not to look up caller name</value>
+    <comment>property description</comment>
+  </data>
+  <data name="LookupPhoneNumber_IncludeCarrier_DisplayName" xml:space="preserve">
+    <value>IncludeCarrier</value>
+    <comment>property name</comment>
+  </data>
+  <data name="LookupPhoneNumber_IncludeCarrier_Description" xml:space="preserve">
+    <value>Whether or not to look up phone carrier</value>
+    <comment>property description</comment>
+  </data>
+  <data name="LookupPhoneNumber_AddOns_DisplayName" xml:space="preserve">
+    <value>AddOns</value>
+    <comment>property name</comment>
+  </data>
+  <data name="LookupPhoneNumber_AddOns_Description" xml:space="preserve">
+    <value>Add on names to use with this lookup</value>
+    <comment>property description</comment>
+  </data>
+  <data name="LookupPhoneNumber_AddOnsData_DisplayName" xml:space="preserve">
+    <value>AddOnsData</value>
+    <comment>property name</comment>
+  </data>
+  <data name="LookupPhoneNumber_AddOnsData_Description" xml:space="preserve">
+    <value>Add on data to use with this lookup</value>
+    <comment>property description</comment>
+  </data>
+  <data name="LookupPhoneNumber_PhoneNumber_DisplayName" xml:space="preserve">
+    <value>PhoneNumber</value>
+    <comment>property name</comment>
+  </data>
+  <data name="LookupPhoneNumber_PhoneNumber_Description" xml:space="preserve">
+    <value>The PhoneNumber Lookup information returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendFax_DisplayName" xml:space="preserve">
+    <value>SendFax</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="SendFax_Description" xml:space="preserve">
+    <value>Creates a fax and sends it with Twilio</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="SendFax_To_DisplayName" xml:space="preserve">
+    <value>To</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendFax_To_Description" xml:space="preserve">
+    <value>The fax phone number to send a fax to.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendFax_MediaUrl_DisplayName" xml:space="preserve">
+    <value>MediaUrl</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendFax_MediaUrl_Description" xml:space="preserve">
+    <value>The publicly accessible URL of a PDF file to fax.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendFax_From_DisplayName" xml:space="preserve">
+    <value>From</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendFax_From_Description" xml:space="preserve">
+    <value>The Twilio fax phone number to send a fax from.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendFax_Quality_DisplayName" xml:space="preserve">
+    <value>Quality</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendFax_Quality_Description" xml:space="preserve">
+    <value>The fax quality enum that the fax should be sent as.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendFax_StoreMedia_DisplayName" xml:space="preserve">
+    <value>StoreMedia</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendFax_StoreMedia_Description" xml:space="preserve">
+    <value>Whether Twilio should save a copy of the faxed media.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendFax_MinutesToSend_DisplayName" xml:space="preserve">
+    <value>MinutesToSend</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendFax_MinutesToSend_Description" xml:space="preserve">
+    <value>The amount of time Twilio should attempt to send the fax for.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendFax_SipAuthUsername_DisplayName" xml:space="preserve">
+    <value>SipAuthUsername</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendFax_SipAuthUsername_Description" xml:space="preserve">
+    <value>The username for SIP authentication.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendFax_SipAuthPassword_DisplayName" xml:space="preserve">
+    <value>SipAuthPassword</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendFax_SipAuthPassword_Description" xml:space="preserve">
+    <value>The password for SIP authentication.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendFax_StatusCallback_DisplayName" xml:space="preserve">
+    <value>StatusCallback</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendFax_StatusCallback_Description" xml:space="preserve">
+    <value>The URL Twilio should call to send status information to your application.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendFax_Fax_DisplayName" xml:space="preserve">
+    <value>Fax</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendFax_Fax_Description" xml:space="preserve">
+    <value>The FaxResource information returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="CancelFax_DisplayName" xml:space="preserve">
+    <value>CancelFax</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="CancelFax_Description" xml:space="preserve">
+    <value>Cancels a queued Fax</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="CancelFax_FaxSid_DisplayName" xml:space="preserve">
+    <value>FaxSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="CancelFax_FaxSid_Description" xml:space="preserve">
+    <value>The ID of the fax to cancel.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="CancelFax_Fax_DisplayName" xml:space="preserve">
+    <value>Fax</value>
+    <comment>property name</comment>
+  </data>
+  <data name="CancelFax_Fax_Description" xml:space="preserve">
+    <value>The FaxResource information returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DeleteFax_DisplayName" xml:space="preserve">
+    <value>DeleteFax</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="DeleteFax_Description" xml:space="preserve">
+    <value>Deletes a Fax</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="DeleteFax_FaxSid_DisplayName" xml:space="preserve">
+    <value>FaxSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DeleteFax_FaxSid_Description" xml:space="preserve">
+    <value>The ID of the fax to delete.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DeleteFax_Success_DisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DeleteFax_Success_Description" xml:space="preserve">
+    <value>Whether a fax was successfully deleted.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxMedia_Limit_DisplayName" xml:space="preserve">
+    <value>Limit</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxMedia_Limit_Description" xml:space="preserve">
+    <value>The number of available phone numbers to return</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DeleteFaxMedia_DisplayName" xml:space="preserve">
+    <value>DeleteFaxMedia</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="DeleteFaxMedia_Description" xml:space="preserve">
+    <value>Deletes a FaxMedia</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="DeleteFaxMedia_FaxSid_DisplayName" xml:space="preserve">
+    <value>FaxSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DeleteFaxMedia_FaxSid_Description" xml:space="preserve">
+    <value>The ID of the fax containing the media to delete.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DeleteFaxMedia_FaxMediaSid_DisplayName" xml:space="preserve">
+    <value>FaxMediaSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DeleteFaxMedia_FaxMediaSid_Description" xml:space="preserve">
+    <value>The ID of the fax media to delete.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DeleteFaxMedia_Success_DisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DeleteFaxMedia_Success_Description" xml:space="preserve">
+    <value>Whether a fax was successfully deleted.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxes_DisplayName" xml:space="preserve">
+    <value>GetFaxes</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetFaxes_Description" xml:space="preserve">
+    <value>Fetches Faxes from Twilio</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetFaxes_From_DisplayName" xml:space="preserve">
+    <value>From</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxes_From_Description" xml:space="preserve">
+    <value>Retrieve only those faxes sent from this phone number.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxes_To_DisplayName" xml:space="preserve">
+    <value>To</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxes_To_Description" xml:space="preserve">
+    <value>Retrieve only those faxes sent to this phone number.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxes_DateCreatedOnOrBefore_DisplayName" xml:space="preserve">
+    <value>DateCreatedOnOrBefore</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxes_DateCreatedOnOrBefore_Description" xml:space="preserve">
+    <value>Retrieve only faxes created on or before this date.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxes_DateCreatedAfter_DisplayName" xml:space="preserve">
+    <value>DateCreatedAfter</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxes_DateCreatedAfter_Description" xml:space="preserve">
+    <value>Retrieve only faxes created after this date.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxes_Limit_DisplayName" xml:space="preserve">
+    <value>Limit</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxes_Limit_Description" xml:space="preserve">
+    <value>The number of available phone numbers to return</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxes_Faxes_DisplayName" xml:space="preserve">
+    <value>Faxes</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxes_Faxes_Description" xml:space="preserve">
+    <value>The retrieved faxes.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendMessage_DisplayName" xml:space="preserve">
+    <value>SendMessage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="SendMessage_Description" xml:space="preserve">
+    <value>Creates a message and sends it with Twilio</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="SendMessage_To_DisplayName" xml:space="preserve">
+    <value>To</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendMessage_To_Description" xml:space="preserve">
+    <value>The message phone number to send a message to.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendMessage_From_DisplayName" xml:space="preserve">
+    <value>From</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendMessage_From_Description" xml:space="preserve">
+    <value>The Twilio message phone number to send a message from.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendMessage_Body_DisplayName" xml:space="preserve">
+    <value>Body</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendMessage_Body_Description" xml:space="preserve">
+    <value>The SMS Body</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendMessage_MediaUrl_DisplayName" xml:space="preserve">
+    <value>MediaUrls</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendMessage_MediaUrl_Description" xml:space="preserve">
+    <value>The publicly accessible URLs of a file to message.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendMessage_AccountSid_DisplayName" xml:space="preserve">
+    <value>AccountSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendMessage_AccountSid_Description" xml:space="preserve">
+    <value>The SID of the Account that will create the resource</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendMessage_MessagingServiceSid_DisplayName" xml:space="preserve">
+    <value>MessagingServiceSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendMessage_MessagingServiceSid_Description" xml:space="preserve">
+    <value>The SID of the Messaging Service you want to associate with the message.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendMessage_ApplicationSid_DisplayName" xml:space="preserve">
+    <value>ApplicationSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendMessage_ApplicationSid_Description" xml:space="preserve">
+    <value>The application to use for callbacks</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendMessage_StatusCallback_DisplayName" xml:space="preserve">
+    <value>StatusCallback</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendMessage_StatusCallback_Description" xml:space="preserve">
+    <value>The URL Twilio should call to send status information to your application</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendMessage_ProvideFeedback_DisplayName" xml:space="preserve">
+    <value>ProvideFeedback</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendMessage_ProvideFeedback_Description" xml:space="preserve">
+    <value>Whether to confirm delivery of the message</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendMessage_MaxPrice_DisplayName" xml:space="preserve">
+    <value>MaxPrice</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendMessage_MaxPrice_Description" xml:space="preserve">
+    <value>The total maximum price up to 4 decimal places in US dollars acceptable for the message to be delivered</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendMessage_ValidityPeriod_DisplayName" xml:space="preserve">
+    <value>ValidityPeriod</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendMessage_ValidityPeriod_Description" xml:space="preserve">
+    <value>The number of seconds that the message can remain in the Twilio outgoing queue.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendMessage_SmartEncoded_DisplayName" xml:space="preserve">
+    <value>SmartEncoded</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendMessage_SmartEncoded_Description" xml:space="preserve">
+    <value>Whether to detect Unicode characters that have a similar GSM-7 character and replace them </value>
+    <comment>property description</comment>
+  </data>
+  <data name="SendMessage_Message_DisplayName" xml:space="preserve">
+    <value>Message</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SendMessage_Message_Description" xml:space="preserve">
+    <value>The MessageResource information returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="CancelMessage_DisplayName" xml:space="preserve">
+    <value>CancelMessage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="CancelMessage_Description" xml:space="preserve">
+    <value>Cancels a queued Message</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="CancelMessage_MessageSid_DisplayName" xml:space="preserve">
+    <value>MessageSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="CancelMessage_MessageSid_Description" xml:space="preserve">
+    <value>The ID of the message to cancel.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="CancelMessage_AccountSid_DisplayName" xml:space="preserve">
+    <value>AccountSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="CancelMessage_AccountSid_Description" xml:space="preserve">
+    <value>The ID of the account containing the message to cancel.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="CancelMessage_Message_DisplayName" xml:space="preserve">
+    <value>Message</value>
+    <comment>property name</comment>
+  </data>
+  <data name="CancelMessage_Message_Description" xml:space="preserve">
+    <value>The MessageResource information returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="UpdateMessage_DisplayName" xml:space="preserve">
+    <value>UpdateMessage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="UpdateMessage_Description" xml:space="preserve">
+    <value>Update a queued Message</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="UpdateMessage_MessageSid_DisplayName" xml:space="preserve">
+    <value>MessageSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateMessage_MessageSid_Description" xml:space="preserve">
+    <value>The ID of the message to cancel.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="UpdateMessage_AccountSid_DisplayName" xml:space="preserve">
+    <value>AccountSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateMessage_AccountSid_Description" xml:space="preserve">
+    <value>The ID of the account containing the message to cancel.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="UpdateMessage_Body_DisplayName" xml:space="preserve">
+    <value>Body</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateMessage_Body_Description" xml:space="preserve">
+    <value>The new message body. String.Empty cancels the message.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="UpdateMessage_Message_DisplayName" xml:space="preserve">
+    <value>Message</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateMessage_Message_Description" xml:space="preserve">
+    <value>The MessageResource information returned by the Twilio API.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DeleteMessage_DisplayName" xml:space="preserve">
+    <value>DeleteMessage</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="DeleteMessage_Description" xml:space="preserve">
+    <value>Delete a sent Message</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="DeleteMessage_MessageSid_DisplayName" xml:space="preserve">
+    <value>MessageSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DeleteMessage_MessageSid_Description" xml:space="preserve">
+    <value>The ID of the message to cancel.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DeleteMessage_AccountSid_DisplayName" xml:space="preserve">
+    <value>AccountSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DeleteMessage_AccountSid_Description" xml:space="preserve">
+    <value>The ID of the account containing the message to cancel.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DeleteMessage_Success_DisplayName" xml:space="preserve">
+    <value>Success</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DeleteMessage_Success_Description" xml:space="preserve">
+    <value>Whether the message was successfully deleted.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessage_AccountSid_DisplayName" xml:space="preserve">
+    <value>AccountSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessage_AccountSid_Description" xml:space="preserve">
+    <value>The ID of the account containing the message to retrieve.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessages_DisplayName" xml:space="preserve">
+    <value>GetMessages</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetMessages_Description" xml:space="preserve">
+    <value>Fetches Messages from Twilio</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetMessages_From_DisplayName" xml:space="preserve">
+    <value>From</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessages_From_Description" xml:space="preserve">
+    <value>Retrieve only those messagees sent from this phone number.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessages_To_DisplayName" xml:space="preserve">
+    <value>To</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessages_To_Description" xml:space="preserve">
+    <value>Retrieve only those messagees sent to this phone number.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessages_DateSent_DisplayName" xml:space="preserve">
+    <value>DateSent</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessages_DateSent_Description" xml:space="preserve">
+    <value>Retrieve only messagees created on this date.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessages_DateSentBefore_DisplayName" xml:space="preserve">
+    <value>DateSentBefore</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessages_DateSentBefore_Description" xml:space="preserve">
+    <value>Retrieve only messagees created before this date.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessages_DateSentAfter_DisplayName" xml:space="preserve">
+    <value>DateSentAfter</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessages_DateSentAfter_Description" xml:space="preserve">
+    <value>Retrieve only messagees created after this date.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessages_AccountSid_DisplayName" xml:space="preserve">
+    <value>AccountSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessages_AccountSid_Description" xml:space="preserve">
+    <value>The SID of the Account that created the resources to read </value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessages_Limit_DisplayName" xml:space="preserve">
+    <value>Limit</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessages_Limit_Description" xml:space="preserve">
+    <value>The number of available phone numbers to return</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetMessages_Messages_DisplayName" xml:space="preserve">
+    <value>Messages</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetMessages_Messages_Description" xml:space="preserve">
+    <value>The retrieved messagees.</value>
+    <comment>property description</comment>
+  </data>
 </root>
