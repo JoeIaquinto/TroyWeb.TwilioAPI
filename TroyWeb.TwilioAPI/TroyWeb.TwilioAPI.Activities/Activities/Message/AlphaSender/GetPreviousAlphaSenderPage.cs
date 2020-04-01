@@ -3,6 +3,10 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.SMS;
+using Twilio.Base;
+using Twilio.Clients;
+using Twilio.Rest.Messaging.V1.Service;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -26,12 +30,12 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetPreviousAlphaSenderPage_Page_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetPreviousAlphaSenderPage_Page_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Page { get; set; }
+        public InArgument<Page<AlphaSenderResource>> Page { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetPreviousAlphaSenderPage_AlphaSenderPage_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetPreviousAlphaSenderPage_AlphaSenderPage_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> AlphaSenderPage { get; set; }
+        public OutArgument<Page<AlphaSenderResource>> AlphaSenderPage { get; set; }
 
         #endregion
 
@@ -50,7 +54,8 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-
+            if (Page == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(Page)));
+            if (AlphaSenderPage == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(AlphaSenderPage)));
             base.CacheMetadata(metadata);
         }
 
@@ -62,13 +67,12 @@ namespace TroyWeb.TwilioAPI.Activities
             // Inputs
             var page = Page.Get(context);
     
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+            var lastPage = AlphaSenderWrappers.GetNextAlphaSenderPage(objectContainer.Get<ITwilioRestClient>(), page);
+
 
             // Outputs
             return (ctx) => {
-                AlphaSenderPage.Set(ctx, null);
+                AlphaSenderPage.Set(ctx, lastPage);
             };
         }
 

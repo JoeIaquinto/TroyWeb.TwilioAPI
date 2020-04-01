@@ -3,6 +3,8 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using Twilio.Base;
+using Twilio.Rest.Fax.V1;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -26,12 +28,12 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetPreviousFaxPage_Page_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetPreviousFaxPage_Page_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Page { get; set; }
+        public InArgument<Page<FaxResource>> Page { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetPreviousFaxPage_FaxPage_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetPreviousFaxPage_FaxPage_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> FaxPage { get; set; }
+        public OutArgument<Page<FaxResource>> FaxPage { get; set; }
 
         #endregion
 
@@ -50,7 +52,8 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-
+            if (Page == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(Page)));
+            if (FaxPage == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(FaxPage)));
             base.CacheMetadata(metadata);
         }
 

@@ -55,6 +55,7 @@ namespace TroyWeb.TwilioAPI.Activities
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
             if (CurrentPage == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(CurrentPage)));
+            if (MessagePage == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(MessagePage)));
 
             base.CacheMetadata(metadata);
         }
