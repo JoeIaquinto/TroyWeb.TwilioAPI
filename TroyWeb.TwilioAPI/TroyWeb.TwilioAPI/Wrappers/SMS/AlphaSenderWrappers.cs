@@ -25,12 +25,12 @@
             return await AlphaSenderResource.FetchAsync(options, client);
         }
 
-        public static async Task<ResourceSet<AlphaSenderResource>> GetAlphaSendersAsync(ITwilioRestClient client, string serviceSid, long? limit = null, int? pageSize = null)
+        public static async Task<ResourceSet<AlphaSenderResource>> GetAlphaSendersAsync(ITwilioRestClient client, string serviceSid, long? limit = null)
         {
             var options = new ReadAlphaSenderOptions(serviceSid)
             {
                 Limit = limit,
-                PageSize = pageSize,
+                PageSize = null
             };
             return await AlphaSenderResource.ReadAsync(options, client);
         }

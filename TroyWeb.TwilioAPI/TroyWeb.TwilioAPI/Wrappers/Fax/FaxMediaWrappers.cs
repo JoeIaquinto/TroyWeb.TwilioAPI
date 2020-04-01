@@ -20,12 +20,12 @@
             return await FaxMediaResource.FetchAsync(options, client);
         }
 
-        public static async Task<ResourceSet<FaxMediaResource>> GetFaxMediumAsync(ITwilioRestClient client, string faxSid, long? limit = null, int? pageSize = null)
+        public static async Task<ResourceSet<FaxMediaResource>> GetFaxMediumAsync(ITwilioRestClient client, string faxSid, long? limit = null)
         {
             var options = new ReadFaxMediaOptions(faxSid)
             {
                 Limit = limit,
-                PageSize = pageSize
+                PageSize = null
             };
             return await FaxMediaResource.ReadAsync(options, client);
         }

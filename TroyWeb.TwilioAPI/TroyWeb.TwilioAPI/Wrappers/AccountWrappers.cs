@@ -36,14 +36,14 @@
             return await AccountResource.FetchAsync(options, client);
         }
 
-        public static async Task<ResourceSet<AccountResource>> GetAccountsAsync(ITwilioRestClient client, string friendlyName = null, AccountResource.StatusEnum status = null, long? limit = null, int? pageSize = null)
+        public static async Task<ResourceSet<AccountResource>> GetAccountsAsync(ITwilioRestClient client, string friendlyName = null, AccountResource.StatusEnum status = null, long? limit = null)
         {
             var options = new ReadAccountOptions
             {
                 FriendlyName = friendlyName,
                 Status = status,
                 Limit = limit,
-                PageSize = pageSize
+                PageSize = null
             };
             return await AccountResource.ReadAsync(options, client);
         }

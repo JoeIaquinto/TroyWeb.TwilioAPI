@@ -17,13 +17,13 @@
             return await AvailablePhoneNumberCountryResource.FetchAsync(options, client);
         }
 
-        public static async Task<ResourceSet<AvailablePhoneNumberCountryResource>> GetAvailablePhoneNumbersAsync(ITwilioRestClient client, string accountSid, long? limit = null, int? pageSize = null)
+        public static async Task<ResourceSet<AvailablePhoneNumberCountryResource>> GetAvailablePhoneNumbersAsync(ITwilioRestClient client, string accountSid, long? limit = null)
         {
             var options = new ReadAvailablePhoneNumberCountryOptions()
             {
                 PathAccountSid = accountSid,
                 Limit = limit,
-                PageSize = pageSize
+                PageSize = null
             };
             return await AvailablePhoneNumberCountryResource.ReadAsync(options, client);
         }

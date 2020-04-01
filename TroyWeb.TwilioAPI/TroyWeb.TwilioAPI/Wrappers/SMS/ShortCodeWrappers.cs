@@ -30,7 +30,7 @@
             return await ShortCodeResource.FetchAsync(options, client);
         }
 
-        public static async Task<ResourceSet<ShortCodeResource>> GetShortCodesAsync(ITwilioRestClient client, string accountSid, string shortCode = null, string friendlyName = null, long? limit = null, int? pageSize = null)
+        public static async Task<ResourceSet<ShortCodeResource>> GetShortCodesAsync(ITwilioRestClient client, string accountSid = null, string shortCode = null, string friendlyName = null, long? limit = null)
         {
             var options = new ReadShortCodeOptions
             {
@@ -38,7 +38,7 @@
                 ShortCode = shortCode,
                 FriendlyName = friendlyName,
                 Limit = limit,
-                PageSize = pageSize,
+                PageSize = null
             };
             return await ShortCodeResource.ReadAsync(options, client);
         }

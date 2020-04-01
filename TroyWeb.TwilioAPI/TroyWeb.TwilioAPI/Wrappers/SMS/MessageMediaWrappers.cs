@@ -20,12 +20,12 @@
             return await MediaResource.FetchAsync(options, client);
         }
 
-        public static async Task<ResourceSet<MediaResource>> GetSMSMediumAsync(ITwilioRestClient client, string messageSid, long? limit = null, int? pageSize = null)
+        public static async Task<ResourceSet<MediaResource>> GetSMSMediumAsync(ITwilioRestClient client, string messageSid, long? limit = null)
         {
             var options = new ReadMediaOptions(messageSid)
             {
                 Limit = limit,
-                PageSize = pageSize
+                PageSize = null
             };
             return await MediaResource.ReadAsync(options, client);
         }

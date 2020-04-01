@@ -45,7 +45,7 @@
             return await FaxResource.FetchAsync(options, client);
         }
 
-        public static async Task<ResourceSet<FaxResource>> GetFaxesAsync(ITwilioRestClient client, string from = null, string to = null, DateTime? dateCreatedAfter = null, DateTime? dateCreatedOnOrBefore = null, long? limit = null, int? pageSize = null)
+        public static async Task<ResourceSet<FaxResource>> GetFaxesAsync(ITwilioRestClient client, string from = null, string to = null, DateTime? dateCreatedAfter = null, DateTime? dateCreatedOnOrBefore = null, long? limit = null)
         {
             var options = new ReadFaxOptions
             {
@@ -54,7 +54,7 @@
                 From = from,
                 To = to,
                 Limit = limit,
-                PageSize = pageSize
+                PageSize = null
             };
             return await FaxResource.ReadAsync(options, client);
         }

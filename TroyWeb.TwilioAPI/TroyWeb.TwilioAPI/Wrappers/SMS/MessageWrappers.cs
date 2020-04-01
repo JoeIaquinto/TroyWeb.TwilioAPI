@@ -68,7 +68,7 @@
             return await MessageResource.FetchAsync(options, client);
         }
 
-        public static async Task<ResourceSet<MessageResource>> GetMessagesAsync(ITwilioRestClient client, string from = null, string to = null, string accountSid = null, DateTime? dateSent = null, DateTime? dateSentAfter = null, DateTime? dateSentBefore = null, long? limit = null, int? pageSize = null)
+        public static async Task<ResourceSet<MessageResource>> GetMessagesAsync(ITwilioRestClient client, string from = null, string to = null, string accountSid = null, DateTime? dateSent = null, DateTime? dateSentAfter = null, DateTime? dateSentBefore = null, long? limit = null)
         {
             var fromNumber = from != null ? new PhoneNumber(from) : null;
             var toNumber = to != null ? new PhoneNumber(to) : null;
@@ -80,25 +80,10 @@
                 DateSentBefore = dateSentBefore,
                 From = fromNumber,
                 Limit = limit,
-                PageSize = pageSize,
-                To = toNumber
+                To = toNumber,
+                PageSize = null
             };
             return await MessageResource.ReadAsync(options, client);
-        }
-
-        public static Page<MessageResource> GetMessagePage(ITwilioRestClient client, string targetUrl)
-        {
-            return MessageResource.GetPage(targetUrl, client);
-        }
-
-        public static Page<MessageResource> GetNextMessagePage(ITwilioRestClient client, Page<MessageResource> page)
-        {
-            return MessageResource.NextPage(page, client);
-        }
-
-        public static Page<MessageResource> GetPreviousMessagePage(ITwilioRestClient client, Page<MessageResource> page)
-        {
-            return MessageResource.PreviousPage(page, client);
         }
     }
 }

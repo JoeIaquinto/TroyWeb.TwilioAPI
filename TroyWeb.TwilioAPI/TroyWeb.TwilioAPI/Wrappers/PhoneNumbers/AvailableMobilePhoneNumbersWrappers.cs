@@ -9,7 +9,7 @@
 
     public static class AvailableMobilePhoneNumbersWrappers
     {
-        public static async Task<ResourceSet<MobileResource>> GetAvailableMobilePhoneNumberAsync(ITwilioRestClient client, CountryCode countryCode, string accountSid = null, int? areaCode = null, bool? smsEnabled = null, bool? mmsEnabled = null, bool? faxEnabled = null, bool? voiceEnabled = null, bool? beta = null, string containsPattern = null, string lata = null, string latLong = null, PhoneNumber nearNumber = null, int? distance = null, string locality = null, string postalCode = null, string rateCenter = null, string region = null, bool? excludeAllAddressRequired = null, bool? excludeForeignAddressRequired = null, bool? excludeMobileAddressRequired = null, long? limit = null, int? pageSize = null)
+        public static async Task<ResourceSet<MobileResource>> GetAvailableMobilePhoneNumberAsync(ITwilioRestClient client, CountryCode countryCode, string accountSid = null, int? areaCode = null, bool? smsEnabled = null, bool? mmsEnabled = null, bool? faxEnabled = null, bool? voiceEnabled = null, bool? beta = null, string containsPattern = null, string lata = null, string latLong = null, PhoneNumber nearNumber = null, int? distance = null, string locality = null, string postalCode = null, string rateCenter = null, string region = null, bool? excludeAllAddressRequired = null, bool? excludeForeignAddressRequired = null, bool? excludeMobileAddressRequired = null, long? limit = null)
         {
             var options = new ReadMobileOptions($"{countryCode:G}")
             {
@@ -33,7 +33,7 @@
                 ExcludeForeignAddressRequired = excludeForeignAddressRequired,
                 ExcludeLocalAddressRequired = excludeMobileAddressRequired,
                 Limit = limit,
-                PageSize = pageSize
+                PageSize = null
             };
             return await MobileResource.ReadAsync(options, client);
         }

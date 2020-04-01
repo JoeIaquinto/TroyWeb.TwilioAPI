@@ -13,11 +13,13 @@
             return await CountryResource.FetchAsync($"{countryCode:G}", client);
         }
 
-        public static async Task<ResourceSet<CountryResource>> GetVoicePricingAsync(ITwilioRestClient client, long? limit, int? pageSize)
+        public static async Task<ResourceSet<CountryResource>> GetVoicePricingAsync(ITwilioRestClient client, long? limit)
         {
-            var options = new ReadCountryOptions();
-            options.Limit = limit;
-            options.PageSize = pageSize;
+            var options = new ReadCountryOptions
+            {
+                Limit = limit,
+                PageSize = null
+            };
             return await CountryResource.ReadAsync(options, client);
         }
 
