@@ -2714,11 +2714,11 @@
     <comment>property description</comment>
   </data>
   <data name="CancelMessage_Message_DisplayName" xml:space="preserve">
-    <value>Message</value>
+    <value>Cancelled</value>
     <comment>property name</comment>
   </data>
   <data name="CancelMessage_Message_Description" xml:space="preserve">
-    <value>The MessageResource information returned by the Twilio API.</value>
+    <value>Whether the message was cancelled.</value>
     <comment>property description</comment>
   </data>
   <data name="UpdateMessage_DisplayName" xml:space="preserve">

@@ -3,6 +3,9 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.SMS;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010.Account.Message;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -36,7 +39,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetMessageMedia_MessageMedia_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetMessageMedia_MessageMedia_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> MessageMedia { get; set; }
+        public OutArgument<MediaResource> MessageMedia { get; set; }
 
         #endregion
 
@@ -55,7 +58,8 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-
+            if (MessageSid == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(MessageSid)));
+            if (MessageMediaSid == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(MessageMediaSid)));
             base.CacheMetadata(metadata);
         }
 
@@ -67,14 +71,12 @@ namespace TroyWeb.TwilioAPI.Activities
             // Inputs
             var messagesid = MessageSid.Get(context);
             var messagemediasid = MessageMediaSid.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var messageMedia = await MessageMediaWrappers.GetSMSMediaAsync(objectContainer.Get<ITwilioRestClient>(), messagesid, messagemediasid);
 
             // Outputs
             return (ctx) => {
-                MessageMedia.Set(ctx, null);
+                MessageMedia.Set(ctx, messageMedia);
             };
         }
 

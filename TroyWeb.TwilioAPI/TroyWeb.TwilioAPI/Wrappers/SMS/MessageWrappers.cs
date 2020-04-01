@@ -85,5 +85,20 @@
             };
             return await MessageResource.ReadAsync(options, client);
         }
+
+        public static Page<MessageResource> GetMessagePage(ITwilioRestClient client, string targetUrl)
+        {
+            return MessageResource.GetPage(targetUrl, client);
+        }
+
+        public static Page<MessageResource> GetNextMessagePage(ITwilioRestClient client, Page<MessageResource> page)
+        {
+            return MessageResource.NextPage(page, client);
+        }
+
+        public static Page<MessageResource> GetPreviousMessagePage(ITwilioRestClient client, Page<MessageResource> page)
+        {
+            return MessageResource.PreviousPage(page, client);
+        }
     }
 }

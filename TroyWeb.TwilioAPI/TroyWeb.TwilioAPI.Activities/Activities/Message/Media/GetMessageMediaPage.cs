@@ -3,15 +3,19 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.SMS;
+using Twilio.Base;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010.Account.Message;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
 
 namespace TroyWeb.TwilioAPI.Activities
 {
-    [LocalizedDisplayName(nameof(Resources.GetPreviousMessageMediaPage_DisplayName))]
-    [LocalizedDescription(nameof(Resources.GetPreviousMessageMediaPage_Description))]
-    public class GetPreviousMessageMediaPage : ContinuableAsyncCodeActivity
+    [LocalizedDisplayName(nameof(Resources.GetMessageMediaPage_DisplayName))]
+    [LocalizedDescription(nameof(Resources.GetMessageMediaPage_Description))]
+    public class GetMessageMediaPage : ContinuableAsyncCodeActivity
     {
         #region Properties
 
@@ -23,24 +27,24 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDescription(nameof(Resources.ContinueOnError_Description))]
         public override InArgument<bool> ContinueOnError { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.GetPreviousMessageMediaPage_Page_DisplayName))]
-        [LocalizedDescription(nameof(Resources.GetPreviousMessageMediaPage_Page_Description))]
+        [LocalizedDisplayName(nameof(Resources.GetMessageMediaPage_TargetUrl_DisplayName))]
+        [LocalizedDescription(nameof(Resources.GetMessageMediaPage_TargetUrl_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Page { get; set; }
+        public InArgument<string> TargetUrl { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.GetPreviousMessageMediaPage_MessageMediaPage_DisplayName))]
-        [LocalizedDescription(nameof(Resources.GetPreviousMessageMediaPage_MessageMediaPage_Description))]
+        [LocalizedDisplayName(nameof(Resources.GetMessageMediaPage_MessageMediaPage_DisplayName))]
+        [LocalizedDescription(nameof(Resources.GetMessageMediaPage_MessageMediaPage_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> MessageMediaPage { get; set; }
+        public OutArgument<Page<MediaResource>> MessageMediaPage { get; set; }
 
         #endregion
 
 
         #region Constructors
 
-        public GetPreviousMessageMediaPage()
+        public GetMessageMediaPage()
         {
-            Constraints.Add(ActivityConstraints.HasParentType<GetPreviousMessageMediaPage, TwilioApiScope>(string.Format(Resources.ValidationScope_Error, Resources.TwilioApiScope_DisplayName)));
+            Constraints.Add(ActivityConstraints.HasParentType<GetMessageMediaPage, TwilioApiScope>(string.Format(Resources.ValidationScope_Error, Resources.TwilioApiScope_DisplayName)));
         }
 
         #endregion
@@ -50,7 +54,7 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-
+            if (TargetUrl == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(TargetUrl)));
             base.CacheMetadata(metadata);
         }
 
@@ -60,15 +64,13 @@ namespace TroyWeb.TwilioAPI.Activities
             var objectContainer = context.GetFromContext<IObjectContainer>(TwilioApiScope.ParentContainerPropertyTag);
 
             // Inputs
-            var page = Page.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+            var targeturl = TargetUrl.Get(context);
+
+            var page = MessageMediaWrappers.GetSMSMediaPage(objectContainer.Get<ITwilioRestClient>(), targeturl);
 
             // Outputs
             return (ctx) => {
-                MessageMediaPage.Set(ctx, null);
+                MessageMediaPage.Set(ctx, page);
             };
         }
 

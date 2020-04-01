@@ -3,6 +3,8 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.SMS;
+using Twilio.Clients;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -68,14 +70,11 @@ namespace TroyWeb.TwilioAPI.Activities
             // Inputs
             var messagesid = MessageSid.Get(context);
             var accountsid = AccountSid.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
 
+            var deleted = await MessageWrappers.DeleteMessageAsync(objectContainer.Get<ITwilioRestClient>(), messagesid, accountsid);
             // Outputs
             return (ctx) => {
-                Success.Set(ctx, null);
+                Success.Set(ctx, deleted);
             };
         }
 

@@ -160,7 +160,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The MessageResource information returned by the Twilio API..
+        ///   Looks up a localized string similar to Whether the message was cancelled..
         /// </summary>
         public static string CancelMessage_Message_Description {
             get {
@@ -169,7 +169,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Message.
+        ///   Looks up a localized string similar to Cancelled.
         /// </summary>
         public static string CancelMessage_Message_DisplayName {
             get {

@@ -3,6 +3,8 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.SMS;
+using Twilio.Clients;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -36,7 +38,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.CancelMessage_Message_DisplayName))]
         [LocalizedDescription(nameof(Resources.CancelMessage_Message_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> Message { get; set; }
+        public OutArgument<bool> Cancelled { get; set; }
 
         #endregion
 
@@ -68,14 +70,12 @@ namespace TroyWeb.TwilioAPI.Activities
             // Inputs
             var messagesid = MessageSid.Get(context);
             var accountsid = AccountSid.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var cancelled = MessageWrappers.CancelMessageAsync(objectContainer.Get<ITwilioRestClient>(), messagesid, accountsid);
 
             // Outputs
             return (ctx) => {
-                Message.Set(ctx, null);
+                Cancelled.Set(ctx, cancelled);
             };
         }
 

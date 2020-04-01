@@ -3,6 +3,10 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.SMS;
+using Twilio.Base;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010.Account;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -26,12 +30,12 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetPreviousMessagePage_Page_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetPreviousMessagePage_Page_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Page { get; set; }
+        public InArgument<Page<MessageResource>> Page { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetPreviousMessagePage_MessagePage_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetPreviousMessagePage_MessagePage_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> MessagePage { get; set; }
+        public OutArgument<Page<MessageResource>> MessagePage { get; set; }
 
         #endregion
 
@@ -50,7 +54,7 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-
+            if (Page == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(Page)));
             base.CacheMetadata(metadata);
         }
 
@@ -61,14 +65,13 @@ namespace TroyWeb.TwilioAPI.Activities
 
             // Inputs
             var page = Page.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var newPage = MessageWrappers.GetPreviousMessagePage(objectContainer.Get<ITwilioRestClient>(), page);
+
 
             // Outputs
             return (ctx) => {
-                MessagePage.Set(ctx, null);
+                MessagePage.Set(ctx, newPage);
             };
         }
 

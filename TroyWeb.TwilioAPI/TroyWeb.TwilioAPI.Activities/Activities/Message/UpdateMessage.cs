@@ -3,6 +3,9 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.SMS;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010.Account;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -41,7 +44,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.UpdateMessage_Message_DisplayName))]
         [LocalizedDescription(nameof(Resources.UpdateMessage_Message_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> Message { get; set; }
+        public OutArgument<MessageResource> Message { get; set; }
 
         #endregion
 
@@ -75,14 +78,12 @@ namespace TroyWeb.TwilioAPI.Activities
             var messagesid = MessageSid.Get(context);
             var accountsid = AccountSid.Get(context);
             var body = Body.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var updated = await MessageWrappers.UpdateMessageAsync(objectContainer.Get<ITwilioRestClient>(), messagesid, body, accountsid);
 
             // Outputs
             return (ctx) => {
-                Message.Set(ctx, null);
+                Message.Set(ctx, updated);
             };
         }
 
