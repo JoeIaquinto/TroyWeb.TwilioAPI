@@ -18,7 +18,7 @@ namespace TroyWeb.TwilioAPI.Activities
         #region Properties
 
         [Browsable(false)]
-        public ActivityAction<IObjectContainer​> Body { get; set; }
+        public ActivityAction<IObjectContainer> Body { get; set; }
 
         /// <summary>
         /// If set, continue executing the remaining activities even if the current activity has failed.
