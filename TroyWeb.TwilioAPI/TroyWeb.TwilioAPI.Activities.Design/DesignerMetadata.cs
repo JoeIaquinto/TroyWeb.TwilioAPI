@@ -227,9 +227,9 @@ namespace TroyWeb.TwilioAPI.Activities.Design
             builder.AddCustomAttributes(typeof(GetFax), new DesignerAttribute(typeof(GetFaxDesigner)));
             builder.AddCustomAttributes(typeof(GetFax), new HelpKeywordAttribute(""));
 
-            builder.AddCustomAttributes(typeof(GetFaxMedia), faxcmediaategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetFaxMedia), new DesignerAttribute(typeof(GetFaxMediaDesigner)));
-            builder.AddCustomAttributes(typeof(GetFaxMedia), new HelpKeywordAttribute(""));
+            builder.AddCustomAttributes(typeof(GetFaxMedias), faxcmediaategoryAttribute);
+            builder.AddCustomAttributes(typeof(GetFaxMedias), new DesignerAttribute(typeof(GetFaxMediaDesigner)));
+            builder.AddCustomAttributes(typeof(GetFaxMedias), new HelpKeywordAttribute(""));
 
             builder.AddCustomAttributes(typeof(GetMessage), SMScategoryAttribute);
             builder.AddCustomAttributes(typeof(GetMessage), new DesignerAttribute(typeof(GetMessageDesigner)));
@@ -311,13 +311,13 @@ namespace TroyWeb.TwilioAPI.Activities.Design
             builder.AddCustomAttributes(typeof(DeleteFax), new DesignerAttribute(typeof(DeleteFaxDesigner)));
             builder.AddCustomAttributes(typeof(DeleteFax), new HelpKeywordAttribute(""));
 
-            builder.AddCustomAttributes(typeof(GetFaxMedia), faxcmediaategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetFaxMedia), new DesignerAttribute(typeof(GetFaxMediaDesigner)));
-            builder.AddCustomAttributes(typeof(GetFaxMedia), new HelpKeywordAttribute(""));
+            builder.AddCustomAttributes(typeof(GetFaxMedias), faxcmediaategoryAttribute);
+            builder.AddCustomAttributes(typeof(GetFaxMedias), new DesignerAttribute(typeof(GetFaxMediaDesigner)));
+            builder.AddCustomAttributes(typeof(GetFaxMedias), new HelpKeywordAttribute(""));
 
-            builder.AddCustomAttributes(typeof(GetFaxMedia), faxcmediaategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetFaxMedia), new DesignerAttribute(typeof(GetFaxMediaDesigner)));
-            builder.AddCustomAttributes(typeof(GetFaxMedia), new HelpKeywordAttribute(""));
+            builder.AddCustomAttributes(typeof(GetFaxMedias), faxcmediaategoryAttribute);
+            builder.AddCustomAttributes(typeof(GetFaxMedias), new DesignerAttribute(typeof(GetFaxMediaDesigner)));
+            builder.AddCustomAttributes(typeof(GetFaxMedias), new HelpKeywordAttribute(""));
 
             builder.AddCustomAttributes(typeof(DeleteFaxMedia), faxcmediaategoryAttribute);
             builder.AddCustomAttributes(typeof(DeleteFaxMedia), new DesignerAttribute(typeof(DeleteFaxMediaDesigner)));

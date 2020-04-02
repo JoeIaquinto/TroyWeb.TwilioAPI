@@ -1,4 +1,4 @@
-<sap:ActivityDesigner x:Class="TroyWeb.TwilioAPI.Activities.Design.Designers.GetFaxMediaDesigner"
+<sap:ActivityDesigner x:Class="TroyWeb.TwilioAPI.Activities.Design.Designers.GetFaxMediasDesigner"
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                       xmlns:activity="clr-namespace:TroyWeb.TwilioAPI.Activities.Properties;assembly=TroyWeb.TwilioAPI.Activities"
@@ -27,20 +27,12 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
             <Label Content="{x:Static activity:Resources.GetFaxMedia_FaxSid_DisplayName}" Grid.Row="0" />
             <sapv:ExpressionTextBox Grid.Row="1" ExpressionType="{Binding ModelItem.Properties[FaxSid].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.GetFaxMedia_FaxSid_Description}" UseLocationExpression="False">
                 <sapv:ExpressionTextBox.Expression>
                     <Binding Path="ModelItem.FaxSid" Converter="{StaticResource ArgumentToExpressionConverter}" Mode="TwoWay" ConverterParameter="In" UpdateSourceTrigger="PropertyChanged" />
-                </sapv:ExpressionTextBox.Expression>
-            </sapv:ExpressionTextBox>
-            <Label Content="{x:Static activity:Resources.GetFaxMedia_FaxMediaSid_DisplayName}" Grid.Row="2" />
-            <sapv:ExpressionTextBox Grid.Row="3" ExpressionType="{Binding ModelItem.Properties[FaxMediaSid].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.GetFaxMedia_FaxMediaSid_Description}" UseLocationExpression="False">
-                <sapv:ExpressionTextBox.Expression>
-                    <Binding Path="ModelItem.FaxMediaSid" Converter="{StaticResource ArgumentToExpressionConverter}" Mode="TwoWay" ConverterParameter="In" UpdateSourceTrigger="PropertyChanged" />
                 </sapv:ExpressionTextBox.Expression>
             </sapv:ExpressionTextBox>
         </Grid>
