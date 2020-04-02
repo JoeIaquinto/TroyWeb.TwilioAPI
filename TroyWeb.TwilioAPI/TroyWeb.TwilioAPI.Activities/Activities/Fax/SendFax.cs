@@ -1,8 +1,13 @@
 using System;
 using System.Activities;
+using System.ComponentModel;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Enums;
+using TroyWeb.TwilioAPI.Wrappers.Fax;
+using Twilio.Clients;
+using Twilio.Rest.Fax.V1;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -41,17 +46,18 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.SendFax_Quality_DisplayName))]
         [LocalizedDescription(nameof(Resources.SendFax_Quality_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Quality { get; set; }
+        [TypeConverter(typeof(FaxQuality))]
+        public InArgument<FaxQuality?> Quality { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.SendFax_StoreMedia_DisplayName))]
         [LocalizedDescription(nameof(Resources.SendFax_StoreMedia_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> StoreMedia { get; set; }
+        public InArgument<bool?> StoreMedia { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.SendFax_MinutesToSend_DisplayName))]
         [LocalizedDescription(nameof(Resources.SendFax_MinutesToSend_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> MinutesToSend { get; set; }
+        public InArgument<int?> MinutesToSend { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.SendFax_SipAuthUsername_DisplayName))]
         [LocalizedDescription(nameof(Resources.SendFax_SipAuthUsername_Description))]
@@ -71,7 +77,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.SendFax_Fax_DisplayName))]
         [LocalizedDescription(nameof(Resources.SendFax_Fax_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> Fax { get; set; }
+        public OutArgument<FaxResource> Fax { get; set; }
 
         #endregion
 
@@ -113,14 +119,16 @@ namespace TroyWeb.TwilioAPI.Activities
             var sipauthusername = SipAuthUsername.Get(context);
             var sipauthpassword = SipAuthPassword.Get(context);
             var statuscallback = StatusCallback.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+            var twilioQuality = quality == FaxQuality.Fine ? FaxResource.QualityEnum.Fine :
+                quality == FaxQuality.SuperFine ? FaxResource.QualityEnum.Superfine :
+                FaxResource.QualityEnum.Standard;
+            
+            var sent = await FaxWrappers.SendFaxAsync(objectContainer.Get<ITwilioRestClient>(), from, to, new Uri(mediaurl),
+                twilioQuality, sipauthusername, sipauthpassword, new Uri(statuscallback), storemedia, minutestosend);
 
             // Outputs
             return (ctx) => {
-                Fax.Set(ctx, null);
+                Fax.Set(ctx, sent);
             };
         }
 

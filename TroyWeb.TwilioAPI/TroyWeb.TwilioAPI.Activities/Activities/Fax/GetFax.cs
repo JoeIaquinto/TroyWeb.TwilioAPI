@@ -3,6 +3,9 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.Fax;
+using Twilio.Clients;
+using Twilio.Rest.Fax.V1;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -31,7 +34,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetFax_Fax_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetFax_Fax_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> Fax { get; set; }
+        public OutArgument<FaxResource> Fax { get; set; }
 
         #endregion
 
@@ -62,14 +65,12 @@ namespace TroyWeb.TwilioAPI.Activities
 
             // Inputs
             var faxsid = FaxSid.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var fax = await FaxWrappers.GetFaxAsync(objectContainer.Get<ITwilioRestClient>(), faxsid);
 
             // Outputs
             return (ctx) => {
-                Fax.Set(ctx, null);
+                Fax.Set(ctx, fax);
             };
         }
 

@@ -3,7 +3,9 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.Fax;
 using Twilio.Base;
+using Twilio.Clients;
 using Twilio.Rest.Fax.V1;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
@@ -64,14 +66,12 @@ namespace TroyWeb.TwilioAPI.Activities
 
             // Inputs
             var targeturl = TargetUrl.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var page = FaxWrappers.GetFaxPage(objectContainer.Get<ITwilioRestClient>(), targeturl);
 
             // Outputs
             return (ctx) => {
-                FaxPage.Set(ctx, null);
+                FaxPage.Set(ctx, page);
             };
         }
 
