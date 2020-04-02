@@ -3,6 +3,10 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.PhoneNumbers;
+using Twilio.Base;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010.Account.AvailablePhoneNumberCountry;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -26,12 +30,12 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetNextAvailableLocalPhoneNumberPage_Page_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetNextAvailableLocalPhoneNumberPage_Page_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Page { get; set; }
+        public InArgument<Page<LocalResource>> Page { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetNextAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetNextAvailableLocalPhoneNumberPage_AvailableLocalPhoneNumberPage_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> AvailableLocalPhoneNumberPage { get; set; }
+        public OutArgument<Page<LocalResource>> AvailableLocalPhoneNumberPage { get; set; }
 
         #endregion
 
@@ -63,13 +67,12 @@ namespace TroyWeb.TwilioAPI.Activities
             // Inputs
             var page = Page.Get(context);
     
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+            var phoneNumberPage = AvailableLocalPhoneNumbersWrappers.GetNextAvailableLocalPhoneNumberPage(
+                objectContainer.Get<ITwilioRestClient>(), page);
 
             // Outputs
             return (ctx) => {
-                AvailableLocalPhoneNumberPage.Set(ctx, null);
+                AvailableLocalPhoneNumberPage.Set(ctx, phoneNumberPage);
             };
         }
 

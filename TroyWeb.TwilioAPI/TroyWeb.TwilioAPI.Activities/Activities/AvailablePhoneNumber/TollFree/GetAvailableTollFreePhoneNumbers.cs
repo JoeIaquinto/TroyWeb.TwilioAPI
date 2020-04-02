@@ -1,8 +1,15 @@
 using System;
 using System.Activities;
+using System.ComponentModel;
+using System.Resources;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Enums;
+using TroyWeb.TwilioAPI.Wrappers.PhoneNumbers;
+using Twilio.Base;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010.Account.AvailablePhoneNumberCountry;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -26,7 +33,8 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_CountryCode_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_CountryCode_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> CountryCode { get; set; }
+        [TypeConverter(typeof(EnumNameConverter<CountryCode>))]
+        public InArgument<CountryCode> CountryCode { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_AccountSid_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_AccountSid_Description))]
@@ -36,27 +44,27 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_AreaCode_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_AreaCode_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> AreaCode { get; set; }
+        public InArgument<int?> AreaCode { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_SmsEnabled_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_SmsEnabled_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> SmsEnabled { get; set; }
+        public InArgument<bool?> SmsEnabled { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_MmsEnabled_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_MmsEnabled_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> MmsEnabled { get; set; }
+        public InArgument<bool?> MmsEnabled { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_VoiceEnabled_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_VoiceEnabled_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> VoiceEnabled { get; set; }
+        public InArgument<bool?> VoiceEnabled { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_FaxEnabled_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_FaxEnabled_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> FaxEnabled { get; set; }
+        public InArgument<bool?> FaxEnabled { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_Contains_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_Contains_Description))]
@@ -66,7 +74,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_Beta_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_Beta_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Beta { get; set; }
+        public InArgument<bool?> Beta { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_NearNumber_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_NearNumber_Description))]
@@ -81,7 +89,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_Distance_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_Distance_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Distance { get; set; }
+        public InArgument<int?> Distance { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_InPostalCode_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_InPostalCode_Description))]
@@ -111,27 +119,27 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_ExcludeAllAddressRequired_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_ExcludeAllAddressRequired_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> ExcludeAllAddressRequired { get; set; }
+        public InArgument<bool?> ExcludeAllAddressRequired { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_ExcludeLocalAddressRequired_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_ExcludeLocalAddressRequired_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> ExcludeLocalAddressRequired { get; set; }
+        public InArgument<bool?> ExcludeLocalAddressRequired { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_ExcludeForeignAddressRequired_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_ExcludeForeignAddressRequired_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> ExcludeForeignAddressRequired { get; set; }
+        public InArgument<bool?> ExcludeForeignAddressRequired { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_Limit_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_Limit_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Limit { get; set; }
+        public InArgument<long?> Limit { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_PhoneNumbers_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_PhoneNumbers_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> PhoneNumbers { get; set; }
+        public OutArgument<ResourceSet<TollFreeResource>> PhoneNumbers { get; set; }
 
         #endregion
 
@@ -182,14 +190,15 @@ namespace TroyWeb.TwilioAPI.Activities
             var excludelocaladdressrequired = ExcludeLocalAddressRequired.Get(context);
             var excludeforeignaddressrequired = ExcludeForeignAddressRequired.Get(context);
             var limit = Limit.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
-
+            
+            var numbers = await AvailableTollFreePhoneNumbersWrappers.GetAvailableTollFreePhoneNumberAsync(
+                objectContainer.Get<ITwilioRestClient>(), countrycode, accountsid, areacode, smsenabled, mmsenabled,
+                faxenabled, voiceenabled, beta, contains, inlata, nearlatlong, nearnumber, distance, inlocality,
+                inpostalcode, inratecenter, inregion, excludealladdressrequired, excludeforeignaddressrequired,
+                excludelocaladdressrequired, limit);
             // Outputs
             return (ctx) => {
-                PhoneNumbers.Set(ctx, null);
+                PhoneNumbers.Set(ctx, numbers);
             };
         }
 

@@ -1,8 +1,15 @@
 using System;
 using System.Activities;
+using System.ComponentModel;
+using System.Resources;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Enums;
+using TroyWeb.TwilioAPI.Wrappers.PhoneNumbers;
+using Twilio.Base;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010.Account;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -26,12 +33,13 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetAvailablePhoneNumbers_CountryCode_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailablePhoneNumbers_CountryCode_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> CountryCode { get; set; }
+        [TypeConverter(typeof(EnumNameConverter<CountryCode>))]
+        public InArgument<CountryCode> CountryCode { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAvailablePhoneNumbers_PhoneNumbers_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailablePhoneNumbers_PhoneNumbers_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> PhoneNumbers { get; set; }
+        public OutArgument<ResourceSet<AvailablePhoneNumberCountryResource>> PhoneNumbers { get; set; }
 
         #endregion
 
@@ -62,14 +70,14 @@ namespace TroyWeb.TwilioAPI.Activities
 
             // Inputs
             var countrycode = CountryCode.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var numbers =
+                AvailablePhoneNumbersWrappers.GetAvailablePhoneNumberAsync(objectContainer.Get<ITwilioRestClient>(),
+                    countrycode);
 
             // Outputs
             return (ctx) => {
-                PhoneNumbers.Set(ctx, null);
+                PhoneNumbers.Set(ctx, numbers);
             };
         }
 

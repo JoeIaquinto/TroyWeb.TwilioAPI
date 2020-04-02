@@ -1,8 +1,13 @@
 using System;
 using System.Activities;
+using System.Resources;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.PhoneNumbers;
+using Twilio.Base;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010.Account;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -31,12 +36,12 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetAvailablePhoneNumbersForAccount_Limit_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailablePhoneNumbersForAccount_Limit_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Limit { get; set; }
+        public InArgument<long?> Limit { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAvailablePhoneNumbersForAccount_PhoneNumbers_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailablePhoneNumbersForAccount_PhoneNumbers_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> PhoneNumbers { get; set; }
+        public OutArgument<ResourceSet<AvailablePhoneNumberCountryResource>> PhoneNumbers { get; set; }
 
         #endregion
 
@@ -68,14 +73,14 @@ namespace TroyWeb.TwilioAPI.Activities
             // Inputs
             var accountsid = AccountSid.Get(context);
             var limit = Limit.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var phoneNumbers =
+                await AvailablePhoneNumbersWrappers.GetAvailablePhoneNumbersAsync(objectContainer.Get<ITwilioRestClient>(),
+                    accountsid, limit);
 
             // Outputs
             return (ctx) => {
-                PhoneNumbers.Set(ctx, null);
+                PhoneNumbers.Set(ctx, phoneNumbers);
             };
         }
 

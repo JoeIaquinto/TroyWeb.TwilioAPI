@@ -3,6 +3,10 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.PhoneNumbers;
+using Twilio.Base;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010.Account.AvailablePhoneNumberCountry;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -31,7 +35,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableMobilePhoneNumberPage_AvailableMobilePhoneNumberPage_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> AvailableMobilePhoneNumberPage { get; set; }
+        public OutArgument<Page<MobileResource>> AvailableMobilePhoneNumberPage { get; set; }
 
         #endregion
 
@@ -62,14 +66,13 @@ namespace TroyWeb.TwilioAPI.Activities
 
             // Inputs
             var targeturl = TargetUrl.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var page = AvailableMobilePhoneNumbersWrappers.GetAvailableMobilePhoneNumberPage(
+                objectContainer.Get<ITwilioRestClient>(), targeturl);
 
             // Outputs
             return (ctx) => {
-                AvailableMobilePhoneNumberPage.Set(ctx, null);
+                AvailableMobilePhoneNumberPage.Set(ctx, page);
             };
         }
 

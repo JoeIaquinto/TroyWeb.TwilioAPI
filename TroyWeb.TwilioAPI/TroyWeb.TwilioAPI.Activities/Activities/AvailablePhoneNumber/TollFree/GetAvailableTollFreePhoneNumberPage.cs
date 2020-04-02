@@ -3,6 +3,10 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.PhoneNumbers;
+using Twilio.Base;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010.Account.AvailablePhoneNumberCountry;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -31,7 +35,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumberPage_AvailableTollFreePhoneNumberPage_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> AvailableTollFreePhoneNumberPage { get; set; }
+        public OutArgument<Page<TollFreeResource>> AvailableTollFreePhoneNumberPage { get; set; }
 
         #endregion
 
@@ -62,14 +66,13 @@ namespace TroyWeb.TwilioAPI.Activities
 
             // Inputs
             var targeturl = TargetUrl.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var page = AvailableTollFreePhoneNumbersWrappers.GetAvailableTollFreePhoneNumberPage(
+                objectContainer.Get<ITwilioRestClient>(), targeturl);
 
             // Outputs
             return (ctx) => {
-                AvailableTollFreePhoneNumberPage.Set(ctx, null);
+                AvailableTollFreePhoneNumberPage.Set(ctx, page);
             };
         }
 

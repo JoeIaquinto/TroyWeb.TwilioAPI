@@ -3,6 +3,10 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.PhoneNumbers;
+using Twilio.Base;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010.Account;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -26,12 +30,12 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetPreviousAvailablePhoneNumberPage_Page_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetPreviousAvailablePhoneNumberPage_Page_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Page { get; set; }
+        public InArgument<Page<AvailablePhoneNumberCountryResource>> Page { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetPreviousAvailablePhoneNumberPage_AvailablePhoneNumberPage_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetPreviousAvailablePhoneNumberPage_AvailablePhoneNumberPage_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> AvailablePhoneNumberPage { get; set; }
+        public OutArgument<Page<AvailablePhoneNumberCountryResource>> AvailablePhoneNumberPage { get; set; }
 
         #endregion
 
@@ -63,13 +67,14 @@ namespace TroyWeb.TwilioAPI.Activities
             // Inputs
             var page = Page.Get(context);
     
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+            var previousPage =
+                AvailablePhoneNumbersWrappers.GetPreviousAvailablePhoneNumberPage(objectContainer.Get<ITwilioRestClient>(),
+                    page);
+
 
             // Outputs
             return (ctx) => {
-                AvailablePhoneNumberPage.Set(ctx, null);
+                AvailablePhoneNumberPage.Set(ctx, previousPage);
             };
         }
 
