@@ -1378,7 +1378,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetFaxMedia_DisplayName" xml:space="preserve">
-    <value>GetFaxMedia</value>
+    <value>GetFaxMedias</value>
     <comment>activity name</comment>
   </data>
   <data name="GetFaxMedia_Description" xml:space="preserve">

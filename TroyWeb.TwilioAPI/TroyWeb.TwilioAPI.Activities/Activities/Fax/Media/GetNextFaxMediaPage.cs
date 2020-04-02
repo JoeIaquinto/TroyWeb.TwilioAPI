@@ -3,6 +3,10 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.Fax;
+using Twilio.Base;
+using Twilio.Clients;
+using Twilio.Rest.Fax.V1.Fax;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -26,12 +30,12 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetNextFaxMediaPage_Page_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetNextFaxMediaPage_Page_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Page { get; set; }
+        public InArgument<Page<FaxMediaResource>> Page { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetNextFaxMediaPage_FaxMediaPage_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetNextFaxMediaPage_FaxMediaPage_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> FaxMediaPage { get; set; }
+        public OutArgument<Page<FaxMediaResource>> FaxMediaPage { get; set; }
 
         #endregion
 
@@ -50,6 +54,7 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
+            if (Page == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(Page)));
 
             base.CacheMetadata(metadata);
         }
@@ -62,13 +67,11 @@ namespace TroyWeb.TwilioAPI.Activities
             // Inputs
             var page = Page.Get(context);
     
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+            var nextPage = FaxMediaWrappers.GetNextFaxMediaPage(objectContainer.Get<ITwilioRestClient>(), page);
 
             // Outputs
             return (ctx) => {
-                FaxMediaPage.Set(ctx, null);
+                FaxMediaPage.Set(ctx, nextPage);
             };
         }
 

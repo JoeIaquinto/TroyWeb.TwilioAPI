@@ -3,6 +3,8 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.Fax;
+using Twilio.Clients;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -36,7 +38,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.DeleteFaxMedia_Success_DisplayName))]
         [LocalizedDescription(nameof(Resources.DeleteFaxMedia_Success_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> Success { get; set; }
+        public OutArgument<bool> Success { get; set; }
 
         #endregion
 
@@ -69,14 +71,14 @@ namespace TroyWeb.TwilioAPI.Activities
             // Inputs
             var faxsid = FaxSid.Get(context);
             var faxmediasid = FaxMediaSid.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var deleted =
+                await FaxMediaWrappers.DeleteFaxMediaAsync(objectContainer.Get<ITwilioRestClient>(), faxsid,
+                    faxmediasid);
 
             // Outputs
             return (ctx) => {
-                Success.Set(ctx, null);
+                Success.Set(ctx, deleted);
             };
         }
 

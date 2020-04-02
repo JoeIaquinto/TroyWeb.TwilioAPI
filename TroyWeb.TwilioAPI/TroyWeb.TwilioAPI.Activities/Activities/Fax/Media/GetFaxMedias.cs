@@ -16,7 +16,7 @@ namespace TroyWeb.TwilioAPI.Activities
 {
     [LocalizedDisplayName(nameof(Resources.GetFaxMedia_DisplayName))]
     [LocalizedDescription(nameof(Resources.GetFaxMedia_Description))]
-    public class GetFaxMedia : ContinuableAsyncCodeActivity
+    public class GetFaxMedias : ContinuableAsyncCodeActivity
     {
         #region Properties
 
@@ -32,23 +32,23 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDescription(nameof(Resources.GetFaxMedia_FaxSid_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
         public InArgument<string> FaxSid { get; set; }
-        
-        [LocalizedDisplayName(nameof(Resources.GetFaxMedia_FaxMediaSid_DisplayName))]
-        [LocalizedDescription(nameof(Resources.GetFaxMedia_FaxMediaSid_Description))]
+
+        [LocalizedDisplayName(nameof(Resources.GetFaxMedia_Limit_DisplayName))]
+        [LocalizedDescription(nameof(Resources.GetFaxMedia_Limit_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> FaxMediaSid { get; set; }
+        public InArgument<long?> Limit { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetFaxMedia_FaxMedia_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetFaxMedia_FaxMedia_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<FaxMediaResource> FaxMedia { get; set; }
+        public OutArgument<ResourceSet<FaxMediaResource>> FaxMedia { get; set; }
 
         #endregion
 
 
         #region Constructors
 
-        public GetFaxMedia()
+        public GetFaxMedias()
         {
             Constraints.Add(ActivityConstraints.HasParentType<GetFaxMedias, TwilioApiScope>(string.Format(Resources.ValidationScope_Error, Resources.TwilioApiScope_DisplayName)));
         }
@@ -61,7 +61,6 @@ namespace TroyWeb.TwilioAPI.Activities
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
             if (FaxSid == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(FaxSid)));
-            if (FaxMediaSid == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(FaxMediaSid)));
 
             base.CacheMetadata(metadata);
         }
@@ -73,10 +72,10 @@ namespace TroyWeb.TwilioAPI.Activities
 
             // Inputs
             var faxsid = FaxSid.Get(context);
-            var faxmediasid = FaxMediaSid.Get(context);
+            var limit = Limit.Get(context);
 
-            var media = await FaxMediaWrappers.GetFaxMediaAsync(objectContainer.Get<ITwilioRestClient>(), faxsid,
-                faxmediasid);
+            var media = await FaxMediaWrappers.GetFaxMediasAsync(objectContainer.Get<ITwilioRestClient>(), faxsid,
+                limit);
 
             // Outputs
             return (ctx) => {

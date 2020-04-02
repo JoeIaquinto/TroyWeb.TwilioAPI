@@ -5,7 +5,7 @@
     using Twilio.Clients;
     using Twilio.Rest.Fax.V1.Fax;
 
-    public static class FaxMediaMediaWrappers
+    public static class FaxMediaWrappers
     {
         public static async Task<bool> DeleteFaxMediaAsync(ITwilioRestClient client,
             string faxSid, string faxMediaSid)
@@ -20,7 +20,7 @@
             return await FaxMediaResource.FetchAsync(options, client);
         }
 
-        public static async Task<ResourceSet<FaxMediaResource>> GetFaxMediumAsync(ITwilioRestClient client, string faxSid, long? limit = null)
+        public static async Task<ResourceSet<FaxMediaResource>> GetFaxMediasAsync(ITwilioRestClient client, string faxSid, long? limit = null)
         {
             var options = new ReadFaxMediaOptions(faxSid)
             {
