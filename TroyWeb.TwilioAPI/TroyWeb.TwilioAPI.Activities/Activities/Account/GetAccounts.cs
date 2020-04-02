@@ -1,8 +1,14 @@
 using System;
 using System.Activities;
+using System.Resources;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Enums;
+using TroyWeb.TwilioAPI.Wrappers;
+using Twilio.Base;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -31,17 +37,17 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetAccounts_Status_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAccounts_Status_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Status { get; set; }
+        public InArgument<AccountStatus?> Status { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAccounts_Limit_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAccounts_Limit_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Limit { get; set; }
+        public InArgument<long?> Limit { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAccounts_Accounts_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAccounts_Accounts_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> Accounts { get; set; }
+        public OutArgument<ResourceSet<AccountResource>> Accounts { get; set; }
 
         #endregion
 
@@ -73,14 +79,16 @@ namespace TroyWeb.TwilioAPI.Activities
             var friendlyname = FriendlyName.Get(context);
             var status = Status.Get(context);
             var limit = Limit.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
-
+            var twilioStatus = status == AccountStatus.Active ? AccountResource.StatusEnum.Active :
+                status == AccountStatus.Closed ? AccountResource.StatusEnum.Closed :
+                status == AccountStatus.Suspended ? AccountResource.StatusEnum.Suspended :
+                null;
+            
+            var accounts = await AccountWrappers.GetAccountsAsync(objectContainer.Get<ITwilioRestClient>(), friendlyname,
+                twilioStatus, limit);
             // Outputs
             return (ctx) => {
-                Accounts.Set(ctx, null);
+                Accounts.Set(ctx, accounts);
             };
         }
 

@@ -3,6 +3,9 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -31,7 +34,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.CreateAccount_Account_DisplayName))]
         [LocalizedDescription(nameof(Resources.CreateAccount_Account_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> Account { get; set; }
+        public OutArgument<AccountResource> Account { get; set; }
 
         #endregion
 
@@ -62,14 +65,13 @@ namespace TroyWeb.TwilioAPI.Activities
 
             // Inputs
             var friendlyname = FriendlyName.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var account =
+                await AccountWrappers.CreateAccountAsync(objectContainer.Get<ITwilioRestClient>(), friendlyname);
 
             // Outputs
             return (ctx) => {
-                Account.Set(ctx, null);
+                Account.Set(ctx, account);
             };
         }
 

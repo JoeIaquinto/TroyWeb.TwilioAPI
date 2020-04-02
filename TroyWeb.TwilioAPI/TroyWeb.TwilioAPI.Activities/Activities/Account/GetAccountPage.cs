@@ -3,6 +3,10 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers;
+using Twilio.Base;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -31,7 +35,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetAccountPage_AccountPage_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAccountPage_AccountPage_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> AccountPage { get; set; }
+        public OutArgument<Page<AccountResource>> AccountPage { get; set; }
 
         #endregion
 
@@ -62,14 +66,12 @@ namespace TroyWeb.TwilioAPI.Activities
 
             // Inputs
             var targeturl = TargetUrl.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var accountPage = AccountWrappers.GetAccountPage(objectContainer.Get<ITwilioRestClient>(), targeturl);
 
             // Outputs
             return (ctx) => {
-                AccountPage.Set(ctx, null);
+                AccountPage.Set(ctx, accountPage);
             };
         }
 

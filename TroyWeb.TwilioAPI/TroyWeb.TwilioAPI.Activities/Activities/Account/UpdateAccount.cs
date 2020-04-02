@@ -3,6 +3,10 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Enums;
+using TroyWeb.TwilioAPI.Wrappers;
+using Twilio.Clients;
+using Twilio.Rest.Api.V2010;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -36,12 +40,12 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.UpdateAccount_Status_DisplayName))]
         [LocalizedDescription(nameof(Resources.UpdateAccount_Status_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Status { get; set; }
+        public InArgument<AccountStatus?> Status { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.UpdateAccount_Account_DisplayName))]
         [LocalizedDescription(nameof(Resources.UpdateAccount_Account_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> Account { get; set; }
+        public OutArgument<AccountResource> Account { get; set; }
 
         #endregion
 
@@ -74,14 +78,16 @@ namespace TroyWeb.TwilioAPI.Activities
             var accountsid = AccountSid.Get(context);
             var friendlyname = FriendlyName.Get(context);
             var status = Status.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
-
+            var twilioStatus = status == AccountStatus.Active ? AccountResource.StatusEnum.Active :
+                status == AccountStatus.Closed ? AccountResource.StatusEnum.Closed :
+                status == AccountStatus.Suspended ? AccountResource.StatusEnum.Suspended :
+                null;
+            
+            var account = await AccountWrappers.UpdateAccountAsync(objectContainer.Get<ITwilioRestClient>(), accountsid,
+                friendlyname, twilioStatus);
             // Outputs
             return (ctx) => {
-                Account.Set(ctx, null);
+                Account.Set(ctx, account);
             };
         }
 
