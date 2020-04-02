@@ -3,6 +3,9 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.SMS;
+using Twilio.Clients;
+using Twilio.Rest.Messaging.V1.Service;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -36,7 +39,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetAlphaSender_AlphaSender_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAlphaSender_AlphaSender_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> AlphaSender { get; set; }
+        public OutArgument<AlphaSenderResource> AlphaSender { get; set; }
 
         #endregion
 
@@ -55,7 +58,8 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-
+            if (ServiceSid == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(ServiceSid)));
+            if (AlphaSenderSid == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(AlphaSenderSid)));
             base.CacheMetadata(metadata);
         }
 
@@ -67,14 +71,12 @@ namespace TroyWeb.TwilioAPI.Activities
             // Inputs
             var servicesid = ServiceSid.Get(context);
             var alphasendersid = AlphaSenderSid.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var alphaSender = AlphaSenderWrappers.GetAlphaSenderAsync(objectContainer.Get<ITwilioRestClient>(), servicesid, alphasendersid);
 
             // Outputs
             return (ctx) => {
-                AlphaSender.Set(ctx, null);
+                AlphaSender.Set(ctx, alphaSender);
             };
         }
 

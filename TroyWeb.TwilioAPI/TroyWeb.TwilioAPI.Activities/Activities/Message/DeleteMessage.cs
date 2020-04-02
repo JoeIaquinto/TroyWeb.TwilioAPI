@@ -38,7 +38,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.DeleteMessage_Success_DisplayName))]
         [LocalizedDescription(nameof(Resources.DeleteMessage_Success_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> Success { get; set; }
+        public OutArgument<bool> Success { get; set; }
 
         #endregion
 
