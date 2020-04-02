@@ -3,6 +3,8 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.Pricing;
+using Twilio.Clients;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -26,7 +28,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetPhoneNumberPricings_Limit_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetPhoneNumberPricings_Limit_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Limit { get; set; }
+        public InArgument<long?> Limit { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetPhoneNumberPricings_CountryResources_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetPhoneNumberPricings_CountryResources_Description))]
@@ -61,14 +63,13 @@ namespace TroyWeb.TwilioAPI.Activities
 
             // Inputs
             var limit = Limit.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var pricings =
+                await PhoneNumberPricingWrappers.GetPhoneNumberPricingAsync(objectContainer.Get<ITwilioRestClient>(), limit);
 
             // Outputs
             return (ctx) => {
-                CountryResources.Set(ctx, null);
+                CountryResources.Set(ctx, pricings);
             };
         }
 

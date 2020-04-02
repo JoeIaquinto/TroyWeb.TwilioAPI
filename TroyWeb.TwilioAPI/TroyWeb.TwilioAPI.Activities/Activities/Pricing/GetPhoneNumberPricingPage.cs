@@ -3,6 +3,10 @@ using System.Activities;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.Pricing;
+using Twilio.Base;
+using Twilio.Clients;
+using Twilio.Rest.Pricing.V1.PhoneNumber;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -31,7 +35,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetPhoneNumberPricingPage_PhoneNumberPricingPage_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetPhoneNumberPricingPage_PhoneNumberPricingPage_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> PhoneNumberPricingPage { get; set; }
+        public OutArgument<Page<CountryResource>> PhoneNumberPricingPage { get; set; }
 
         #endregion
 
@@ -62,14 +66,13 @@ namespace TroyWeb.TwilioAPI.Activities
 
             // Inputs
             var targeturl = TargetUrl.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var page = PhoneNumberPricingWrappers.GetPhoneNumberPricingPage(objectContainer.Get<ITwilioRestClient>(),
+                targeturl);
 
             // Outputs
             return (ctx) => {
-                PhoneNumberPricingPage.Set(ctx, null);
+                PhoneNumberPricingPage.Set(ctx, page);
             };
         }
 

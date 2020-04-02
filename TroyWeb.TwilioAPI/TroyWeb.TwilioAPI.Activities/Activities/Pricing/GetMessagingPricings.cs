@@ -1,8 +1,13 @@
 using System;
 using System.Activities;
+using System.Resources;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Wrappers.Pricing;
+using Twilio.Base;
+using Twilio.Clients;
+using Twilio.Rest.Pricing.V1.Messaging;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -26,12 +31,12 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetMessagingPricings_Limit_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetMessagingPricings_Limit_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Limit { get; set; }
+        public InArgument<long?> Limit { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetMessagingPricings_CountryResources_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetMessagingPricings_CountryResources_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<object> CountryResources { get; set; }
+        public OutArgument<ResourceSet<CountryResource>> CountryResources { get; set; }
 
         #endregion
 
@@ -61,14 +66,13 @@ namespace TroyWeb.TwilioAPI.Activities
 
             // Inputs
             var limit = Limit.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var pricing =
+                await MessagingPricingWrappers.GetMessagingPricingAsync(objectContainer.Get<ITwilioRestClient>(), limit);
 
             // Outputs
             return (ctx) => {
-                CountryResources.Set(ctx, null);
+                CountryResources.Set(ctx, pricing);
             };
         }
 

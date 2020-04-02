@@ -1,8 +1,12 @@
 using System;
 using System.Activities;
+using System.ComponentModel;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
+using TroyWeb.TwilioAPI.Enums;
+using TroyWeb.TwilioAPI.Wrappers.Pricing;
+using Twilio.Clients;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -26,7 +30,8 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetPhoneNumberPricing_CountryCode_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetPhoneNumberPricing_CountryCode_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> CountryCode { get; set; }
+        [TypeConverter(typeof(EnumNameConverter<CountryCode>))]
+        public InArgument<CountryCode> CountryCode { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetPhoneNumberPricing_CountryResource_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetPhoneNumberPricing_CountryResource_Description))]
@@ -61,14 +66,14 @@ namespace TroyWeb.TwilioAPI.Activities
 
             // Inputs
             var countrycode = CountryCode.Get(context);
-    
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+
+            var pricing =
+                await PhoneNumberPricingWrappers.GetPhoneNumberPricingAsync(objectContainer.Get<ITwilioRestClient>(),
+                    countrycode);
 
             // Outputs
             return (ctx) => {
-                CountryResource.Set(ctx, null);
+                CountryResource.Set(ctx, pricing);
             };
         }
 
