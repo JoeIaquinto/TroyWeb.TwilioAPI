@@ -1,4 +1,4 @@
-<sap:ActivityDesigner x:Class="TroyWeb.TwilioAPI.Activities.Design.Designers.GetPreviousAvailableTollFreePhoneNumberPageDesigner"
+<sap:ActivityDesigner x:Class="TroyWeb.TwilioAPI.Activities.Design.Designers.DownloadFaxMediaDesigner"
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                       xmlns:activity="clr-namespace:TroyWeb.TwilioAPI.Activities.Properties;assembly=TroyWeb.TwilioAPI.Activities"
@@ -25,7 +25,24 @@
     <uip:ActivityDecoratorControl Style="{StaticResource ActivityDecoratorStyle}">
         <Grid Width="300">
             <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
+
+            <Label Content="{x:Static activity:Resources.DownloadFaxMedia_Fax_DisplayName}" Grid.Row="0" />
+            <sapv:ExpressionTextBox Grid.Row="1" ExpressionType="{Binding ModelItem.Properties[Fax].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.DownloadFaxMedia_Fax_Description}" UseLocationExpression="False">
+                <sapv:ExpressionTextBox.Expression>
+                    <Binding Path="ModelItem.Fax" Converter="{StaticResource ArgumentToExpressionConverter}" Mode="TwoWay" ConverterParameter="In" UpdateSourceTrigger="PropertyChanged" />
+                </sapv:ExpressionTextBox.Expression>
+            </sapv:ExpressionTextBox>
+            <Label Content="{x:Static activity:Resources.DownloadFaxMedia_Path_DisplayName}" Grid.Row="2" />
+            <sapv:ExpressionTextBox Grid.Row="3" ExpressionType="{Binding ModelItem.Properties[Path].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.DownloadFaxMedia_Path_Description}" UseLocationExpression="False">
+                <sapv:ExpressionTextBox.Expression>
+                    <Binding Path="ModelItem.Path" Converter="{StaticResource ArgumentToExpressionConverter}" Mode="TwoWay" ConverterParameter="In" UpdateSourceTrigger="PropertyChanged" />
+                </sapv:ExpressionTextBox.Expression>
+            </sapv:ExpressionTextBox>
         </Grid>
     </uip:ActivityDecoratorControl>
 </sap:ActivityDesigner>

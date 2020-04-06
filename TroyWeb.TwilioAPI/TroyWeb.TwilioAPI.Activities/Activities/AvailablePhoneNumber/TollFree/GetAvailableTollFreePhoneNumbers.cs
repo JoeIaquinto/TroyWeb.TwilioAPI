@@ -34,7 +34,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_CountryCode_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
         [TypeConverter(typeof(EnumNameConverter<CountryCode>))]
-        public InArgument<CountryCode> CountryCode { get; set; }
+        public CountryCode CountryCode { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetAvailableTollFreePhoneNumbers_AccountSid_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableTollFreePhoneNumbers_AccountSid_Description))]
@@ -158,7 +158,7 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-            if (CountryCode == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(CountryCode)));
+            
 
             base.CacheMetadata(metadata);
         }
@@ -169,7 +169,7 @@ namespace TroyWeb.TwilioAPI.Activities
             var objectContainer = context.GetFromContext<IObjectContainer>(TwilioApiScope.ParentContainerPropertyTag);
 
             // Inputs
-            var countrycode = CountryCode.Get(context);
+            var countrycode = CountryCode;
             var accountsid = AccountSid.Get(context);
             var areacode = AreaCode.Get(context);
             var smsenabled = SmsEnabled.Get(context);

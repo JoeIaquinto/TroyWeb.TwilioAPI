@@ -1,12 +1,13 @@
 using System;
 using System.Activities;
+using System.ComponentModel;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
 using TroyWeb.TwilioAPI.Enums;
 using TroyWeb.TwilioAPI.Wrappers.Pricing;
 using Twilio.Clients;
-using Twilio.Rest.Pricing.V1.Voice;
+using Twilio.Rest.Pricing.V1.Messaging;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 using UiPath.Shared.Activities.Utilities;
@@ -30,7 +31,8 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.GetMessagingPricing_CountryCode_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetMessagingPricing_CountryCode_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<CountryCode> CountryCode { get; set; }
+        [TypeConverter(typeof(EnumNameConverter<CountryCode>))]
+        public CountryCode CountryCode { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.GetMessagingPricing_CountryResource_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetMessagingPricing_CountryResource_Description))]
@@ -54,7 +56,7 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-            if (CountryCode == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(CountryCode)));
+            
 
             base.CacheMetadata(metadata);
         }
@@ -65,7 +67,7 @@ namespace TroyWeb.TwilioAPI.Activities
             var objectContainer = context.GetFromContext<IObjectContainer>(TwilioApiScope.ParentContainerPropertyTag);
 
             // Inputs
-            var countrycode = CountryCode.Get(context);
+            var countrycode = CountryCode;
 
             var pricing =
                 await MessagingPricingWrappers.GetMessagingPricingAsync(objectContainer.Get<ITwilioRestClient>(),

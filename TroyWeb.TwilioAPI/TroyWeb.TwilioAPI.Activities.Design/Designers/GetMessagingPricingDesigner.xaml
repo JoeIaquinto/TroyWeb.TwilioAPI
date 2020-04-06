@@ -23,9 +23,6 @@
     </sap:ActivityDesigner.Icon>
 
     <uip:ActivityDecoratorControl Style="{StaticResource ActivityDecoratorStyle}">
-        <Grid Width="300">
-            <Grid.RowDefinitions>
-            </Grid.RowDefinitions>
-        </Grid>
+
     </uip:ActivityDecoratorControl>
 </sap:ActivityDesigner>

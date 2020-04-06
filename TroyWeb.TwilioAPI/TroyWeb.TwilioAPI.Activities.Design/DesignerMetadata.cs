@@ -151,54 +151,6 @@ namespace TroyWeb.TwilioAPI.Activities.Design
             builder.AddCustomAttributes(typeof(GetPreviousMessagingPricingPage), new DesignerAttribute(typeof(GetPreviousMessagingPricingPageDesigner)));
             builder.AddCustomAttributes(typeof(GetPreviousMessagingPricingPage), new HelpKeywordAttribute(""));
 
-            builder.AddCustomAttributes(typeof(GetAvailableTollFreePhoneNumberPage), tollFreephonecategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetAvailableTollFreePhoneNumberPage), new DesignerAttribute(typeof(GetAvailableTollFreePhoneNumberPageDesigner)));
-            builder.AddCustomAttributes(typeof(GetAvailableTollFreePhoneNumberPage), new HelpKeywordAttribute(""));
-
-            builder.AddCustomAttributes(typeof(GetNextAvailableTollFreePhoneNumberPage), tollFreephonecategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetNextAvailableTollFreePhoneNumberPage), new DesignerAttribute(typeof(GetNextAvailableTollFreePhoneNumberPageDesigner)));
-            builder.AddCustomAttributes(typeof(GetNextAvailableTollFreePhoneNumberPage), new HelpKeywordAttribute(""));
-
-            builder.AddCustomAttributes(typeof(GetPreviousAvailableTollFreePhoneNumberPage), tollFreephonecategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetPreviousAvailableTollFreePhoneNumberPage), new DesignerAttribute(typeof(GetPreviousAvailableTollFreePhoneNumberPageDesigner)));
-            builder.AddCustomAttributes(typeof(GetPreviousAvailableTollFreePhoneNumberPage), new HelpKeywordAttribute(""));
-
-            builder.AddCustomAttributes(typeof(GetAvailablePhoneNumberPage), phonecategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetAvailablePhoneNumberPage), new DesignerAttribute(typeof(GetAvailablePhoneNumberPageDesigner)));
-            builder.AddCustomAttributes(typeof(GetAvailablePhoneNumberPage), new HelpKeywordAttribute(""));
-
-            builder.AddCustomAttributes(typeof(GetNextAvailablePhoneNumberPage), phonecategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetNextAvailablePhoneNumberPage), new DesignerAttribute(typeof(GetNextAvailablePhoneNumberPageDesigner)));
-            builder.AddCustomAttributes(typeof(GetNextAvailablePhoneNumberPage), new HelpKeywordAttribute(""));
-
-            builder.AddCustomAttributes(typeof(GetPreviousAvailablePhoneNumberPage), phonecategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetPreviousAvailablePhoneNumberPage), new DesignerAttribute(typeof(GetPreviousAvailablePhoneNumberPageDesigner)));
-            builder.AddCustomAttributes(typeof(GetPreviousAvailablePhoneNumberPage), new HelpKeywordAttribute(""));
-
-            builder.AddCustomAttributes(typeof(GetAvailableMobilePhoneNumberPage), mobilephonecategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetAvailableMobilePhoneNumberPage), new DesignerAttribute(typeof(GetAvailableMobilePhoneNumberPageDesigner)));
-            builder.AddCustomAttributes(typeof(GetAvailableMobilePhoneNumberPage), new HelpKeywordAttribute(""));
-
-            builder.AddCustomAttributes(typeof(GetNextAvailableMobilePhoneNumberPage), mobilephonecategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetNextAvailableMobilePhoneNumberPage), new DesignerAttribute(typeof(GetNextAvailableMobilePhoneNumberPageDesigner)));
-            builder.AddCustomAttributes(typeof(GetNextAvailableMobilePhoneNumberPage), new HelpKeywordAttribute(""));
-
-            builder.AddCustomAttributes(typeof(GetPreviousAvailableMobilePhoneNumberPage), mobilephonecategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetPreviousAvailableMobilePhoneNumberPage), new DesignerAttribute(typeof(GetPreviousAvailableMobilePhoneNumberPageDesigner)));
-            builder.AddCustomAttributes(typeof(GetPreviousAvailableMobilePhoneNumberPage), new HelpKeywordAttribute(""));
-
-            builder.AddCustomAttributes(typeof(GetAvailableLocalPhoneNumberPage), localphonecategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetAvailableLocalPhoneNumberPage), new DesignerAttribute(typeof(GetAvailableLocalPhoneNumberPageDesigner)));
-            builder.AddCustomAttributes(typeof(GetAvailableLocalPhoneNumberPage), new HelpKeywordAttribute(""));
-
-            builder.AddCustomAttributes(typeof(GetNextAvailableLocalPhoneNumberPage), localphonecategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetNextAvailableLocalPhoneNumberPage), new DesignerAttribute(typeof(GetNextAvailableLocalPhoneNumberPageDesigner)));
-            builder.AddCustomAttributes(typeof(GetNextAvailableLocalPhoneNumberPage), new HelpKeywordAttribute(""));
-
-            builder.AddCustomAttributes(typeof(GetPreviousAvailableLocalPhoneNumberPage), localphonecategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetPreviousAvailableLocalPhoneNumberPage), new DesignerAttribute(typeof(GetPreviousAvailableLocalPhoneNumberPageDesigner)));
-            builder.AddCustomAttributes(typeof(GetPreviousAvailableLocalPhoneNumberPage), new HelpKeywordAttribute(""));
-
             builder.AddCustomAttributes(typeof(GetFaxPage), faxcategoryAttribute);
             builder.AddCustomAttributes(typeof(GetFaxPage), new DesignerAttribute(typeof(GetFaxPageDesigner)));
             builder.AddCustomAttributes(typeof(GetFaxPage), new HelpKeywordAttribute(""));
@@ -275,14 +227,6 @@ namespace TroyWeb.TwilioAPI.Activities.Design
             builder.AddCustomAttributes(typeof(GetVoicePricings), new DesignerAttribute(typeof(GetVoicePricingsDesigner)));
             builder.AddCustomAttributes(typeof(GetVoicePricings), new HelpKeywordAttribute(""));
 
-            builder.AddCustomAttributes(typeof(GetAvailablePhoneNumbers), phonecategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetAvailablePhoneNumbers), new DesignerAttribute(typeof(GetAvailablePhoneNumbersDesigner)));
-            builder.AddCustomAttributes(typeof(GetAvailablePhoneNumbers), new HelpKeywordAttribute(""));
-
-            builder.AddCustomAttributes(typeof(GetAvailablePhoneNumbersForAccount), phonecategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetAvailablePhoneNumbersForAccount), new DesignerAttribute(typeof(GetAvailablePhoneNumbersForAccountDesigner)));
-            builder.AddCustomAttributes(typeof(GetAvailablePhoneNumbersForAccount), new HelpKeywordAttribute(""));
-
             builder.AddCustomAttributes(typeof(GetAvailableLocalPhoneNumbers), localphonecategoryAttribute);
             builder.AddCustomAttributes(typeof(GetAvailableLocalPhoneNumbers), new DesignerAttribute(typeof(GetAvailableLocalPhoneNumbersDesigner)));
             builder.AddCustomAttributes(typeof(GetAvailableLocalPhoneNumbers), new HelpKeywordAttribute(""));
@@ -311,12 +255,12 @@ namespace TroyWeb.TwilioAPI.Activities.Design
             builder.AddCustomAttributes(typeof(DeleteFax), new DesignerAttribute(typeof(DeleteFaxDesigner)));
             builder.AddCustomAttributes(typeof(DeleteFax), new HelpKeywordAttribute(""));
 
-            builder.AddCustomAttributes(typeof(GetFaxMedias), faxcmediaategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetFaxMedias), new DesignerAttribute(typeof(GetFaxMediaDesigner)));
-            builder.AddCustomAttributes(typeof(GetFaxMedias), new HelpKeywordAttribute(""));
+            builder.AddCustomAttributes(typeof(GetFaxMedia), faxcmediaategoryAttribute);
+            builder.AddCustomAttributes(typeof(GetFaxMedia), new DesignerAttribute(typeof(GetFaxMediaDesigner)));
+            builder.AddCustomAttributes(typeof(GetFaxMedia), new HelpKeywordAttribute(""));
 
             builder.AddCustomAttributes(typeof(GetFaxMedias), faxcmediaategoryAttribute);
-            builder.AddCustomAttributes(typeof(GetFaxMedias), new DesignerAttribute(typeof(GetFaxMediaDesigner)));
+            builder.AddCustomAttributes(typeof(GetFaxMedias), new DesignerAttribute(typeof(GetFaxMediasDesigner)));
             builder.AddCustomAttributes(typeof(GetFaxMedias), new HelpKeywordAttribute(""));
 
             builder.AddCustomAttributes(typeof(DeleteFaxMedia), faxcmediaategoryAttribute);
@@ -355,6 +299,9 @@ namespace TroyWeb.TwilioAPI.Activities.Design
             builder.AddCustomAttributes(typeof(GetMessages), new DesignerAttribute(typeof(GetMessagesDesigner)));
             builder.AddCustomAttributes(typeof(GetMessages), new HelpKeywordAttribute(""));
 
+            builder.AddCustomAttributes(typeof(DownloadFaxMedia), faxcmediaategoryAttribute);
+            builder.AddCustomAttributes(typeof(DownloadFaxMedia), new DesignerAttribute(typeof(DownloadFaxMediaDesigner)));
+            builder.AddCustomAttributes(typeof(DownloadFaxMedia), new HelpKeywordAttribute(""));
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }

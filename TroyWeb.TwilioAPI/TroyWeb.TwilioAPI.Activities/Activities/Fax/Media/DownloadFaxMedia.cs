@@ -1,5 +1,6 @@
 using System;
 using System.Activities;
+using System.IO;
 using System.Resources;
 using System.Threading;
 using System.Threading.Tasks;
@@ -7,6 +8,7 @@ using TroyWeb.TwilioAPI.Activities.Properties;
 using TroyWeb.TwilioAPI.Wrappers.Fax;
 using Twilio.Base;
 using Twilio.Clients;
+using Twilio.Rest.Fax.V1;
 using Twilio.Rest.Fax.V1.Fax;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
@@ -14,9 +16,9 @@ using UiPath.Shared.Activities.Utilities;
 
 namespace TroyWeb.TwilioAPI.Activities
 {
-    [LocalizedDisplayName(nameof(Resources.GetFaxMedias_DisplayName))]
-    [LocalizedDescription(nameof(Resources.GetFaxMedias_Description))]
-    public class GetFaxMedias : ContinuableAsyncCodeActivity
+    [LocalizedDisplayName(nameof(Resources.DownloadFaxMedia_DisplayName))]
+    [LocalizedDescription(nameof(Resources.DownloadFaxMedia_Description))]
+    public class DownloadFaxMedia : ContinuableAsyncCodeActivity
     {
         #region Properties
 
@@ -28,29 +30,29 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDescription(nameof(Resources.ContinueOnError_Description))]
         public override InArgument<bool> ContinueOnError { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.GetFaxMedias_FaxSid_DisplayName))]
-        [LocalizedDescription(nameof(Resources.GetFaxMedias_FaxSid_Description))]
+        [LocalizedDisplayName(nameof(Resources.DownloadFaxMedia_Fax_DisplayName))]
+        [LocalizedDescription(nameof(Resources.DownloadFaxMedia_Fax_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> FaxSid { get; set; }
+        public InArgument<FaxResource> Fax { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.GetFaxMedias_Limit_DisplayName))]
-        [LocalizedDescription(nameof(Resources.GetFaxMedias_Limit_Description))]
+        [LocalizedDisplayName(nameof(Resources.DownloadFaxMedia_Path_DisplayName))]
+        [LocalizedDescription(nameof(Resources.DownloadFaxMedia_Path_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<long?> Limit { get; set; }
+        public InArgument<string> Path { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.GetFaxMedias_FaxMedia_DisplayName))]
-        [LocalizedDescription(nameof(Resources.GetFaxMedias_FaxMedia_Description))]
+        [LocalizedDisplayName(nameof(Resources.DownloadFaxMedia_FaxMediaPDF_DisplayName))]
+        [LocalizedDescription(nameof(Resources.DownloadFaxMedia_FaxMediaPDF_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<ResourceSet<FaxMediaResource>> FaxMedia { get; set; }
+        public OutArgument<FileInfo> FaxMediaPDF { get; set; }
 
         #endregion
 
 
         #region Constructors
 
-        public GetFaxMedias()
+        public DownloadFaxMedia()
         {
-            Constraints.Add(ActivityConstraints.HasParentType<GetFaxMedias, TwilioApiScope>(string.Format(Resources.ValidationScope_Error, Resources.TwilioApiScope_DisplayName)));
+            Constraints.Add(ActivityConstraints.HasParentType<DownloadFaxMedia, TwilioApiScope>(string.Format(Resources.ValidationScope_Error, Resources.TwilioApiScope_DisplayName)));
         }
 
         #endregion
@@ -60,7 +62,8 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-            if (FaxSid == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(FaxSid)));
+            if (Fax == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(Fax)));
+            if (Path == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(Path)));
 
             base.CacheMetadata(metadata);
         }
@@ -71,15 +74,14 @@ namespace TroyWeb.TwilioAPI.Activities
             var objectContainer = context.GetFromContext<IObjectContainer>(TwilioApiScope.ParentContainerPropertyTag);
 
             // Inputs
-            var faxsid = FaxSid.Get(context);
-            var limit = Limit.Get(context);
+            var fax = Fax.Get(context);
+            var path = Path.Get(context);
 
-            var media = await FaxMediaWrappers.GetFaxMediasAsync(objectContainer.Get<ITwilioRestClient>(), faxsid,
-                limit);
+            var media = await FaxWrappers.DownloadFaxMediaAsync(objectContainer.Get<ITwilioRestClient>(), fax, path);
 
             // Outputs
             return (ctx) => {
-                FaxMedia.Set(ctx, media);
+                FaxMediaPDF.Set(ctx, media);
             };
         }
 

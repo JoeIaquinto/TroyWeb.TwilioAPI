@@ -46,7 +46,6 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDisplayName(nameof(Resources.SendFax_Quality_DisplayName))]
         [LocalizedDescription(nameof(Resources.SendFax_Quality_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        [TypeConverter(typeof(FaxQuality))]
         public InArgument<FaxQuality?> Quality { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.SendFax_StoreMedia_DisplayName))]
@@ -122,9 +121,9 @@ namespace TroyWeb.TwilioAPI.Activities
             var twilioQuality = quality == FaxQuality.Fine ? FaxResource.QualityEnum.Fine :
                 quality == FaxQuality.SuperFine ? FaxResource.QualityEnum.Superfine :
                 FaxResource.QualityEnum.Standard;
-            
+            var statusCallbackUri = statuscallback != null ? new Uri(statuscallback) : null;
             var sent = await FaxWrappers.SendFaxAsync(objectContainer.Get<ITwilioRestClient>(), from, to, new Uri(mediaurl),
-                twilioQuality, sipauthusername, sipauthpassword, new Uri(statuscallback), storemedia, minutestosend);
+                twilioQuality, sipauthusername, sipauthpassword, statusCallbackUri, storemedia, minutestosend);
 
             // Outputs
             return (ctx) => {

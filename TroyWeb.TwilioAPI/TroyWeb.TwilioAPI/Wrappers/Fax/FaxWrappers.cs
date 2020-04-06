@@ -1,6 +1,8 @@
 ﻿namespace TroyWeb.TwilioAPI.Wrappers.Fax
 {
     using System;
+    using System.IO;
+    using System.Net.Http;
     using System.Threading.Tasks;
     using Twilio.Base;
     using Twilio.Clients;
@@ -57,6 +59,19 @@
                 PageSize = null
             };
             return await FaxResource.ReadAsync(options, client);
+        }
+
+        public static async Task<FileInfo> DownloadFaxMediaAsync(ITwilioRestClient twilioRestClient, FaxResource fax, string path)
+        {
+            var twilioPath = fax.MediaUrl;
+            var file = File.Create(path);
+            using (var client = new HttpClient())
+            {
+                var bytes = await client.GetByteArrayAsync(twilioPath);
+                await file.WriteAsync(bytes, 0, bytes.Length);
+                await file.FlushAsync();
+            }
+            return new FileInfo(path);
         }
 
         public static Page<FaxResource> GetFaxPage(ITwilioRestClient client, string targetUrl)

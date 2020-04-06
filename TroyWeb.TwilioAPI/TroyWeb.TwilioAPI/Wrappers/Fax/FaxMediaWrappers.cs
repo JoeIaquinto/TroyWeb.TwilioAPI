@@ -1,9 +1,14 @@
 ﻿namespace TroyWeb.TwilioAPI.Wrappers.Fax
 {
+    using System;
+    using System.IO;
+    using System.Net.Http;
     using System.Threading.Tasks;
     using Twilio.Base;
     using Twilio.Clients;
+    using Twilio.Rest.Fax.V1;
     using Twilio.Rest.Fax.V1.Fax;
+    using Twilio.TwiML.Voice;
 
     public static class FaxMediaWrappers
     {

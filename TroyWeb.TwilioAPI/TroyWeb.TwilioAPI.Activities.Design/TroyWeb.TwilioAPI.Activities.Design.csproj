@@ -30,6 +30,7 @@
     <PackageVersion>0.1.1</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Designers\DownloadFaxMediaDesigner.xaml" />
     <None Remove="Designers\TwilioApiScopeDesigner.xaml" />
   </ItemGroup>
   <!-- Package Icon -->
@@ -130,21 +131,16 @@
     <Page Include="Designers\GetAvailableMobilePhoneNumbersDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
-    <Page Include="Designers\GetAvailablePhoneNumberPageDesigner.xaml">
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Page>
-    <Page Include="Designers\GetAvailablePhoneNumbersDesigner.xaml">
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
-    </Page>
-    <Page Include="Designers\GetAvailablePhoneNumbersForAccountDesigner.xaml">
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
-    </Page>
     <Page Include="Designers\GetAvailableTollFreePhoneNumberPageDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>
     <Page Include="Designers\GetAvailableTollFreePhoneNumbersDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\DownloadFaxMediaDesigner.xaml">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Designers\GetFaxDesigner.xaml">
@@ -215,10 +211,6 @@
       <Generator>XamlIntelliSenseFileGenerator</Generator>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>
-    <Page Include="Designers\GetNextAvailablePhoneNumberPageDesigner.xaml">
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Page>
     <Page Include="Designers\GetNextAvailableTollFreePhoneNumberPageDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
@@ -278,10 +270,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>
     <Page Include="Designers\GetPreviousAvailableMobilePhoneNumberPageDesigner.xaml">
-      <Generator>XamlIntelliSenseFileGenerator</Generator>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Page>
-    <Page Include="Designers\GetPreviousAvailablePhoneNumberPageDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>

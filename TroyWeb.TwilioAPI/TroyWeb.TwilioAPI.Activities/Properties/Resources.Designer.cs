@@ -19,7 +19,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -79,7 +79,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CancelFax.
+        ///   Looks up a localized string similar to Cancel Fax.
         /// </summary>
         public static string CancelFax_DisplayName {
             get {
@@ -124,7 +124,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The ID of the account containing the message to cancel..
+        ///   Looks up a localized string similar to The ID of the account containing the message to redact..
         /// </summary>
         public static string CancelMessage_AccountSid_Description {
             get {
@@ -142,7 +142,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancels a queued Message.
+        ///   Looks up a localized string similar to Redact Message Content.
         /// </summary>
         public static string CancelMessage_Description {
             get {
@@ -151,7 +151,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CancelMessage.
+        ///   Looks up a localized string similar to Redact Message Content.
         /// </summary>
         public static string CancelMessage_DisplayName {
             get {
@@ -160,7 +160,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Whether the message was cancelled..
+        ///   Looks up a localized string similar to The Redacted Message.
         /// </summary>
         public static string CancelMessage_Message_Description {
             get {
@@ -169,7 +169,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancelled.
+        ///   Looks up a localized string similar to Redacted Message.
         /// </summary>
         public static string CancelMessage_Message_DisplayName {
             get {
@@ -178,7 +178,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The ID of the message to cancel..
+        ///   Looks up a localized string similar to The ID of the message to redact.
         /// </summary>
         public static string CancelMessage_MessageSid_Description {
             get {
@@ -250,7 +250,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CreateAccount.
+        ///   Looks up a localized string similar to Create Account.
         /// </summary>
         public static string CreateAccount_DisplayName {
             get {
@@ -286,7 +286,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DeleteFax.
+        ///   Looks up a localized string similar to Delete Fax.
         /// </summary>
         public static string DeleteFax_DisplayName {
             get {
@@ -340,7 +340,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DeleteFaxMedia.
+        ///   Looks up a localized string similar to Delete Fax Media.
         /// </summary>
         public static string DeleteFaxMedia_DisplayName {
             get {
@@ -430,7 +430,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DeleteMessage.
+        ///   Looks up a localized string similar to Delete Message.
         /// </summary>
         public static string DeleteMessage_DisplayName {
             get {
@@ -484,6 +484,78 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Download the PDF from a FaxResource and save to a local file..
+        /// </summary>
+        public static string DownloadFaxMedia_Description {
+            get {
+                return ResourceManager.GetString("DownloadFaxMedia_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Download Fax Media.
+        /// </summary>
+        public static string DownloadFaxMedia_DisplayName {
+            get {
+                return ResourceManager.GetString("DownloadFaxMedia_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The FaxResource containing the Media to download.
+        /// </summary>
+        public static string DownloadFaxMedia_Fax_Description {
+            get {
+                return ResourceManager.GetString("DownloadFaxMedia_Fax_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fax.
+        /// </summary>
+        public static string DownloadFaxMedia_Fax_DisplayName {
+            get {
+                return ResourceManager.GetString("DownloadFaxMedia_Fax_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FileInfo of the downloaded PDF File.
+        /// </summary>
+        public static string DownloadFaxMedia_FaxMediaPDF_Description {
+            get {
+                return ResourceManager.GetString("DownloadFaxMedia_FaxMediaPDF_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fax Media PDF.
+        /// </summary>
+        public static string DownloadFaxMedia_FaxMediaPDF_DisplayName {
+            get {
+                return ResourceManager.GetString("DownloadFaxMedia_FaxMediaPDF_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The file path to save the fax media PDF..
+        /// </summary>
+        public static string DownloadFaxMedia_Path_Description {
+            get {
+                return ResourceManager.GetString("DownloadFaxMedia_Path_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Path.
+        /// </summary>
+        public static string DownloadFaxMedia_Path_DisplayName {
+            get {
+                return ResourceManager.GetString("DownloadFaxMedia_Path_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The AccountResource returned by the Twilio API..
         /// </summary>
         public static string GetAccount_Account_Description {
@@ -529,7 +601,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetAccount.
+        ///   Looks up a localized string similar to Get Account.
         /// </summary>
         public static string GetAccount_DisplayName {
             get {
@@ -565,7 +637,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetAccountPage.
+        ///   Looks up a localized string similar to Get Account Page.
         /// </summary>
         public static string GetAccountPage_DisplayName {
             get {
@@ -619,7 +691,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetAccounts.
+        ///   Looks up a localized string similar to Get Accounts.
         /// </summary>
         public static string GetAccounts_DisplayName {
             get {
@@ -727,7 +799,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetAlphaSender.
+        ///   Looks up a localized string similar to Get AlphaSender.
         /// </summary>
         public static string GetAlphaSender_DisplayName {
             get {
@@ -781,7 +853,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetAlphaSenderPage.
+        ///   Looks up a localized string similar to Get AlphaSender Page.
         /// </summary>
         public static string GetAlphaSenderPage_DisplayName {
             get {
@@ -835,7 +907,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetAvailableLocalPhoneNumberPage.
+        ///   Looks up a localized string similar to Get Available Local Phone Number Page.
         /// </summary>
         public static string GetAvailableLocalPhoneNumberPage_DisplayName {
             get {
@@ -961,7 +1033,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetAvailableLocalPhoneNumbers.
+        ///   Looks up a localized string similar to Get Available Local Phone Numbers.
         /// </summary>
         public static string GetAvailableLocalPhoneNumbers_DisplayName {
             get {
@@ -1303,7 +1375,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetAvailableMobilePhoneNumberPage.
+        ///   Looks up a localized string similar to Get Available Mobile Phone Number Page.
         /// </summary>
         public static string GetAvailableMobilePhoneNumberPage_DisplayName {
             get {
@@ -1429,7 +1501,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetAvailableMobilePhoneNumbers.
+        ///   Looks up a localized string similar to Get Available Mobile Phone Numbers.
         /// </summary>
         public static string GetAvailableMobilePhoneNumbers_DisplayName {
             get {
@@ -1771,7 +1843,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetAvailablePhoneNumberPage.
+        ///   Looks up a localized string similar to Get Available Phone Number Page.
         /// </summary>
         public static string GetAvailablePhoneNumberPage_DisplayName {
             get {
@@ -1825,7 +1897,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetAvailablePhoneNumbers.
+        ///   Looks up a localized string similar to Get Available Phone Numbers.
         /// </summary>
         public static string GetAvailablePhoneNumbers_DisplayName {
             get {
@@ -1879,7 +1951,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetAvailablePhoneNumbersForAccount.
+        ///   Looks up a localized string similar to Get Available Phone Numbers For Account.
         /// </summary>
         public static string GetAvailablePhoneNumbersForAccount_DisplayName {
             get {
@@ -1951,7 +2023,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetAvailableTollFreePhoneNumberPage.
+        ///   Looks up a localized string similar to Get Available Toll-Free Phone Number Page.
         /// </summary>
         public static string GetAvailableTollFreePhoneNumberPage_DisplayName {
             get {
@@ -2077,7 +2149,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetAvailableTollFreePhoneNumbers.
+        ///   Looks up a localized string similar to Get Available Toll-Free Phone Numbers.
         /// </summary>
         public static string GetAvailableTollFreePhoneNumbers_DisplayName {
             get {
@@ -2401,7 +2473,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetFax.
+        ///   Looks up a localized string similar to Get Fax.
         /// </summary>
         public static string GetFax_DisplayName {
             get {
@@ -2491,7 +2563,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetFaxes.
+        ///   Looks up a localized string similar to Get Faxes.
         /// </summary>
         public static string GetFaxes_DisplayName {
             get {
@@ -2572,7 +2644,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fetches multiple FaxMedia for a fax from Twilio.
+        ///   Looks up a localized string similar to Fetches a FaxMedia from Twilio.
         /// </summary>
         public static string GetFaxMedia_Description {
             get {
@@ -2581,7 +2653,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetFaxMedias.
+        ///   Looks up a localized string similar to Get Fax Media.
         /// </summary>
         public static string GetFaxMedia_DisplayName {
             get {
@@ -2671,7 +2743,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetFaxMediaPage.
+        ///   Looks up a localized string similar to Get Fax Media Page.
         /// </summary>
         public static string GetFaxMediaPage_DisplayName {
             get {
@@ -2716,6 +2788,78 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fetches multiple FaxMedias from Twilio.
+        /// </summary>
+        public static string GetFaxMedias_Description {
+            get {
+                return ResourceManager.GetString("GetFaxMedias_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Fax Medias.
+        /// </summary>
+        public static string GetFaxMedias_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxMedias_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The set of retrieved fax media..
+        /// </summary>
+        public static string GetFaxMedias_FaxMedia_Description {
+            get {
+                return ResourceManager.GetString("GetFaxMedias_FaxMedia_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxMedia.
+        /// </summary>
+        public static string GetFaxMedias_FaxMedia_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxMedias_FaxMedia_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ID of the fax containing the media..
+        /// </summary>
+        public static string GetFaxMedias_FaxSid_Description {
+            get {
+                return ResourceManager.GetString("GetFaxMedias_FaxSid_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FaxSid.
+        /// </summary>
+        public static string GetFaxMedias_FaxSid_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxMedias_FaxSid_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The number of available phone numbers to return.
+        /// </summary>
+        public static string GetFaxMedias_Limit_Description {
+            get {
+                return ResourceManager.GetString("GetFaxMedias_Limit_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Limit.
+        /// </summary>
+        public static string GetFaxMedias_Limit_DisplayName {
+            get {
+                return ResourceManager.GetString("GetFaxMedias_Limit_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Get a page of Twilio Faxes.
         /// </summary>
         public static string GetFaxPage_Description {
@@ -2725,7 +2869,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetFaxPage.
+        ///   Looks up a localized string similar to Get Fax Page.
         /// </summary>
         public static string GetFaxPage_DisplayName {
             get {
@@ -2797,7 +2941,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetMessage.
+        ///   Looks up a localized string similar to Get Message.
         /// </summary>
         public static string GetMessage_DisplayName {
             get {
@@ -2851,7 +2995,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetMessageMedia.
+        ///   Looks up a localized string similar to Get Message Media.
         /// </summary>
         public static string GetMessageMedia_DisplayName {
             get {
@@ -2923,7 +3067,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetMessageMediaPage.
+        ///   Looks up a localized string similar to Get Message Media Page.
         /// </summary>
         public static string GetMessageMediaPage_DisplayName {
             get {
@@ -2977,7 +3121,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetMessagePage.
+        ///   Looks up a localized string similar to Get Message Page.
         /// </summary>
         public static string GetMessagePage_DisplayName {
             get {
@@ -3103,7 +3247,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetMessages.
+        ///   Looks up a localized string similar to Get Messages.
         /// </summary>
         public static string GetMessages_DisplayName {
             get {
@@ -3229,7 +3373,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetMessagingPricing.
+        ///   Looks up a localized string similar to Get Messaging Pricing.
         /// </summary>
         public static string GetMessagingPricing_DisplayName {
             get {
@@ -3247,7 +3391,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetMessagingPricingPage.
+        ///   Looks up a localized string similar to Get Messaging Pricing Page.
         /// </summary>
         public static string GetMessagingPricingPage_DisplayName {
             get {
@@ -3319,7 +3463,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetMessagingPricings.
+        ///   Looks up a localized string similar to Get Messaging Pricings.
         /// </summary>
         public static string GetMessagingPricings_DisplayName {
             get {
@@ -3373,7 +3517,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetNextAccountPage.
+        ///   Looks up a localized string similar to Get Next Account Page.
         /// </summary>
         public static string GetNextAccountPage_DisplayName {
             get {
@@ -3427,7 +3571,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetNextAlphaSenderPage.
+        ///   Looks up a localized string similar to Get Next AlphaSender Page.
         /// </summary>
         public static string GetNextAlphaSenderPage_DisplayName {
             get {
@@ -3481,7 +3625,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetNextAvailableLocalPhoneNumberPage.
+        ///   Looks up a localized string similar to Get Next Available Local Phone Number Page.
         /// </summary>
         public static string GetNextAvailableLocalPhoneNumberPage_DisplayName {
             get {
@@ -3535,7 +3679,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetNextAvailableMobilePhoneNumberPage.
+        ///   Looks up a localized string similar to Get Next Available Mobile Phone Number Page.
         /// </summary>
         public static string GetNextAvailableMobilePhoneNumberPage_DisplayName {
             get {
@@ -3589,7 +3733,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetNextAvailablePhoneNumberPage.
+        ///   Looks up a localized string similar to Get Next Available Phone Number Page.
         /// </summary>
         public static string GetNextAvailablePhoneNumberPage_DisplayName {
             get {
@@ -3645,7 +3789,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetNextAvailableTollFreePhoneNumberPage.
+        ///   Looks up a localized string similar to Get Next Available Toll-Free Phone Number Page.
         /// </summary>
         public static string GetNextAvailableTollFreePhoneNumberPage_DisplayName {
             get {
@@ -3681,7 +3825,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetNextFaxMediaPage.
+        ///   Looks up a localized string similar to Get Next Fax Media Page.
         /// </summary>
         public static string GetNextFaxMediaPage_DisplayName {
             get {
@@ -3735,7 +3879,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetNextFaxPage.
+        ///   Looks up a localized string similar to Get Next Fax Page.
         /// </summary>
         public static string GetNextFaxPage_DisplayName {
             get {
@@ -3789,7 +3933,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetNextMessageMediaPage.
+        ///   Looks up a localized string similar to Get Next Message Media Page.
         /// </summary>
         public static string GetNextMessageMediaPage_DisplayName {
             get {
@@ -3843,7 +3987,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetNextMessagePage.
+        ///   Looks up a localized string similar to Get Next Message Page.
         /// </summary>
         public static string GetNextMessagePage_DisplayName {
             get {
@@ -3897,7 +4041,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetNextMessagingPricingPage.
+        ///   Looks up a localized string similar to Get Next Messaging Pricing Page.
         /// </summary>
         public static string GetNextMessagingPricingPage_DisplayName {
             get {
@@ -3951,7 +4095,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetNextPhoneNumberPricingPage.
+        ///   Looks up a localized string similar to Get Next Phone Number Pricing Page.
         /// </summary>
         public static string GetNextPhoneNumberPricingPage_DisplayName {
             get {
@@ -4005,7 +4149,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetNextShortCodePage.
+        ///   Looks up a localized string similar to Get Next ShortCode Page.
         /// </summary>
         public static string GetNextShortCodePage_DisplayName {
             get {
@@ -4059,7 +4203,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetNextVoicePricingPage.
+        ///   Looks up a localized string similar to Get Next Voice Pricing Page.
         /// </summary>
         public static string GetNextVoicePricingPage_DisplayName {
             get {
@@ -4149,7 +4293,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPhoneNumberPricing.
+        ///   Looks up a localized string similar to Get Phone Number Pricing.
         /// </summary>
         public static string GetPhoneNumberPricing_DisplayName {
             get {
@@ -4167,7 +4311,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPhoneNumberPricingPage.
+        ///   Looks up a localized string similar to Get Phone Number Pricing Page.
         /// </summary>
         public static string GetPhoneNumberPricingPage_DisplayName {
             get {
@@ -4239,7 +4383,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPhoneNumberPricings.
+        ///   Looks up a localized string similar to Get Phone Number Pricings.
         /// </summary>
         public static string GetPhoneNumberPricings_DisplayName {
             get {
@@ -4293,7 +4437,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPreviousAccountPage.
+        ///   Looks up a localized string similar to Get Previous Account Page.
         /// </summary>
         public static string GetPreviousAccountPage_DisplayName {
             get {
@@ -4347,7 +4491,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPreviousAlphaSenderPage.
+        ///   Looks up a localized string similar to Get Previous AlphaSender Page.
         /// </summary>
         public static string GetPreviousAlphaSenderPage_DisplayName {
             get {
@@ -4403,7 +4547,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPreviousAvailableLocalPhoneNumberPage.
+        ///   Looks up a localized string similar to Get Previous Available Local Phone Number Page.
         /// </summary>
         public static string GetPreviousAvailableLocalPhoneNumberPage_DisplayName {
             get {
@@ -4459,7 +4603,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPreviousAvailableMobilePhoneNumberPage.
+        ///   Looks up a localized string similar to Get Previous Available Mobile Phone Number Page.
         /// </summary>
         public static string GetPreviousAvailableMobilePhoneNumberPage_DisplayName {
             get {
@@ -4513,7 +4657,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPreviousAvailablePhoneNumberPage.
+        ///   Looks up a localized string similar to Get Previous Available Phone Number Page.
         /// </summary>
         public static string GetPreviousAvailablePhoneNumberPage_DisplayName {
             get {
@@ -4569,7 +4713,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPreviousAvailableTollFreePhoneNumberPage.
+        ///   Looks up a localized string similar to Get Previous Available Toll-Free Phone Number Page.
         /// </summary>
         public static string GetPreviousAvailableTollFreePhoneNumberPage_DisplayName {
             get {
@@ -4605,7 +4749,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPreviousFaxMediaPage.
+        ///   Looks up a localized string similar to Get Previous Fax Media Page.
         /// </summary>
         public static string GetPreviousFaxMediaPage_DisplayName {
             get {
@@ -4659,7 +4803,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPreviousFaxPage.
+        ///   Looks up a localized string similar to Get Previous Fax Page.
         /// </summary>
         public static string GetPreviousFaxPage_DisplayName {
             get {
@@ -4713,7 +4857,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPreviousMessageMediaPage.
+        ///   Looks up a localized string similar to Get Previous Message Media Page.
         /// </summary>
         public static string GetPreviousMessageMediaPage_DisplayName {
             get {
@@ -4821,7 +4965,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPreviousMessagingPricingPage.
+        ///   Looks up a localized string similar to Get Previous Messaging Pricing Page.
         /// </summary>
         public static string GetPreviousMessagingPricingPage_DisplayName {
             get {
@@ -4875,7 +5019,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPreviousPhoneNumberPricingPage.
+        ///   Looks up a localized string similar to Get Previous Phone Number Pricing Page.
         /// </summary>
         public static string GetPreviousPhoneNumberPricingPage_DisplayName {
             get {
@@ -4929,7 +5073,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPreviousShortCodePage.
+        ///   Looks up a localized string similar to Get Previous ShortCode Page.
         /// </summary>
         public static string GetPreviousShortCodePage_DisplayName {
             get {
@@ -4983,7 +5127,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetPreviousVoicePricingPage.
+        ///   Looks up a localized string similar to Get Previous Voice Pricing Page.
         /// </summary>
         public static string GetPreviousVoicePricingPage_DisplayName {
             get {
@@ -5055,7 +5199,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetShortCode.
+        ///   Looks up a localized string similar to Get ShortCode.
         /// </summary>
         public static string GetShortCode_DisplayName {
             get {
@@ -5109,7 +5253,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetShortCodePage.
+        ///   Looks up a localized string similar to Get ShortCode Page.
         /// </summary>
         public static string GetShortCodePage_DisplayName {
             get {
@@ -5199,7 +5343,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetVoicePricing.
+        ///   Looks up a localized string similar to Get Voice Pricing.
         /// </summary>
         public static string GetVoicePricing_DisplayName {
             get {
@@ -5217,7 +5361,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetVoicePricingPage.
+        ///   Looks up a localized string similar to Get Voice Pricing Page.
         /// </summary>
         public static string GetVoicePricingPage_DisplayName {
             get {
@@ -5289,7 +5433,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GetVoicePricings.
+        ///   Looks up a localized string similar to Get Voice Pricings.
         /// </summary>
         public static string GetVoicePricings_DisplayName {
             get {
@@ -5388,7 +5532,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LookupPhoneNumber.
+        ///   Looks up a localized string similar to Look-up Phone Number.
         /// </summary>
         public static string LookupPhoneNumber_DisplayName {
             get {
@@ -5496,7 +5640,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SendFax.
+        ///   Looks up a localized string similar to Send Fax.
         /// </summary>
         public static string SendFax_DisplayName {
             get {
@@ -5748,7 +5892,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SendMessage.
+        ///   Looks up a localized string similar to Send Message.
         /// </summary>
         public static string SendMessage_DisplayName {
             get {
@@ -6099,7 +6243,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to UpdateAccount.
+        ///   Looks up a localized string similar to Update Account.
         /// </summary>
         public static string UpdateAccount_DisplayName {
             get {
@@ -6189,7 +6333,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to UpdateMessage.
+        ///   Looks up a localized string similar to Update Message.
         /// </summary>
         public static string UpdateMessage_DisplayName {
             get {

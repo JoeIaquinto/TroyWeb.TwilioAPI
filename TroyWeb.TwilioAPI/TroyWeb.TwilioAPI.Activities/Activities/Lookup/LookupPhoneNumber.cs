@@ -38,7 +38,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDescription(nameof(Resources.LookupPhoneNumber_CountryCode_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
         [TypeConverter(typeof(EnumNameConverter<CountryCode>))]
-        public InArgument<CountryCode> CountryCode { get; set; }
+        public CountryCode? CountryCode { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.LookupPhoneNumber_IncludeCallerName_DisplayName))]
         [LocalizedDescription(nameof(Resources.LookupPhoneNumber_IncludeCallerName_Description))]
@@ -96,13 +96,13 @@ namespace TroyWeb.TwilioAPI.Activities
 
             // Inputs
             var number = Number.Get(context);
-            var countrycode = CountryCode.Get(context);
+            var countrycode = CountryCode;
             var includeCallerName = IncludeCallerName.Get(context);
             var includeCarrier = IncludeCarrier.Get(context);
             var addOns = AddOns.Get(context);
             var addOnsData = AddOnsData.Get(context);
 
-            var lookup = LookupWrappers.LookupPhoneNumber(objectContainer.Get<ITwilioRestClient>(), number, countrycode,
+            var lookup = await LookupWrappers.LookupPhoneNumber(objectContainer.Get<ITwilioRestClient>(), number, countrycode,
                 includeCallerName, includeCarrier, addOns, addOnsData);
 
             // Outputs

@@ -1,6 +1,5 @@
 using System;
 using System.Activities;
-using System.Resources;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;

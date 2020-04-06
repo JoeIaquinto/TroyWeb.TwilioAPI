@@ -218,7 +218,7 @@
     <comment>property description</comment>
   </data>
   <data name="CreateAccount_DisplayName" xml:space="preserve">
-    <value>CreateAccount</value>
+    <value>Create Account</value>
     <comment>activity name</comment>
   </data>
   <data name="CreateAccount_Description" xml:space="preserve">
@@ -242,7 +242,7 @@
     <comment>property description</comment>
   </data>
   <data name="UpdateAccount_DisplayName" xml:space="preserve">
-    <value>UpdateAccount</value>
+    <value>Update Account</value>
     <comment>activity name</comment>
   </data>
   <data name="UpdateAccount_Description" xml:space="preserve">
@@ -282,7 +282,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetAccounts_DisplayName" xml:space="preserve">
-    <value>GetAccounts</value>
+    <value>Get Accounts</value>
     <comment>activity name</comment>
   </data>
   <data name="GetAccounts_Description" xml:space="preserve">
@@ -322,7 +322,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetAccount_DisplayName" xml:space="preserve">
-    <value>GetAccount</value>
+    <value>Get Account</value>
     <comment>activity name</comment>
   </data>
   <data name="GetAccount_Description" xml:space="preserve">
@@ -346,7 +346,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetAccountPage_DisplayName" xml:space="preserve">
-    <value>GetAccountPage</value>
+    <value>Get Account Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetAccountPage_Description" xml:space="preserve">
@@ -370,7 +370,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetNextAccountPage_DisplayName" xml:space="preserve">
-    <value>GetNextAccountPage</value>
+    <value>Get Next Account Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetNextAccountPage_Description" xml:space="preserve">
@@ -394,7 +394,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPreviousAccountPage_DisplayName" xml:space="preserve">
-    <value>GetPreviousAccountPage</value>
+    <value>Get Previous Account Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPreviousAccountPage_Description" xml:space="preserve">
@@ -418,7 +418,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetMessagePage_DisplayName" xml:space="preserve">
-    <value>GetMessagePage</value>
+    <value>Get Message Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetMessagePage_Description" xml:space="preserve">
@@ -442,7 +442,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetNextMessagePage_DisplayName" xml:space="preserve">
-    <value>GetNextMessagePage</value>
+    <value>Get Next Message Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetNextMessagePage_Description" xml:space="preserve">
@@ -490,7 +490,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetMessageMediaPage_DisplayName" xml:space="preserve">
-    <value>GetMessageMediaPage</value>
+    <value>Get Message Media Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetMessageMediaPage_Description" xml:space="preserve">
@@ -514,7 +514,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetNextMessageMediaPage_DisplayName" xml:space="preserve">
-    <value>GetNextMessageMediaPage</value>
+    <value>Get Next Message Media Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetNextMessageMediaPage_Description" xml:space="preserve">
@@ -538,7 +538,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPreviousMessageMediaPage_DisplayName" xml:space="preserve">
-    <value>GetPreviousMessageMediaPage</value>
+    <value>Get Previous Message Media Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPreviousMessageMediaPage_Description" xml:space="preserve">
@@ -562,7 +562,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetAlphaSenderPage_DisplayName" xml:space="preserve">
-    <value>GetAlphaSenderPage</value>
+    <value>Get AlphaSender Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetAlphaSenderPage_Description" xml:space="preserve">
@@ -586,7 +586,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetNextAlphaSenderPage_DisplayName" xml:space="preserve">
-    <value>GetNextAlphaSenderPage</value>
+    <value>Get Next AlphaSender Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetNextAlphaSenderPage_Description" xml:space="preserve">
@@ -610,7 +610,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPreviousAlphaSenderPage_DisplayName" xml:space="preserve">
-    <value>GetPreviousAlphaSenderPage</value>
+    <value>Get Previous AlphaSender Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPreviousAlphaSenderPage_Description" xml:space="preserve">
@@ -634,7 +634,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetShortCodePage_DisplayName" xml:space="preserve">
-    <value>GetShortCodePage</value>
+    <value>Get ShortCode Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetShortCodePage_Description" xml:space="preserve">
@@ -658,7 +658,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetNextShortCodePage_DisplayName" xml:space="preserve">
-    <value>GetNextShortCodePage</value>
+    <value>Get Next ShortCode Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetNextShortCodePage_Description" xml:space="preserve">
@@ -682,7 +682,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPreviousShortCodePage_DisplayName" xml:space="preserve">
-    <value>GetPreviousShortCodePage</value>
+    <value>Get Previous ShortCode Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPreviousShortCodePage_Description" xml:space="preserve">
@@ -706,7 +706,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetVoicePricingPage_DisplayName" xml:space="preserve">
-    <value>GetVoicePricingPage</value>
+    <value>Get Voice Pricing Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetVoicePricingPage_Description" xml:space="preserve">
@@ -730,7 +730,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetNextVoicePricingPage_DisplayName" xml:space="preserve">
-    <value>GetNextVoicePricingPage</value>
+    <value>Get Next Voice Pricing Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetNextVoicePricingPage_Description" xml:space="preserve">
@@ -754,7 +754,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPreviousVoicePricingPage_DisplayName" xml:space="preserve">
-    <value>GetPreviousVoicePricingPage</value>
+    <value>Get Previous Voice Pricing Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPreviousVoicePricingPage_Description" xml:space="preserve">
@@ -778,7 +778,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPhoneNumberPricingPage_DisplayName" xml:space="preserve">
-    <value>GetPhoneNumberPricingPage</value>
+    <value>Get Phone Number Pricing Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPhoneNumberPricingPage_Description" xml:space="preserve">
@@ -802,7 +802,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetNextPhoneNumberPricingPage_DisplayName" xml:space="preserve">
-    <value>GetNextPhoneNumberPricingPage</value>
+    <value>Get Next Phone Number Pricing Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetNextPhoneNumberPricingPage_Description" xml:space="preserve">
@@ -826,7 +826,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPreviousPhoneNumberPricingPage_DisplayName" xml:space="preserve">
-    <value>GetPreviousPhoneNumberPricingPage</value>
+    <value>Get Previous Phone Number Pricing Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPreviousPhoneNumberPricingPage_Description" xml:space="preserve">
@@ -850,7 +850,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetMessagingPricingPage_DisplayName" xml:space="preserve">
-    <value>GetMessagingPricingPage</value>
+    <value>Get Messaging Pricing Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetMessagingPricingPage_Description" xml:space="preserve">
@@ -874,7 +874,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetNextMessagingPricingPage_DisplayName" xml:space="preserve">
-    <value>GetNextMessagingPricingPage</value>
+    <value>Get Next Messaging Pricing Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetNextMessagingPricingPage_Description" xml:space="preserve">
@@ -898,7 +898,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPreviousMessagingPricingPage_DisplayName" xml:space="preserve">
-    <value>GetPreviousMessagingPricingPage</value>
+    <value>Get Previous Messaging Pricing Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPreviousMessagingPricingPage_Description" xml:space="preserve">
@@ -922,7 +922,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetAvailableTollFreePhoneNumberPage_DisplayName" xml:space="preserve">
-    <value>GetAvailableTollFreePhoneNumberPage</value>
+    <value>Get Available Toll-Free Phone Number Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetAvailableTollFreePhoneNumberPage_Description" xml:space="preserve">
@@ -946,7 +946,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetNextAvailableTollFreePhoneNumberPage_DisplayName" xml:space="preserve">
-    <value>GetNextAvailableTollFreePhoneNumberPage</value>
+    <value>Get Next Available Toll-Free Phone Number Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetNextAvailableTollFreePhoneNumberPage_Description" xml:space="preserve">
@@ -970,7 +970,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPreviousAvailableTollFreePhoneNumberPage_DisplayName" xml:space="preserve">
-    <value>GetPreviousAvailableTollFreePhoneNumberPage</value>
+    <value>Get Previous Available Toll-Free Phone Number Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPreviousAvailableTollFreePhoneNumberPage_Description" xml:space="preserve">
@@ -994,7 +994,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetAvailablePhoneNumberPage_DisplayName" xml:space="preserve">
-    <value>GetAvailablePhoneNumberPage</value>
+    <value>Get Available Phone Number Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetAvailablePhoneNumberPage_Description" xml:space="preserve">
@@ -1018,7 +1018,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetNextAvailablePhoneNumberPage_DisplayName" xml:space="preserve">
-    <value>GetNextAvailablePhoneNumberPage</value>
+    <value>Get Next Available Phone Number Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetNextAvailablePhoneNumberPage_Description" xml:space="preserve">
@@ -1042,7 +1042,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPreviousAvailablePhoneNumberPage_DisplayName" xml:space="preserve">
-    <value>GetPreviousAvailablePhoneNumberPage</value>
+    <value>Get Previous Available Phone Number Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPreviousAvailablePhoneNumberPage_Description" xml:space="preserve">
@@ -1066,7 +1066,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetAvailableMobilePhoneNumberPage_DisplayName" xml:space="preserve">
-    <value>GetAvailableMobilePhoneNumberPage</value>
+    <value>Get Available Mobile Phone Number Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetAvailableMobilePhoneNumberPage_Description" xml:space="preserve">
@@ -1090,7 +1090,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetNextAvailableMobilePhoneNumberPage_DisplayName" xml:space="preserve">
-    <value>GetNextAvailableMobilePhoneNumberPage</value>
+    <value>Get Next Available Mobile Phone Number Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetNextAvailableMobilePhoneNumberPage_Description" xml:space="preserve">
@@ -1114,7 +1114,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPreviousAvailableMobilePhoneNumberPage_DisplayName" xml:space="preserve">
-    <value>GetPreviousAvailableMobilePhoneNumberPage</value>
+    <value>Get Previous Available Mobile Phone Number Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPreviousAvailableMobilePhoneNumberPage_Description" xml:space="preserve">
@@ -1138,7 +1138,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetAvailableLocalPhoneNumberPage_DisplayName" xml:space="preserve">
-    <value>GetAvailableLocalPhoneNumberPage</value>
+    <value>Get Available Local Phone Number Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetAvailableLocalPhoneNumberPage_Description" xml:space="preserve">
@@ -1162,7 +1162,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetNextAvailableLocalPhoneNumberPage_DisplayName" xml:space="preserve">
-    <value>GetNextAvailableLocalPhoneNumberPage</value>
+    <value>Get Next Available Local Phone Number Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetNextAvailableLocalPhoneNumberPage_Description" xml:space="preserve">
@@ -1186,7 +1186,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPreviousAvailableLocalPhoneNumberPage_DisplayName" xml:space="preserve">
-    <value>GetPreviousAvailableLocalPhoneNumberPage</value>
+    <value>Get Previous Available Local Phone Number Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPreviousAvailableLocalPhoneNumberPage_Description" xml:space="preserve">
@@ -1210,7 +1210,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetFaxPage_DisplayName" xml:space="preserve">
-    <value>GetFaxPage</value>
+    <value>Get Fax Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetFaxPage_Description" xml:space="preserve">
@@ -1234,7 +1234,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetNextFaxPage_DisplayName" xml:space="preserve">
-    <value>GetNextFaxPage</value>
+    <value>Get Next Fax Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetNextFaxPage_Description" xml:space="preserve">
@@ -1258,7 +1258,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPreviousFaxPage_DisplayName" xml:space="preserve">
-    <value>GetPreviousFaxPage</value>
+    <value>Get Previous Fax Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPreviousFaxPage_Description" xml:space="preserve">
@@ -1282,7 +1282,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetFaxMediaPage_DisplayName" xml:space="preserve">
-    <value>GetFaxMediaPage</value>
+    <value>Get Fax Media Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetFaxMediaPage_Description" xml:space="preserve">
@@ -1306,7 +1306,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetNextFaxMediaPage_DisplayName" xml:space="preserve">
-    <value>GetNextFaxMediaPage</value>
+    <value>Get Next Fax Media Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetNextFaxMediaPage_Description" xml:space="preserve">
@@ -1330,7 +1330,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPreviousFaxMediaPage_DisplayName" xml:space="preserve">
-    <value>GetPreviousFaxMediaPage</value>
+    <value>Get Previous Fax Media Page</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPreviousFaxMediaPage_Description" xml:space="preserve">
@@ -1354,7 +1354,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetFax_DisplayName" xml:space="preserve">
-    <value>GetFax</value>
+    <value>Get Fax</value>
     <comment>activity name</comment>
   </data>
   <data name="GetFax_Description" xml:space="preserve">
@@ -1378,11 +1378,11 @@
     <comment>property description</comment>
   </data>
   <data name="GetFaxMedia_DisplayName" xml:space="preserve">
-    <value>GetFaxMedias</value>
+    <value>Get Fax Media</value>
     <comment>activity name</comment>
   </data>
   <data name="GetFaxMedia_Description" xml:space="preserve">
-    <value>Fetches multiple FaxMedia for a fax from Twilio</value>
+    <value>Fetches a FaxMedia from Twilio</value>
     <comment>activity description</comment>
   </data>
   <data name="GetFaxMedia_FaxSid_DisplayName" xml:space="preserve">
@@ -1410,7 +1410,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetMessage_DisplayName" xml:space="preserve">
-    <value>GetMessage</value>
+    <value>Get Message</value>
     <comment>activity name</comment>
   </data>
   <data name="GetMessage_Description" xml:space="preserve">
@@ -1434,7 +1434,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetMessageMedia_DisplayName" xml:space="preserve">
-    <value>GetMessageMedia</value>
+    <value>Get Message Media</value>
     <comment>activity name</comment>
   </data>
   <data name="GetMessageMedia_Description" xml:space="preserve">
@@ -1466,7 +1466,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetAlphaSender_DisplayName" xml:space="preserve">
-    <value>GetAlphaSender</value>
+    <value>Get AlphaSender</value>
     <comment>activity name</comment>
   </data>
   <data name="GetAlphaSender_Description" xml:space="preserve">
@@ -1498,7 +1498,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetShortCode_DisplayName" xml:space="preserve">
-    <value>GetShortCode</value>
+    <value>Get ShortCode</value>
     <comment>activity name</comment>
   </data>
   <data name="GetShortCode_Description" xml:space="preserve">
@@ -1530,7 +1530,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetVoicePricing_DisplayName" xml:space="preserve">
-    <value>GetVoicePricing</value>
+    <value>Get Voice Pricing</value>
     <comment>activity name</comment>
   </data>
   <data name="GetVoicePricing_Description" xml:space="preserve">
@@ -1554,7 +1554,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetMessagingPricing_DisplayName" xml:space="preserve">
-    <value>GetMessagingPricing</value>
+    <value>Get Messaging Pricing</value>
     <comment>activity name</comment>
   </data>
   <data name="GetMessagingPricing_Description" xml:space="preserve">
@@ -1578,7 +1578,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPhoneNumberPricing_DisplayName" xml:space="preserve">
-    <value>GetPhoneNumberPricing</value>
+    <value>Get Phone Number Pricing</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPhoneNumberPricing_Description" xml:space="preserve">
@@ -1602,7 +1602,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetPhoneNumberPricings_DisplayName" xml:space="preserve">
-    <value>GetPhoneNumberPricings</value>
+    <value>Get Phone Number Pricings</value>
     <comment>activity name</comment>
   </data>
   <data name="GetPhoneNumberPricings_Description" xml:space="preserve">
@@ -1626,7 +1626,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetMessagingPricings_DisplayName" xml:space="preserve">
-    <value>GetMessagingPricings</value>
+    <value>Get Messaging Pricings</value>
     <comment>activity name</comment>
   </data>
   <data name="GetMessagingPricings_Description" xml:space="preserve">
@@ -1650,7 +1650,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetVoicePricings_DisplayName" xml:space="preserve">
-    <value>GetVoicePricings</value>
+    <value>Get Voice Pricings</value>
     <comment>activity name</comment>
   </data>
   <data name="GetVoicePricings_Description" xml:space="preserve">
@@ -1674,7 +1674,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetAvailablePhoneNumbers_DisplayName" xml:space="preserve">
-    <value>GetAvailablePhoneNumbers</value>
+    <value>Get Available Phone Numbers</value>
     <comment>activity name</comment>
   </data>
   <data name="GetAvailablePhoneNumbers_Description" xml:space="preserve">
@@ -1698,7 +1698,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetAvailablePhoneNumbersForAccount_DisplayName" xml:space="preserve">
-    <value>GetAvailablePhoneNumbersForAccount</value>
+    <value>Get Available Phone Numbers For Account</value>
     <comment>activity name</comment>
   </data>
   <data name="GetAvailablePhoneNumbersForAccount_Description" xml:space="preserve">
@@ -1730,7 +1730,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetAvailableLocalPhoneNumbers_DisplayName" xml:space="preserve">
-    <value>GetAvailableLocalPhoneNumbers</value>
+    <value>Get Available Local Phone Numbers</value>
     <comment>activity name</comment>
   </data>
   <data name="GetAvailableLocalPhoneNumbers_Description" xml:space="preserve">
@@ -1914,7 +1914,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetAvailableMobilePhoneNumbers_DisplayName" xml:space="preserve">
-    <value>GetAvailableMobilePhoneNumbers</value>
+    <value>Get Available Mobile Phone Numbers</value>
     <comment>activity name</comment>
   </data>
   <data name="GetAvailableMobilePhoneNumbers_Description" xml:space="preserve">
@@ -2098,7 +2098,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetAvailableTollFreePhoneNumbers_DisplayName" xml:space="preserve">
-    <value>GetAvailableTollFreePhoneNumbers</value>
+    <value>Get Available Toll-Free Phone Numbers</value>
     <comment>activity name</comment>
   </data>
   <data name="GetAvailableTollFreePhoneNumbers_Description" xml:space="preserve">
@@ -2282,7 +2282,7 @@
     <comment>property description</comment>
   </data>
   <data name="LookupPhoneNumber_DisplayName" xml:space="preserve">
-    <value>LookupPhoneNumber</value>
+    <value>Look-up Phone Number</value>
     <comment>activity name</comment>
   </data>
   <data name="LookupPhoneNumber_Description" xml:space="preserve">
@@ -2346,7 +2346,7 @@
     <comment>property description</comment>
   </data>
   <data name="SendFax_DisplayName" xml:space="preserve">
-    <value>SendFax</value>
+    <value>Send Fax</value>
     <comment>activity name</comment>
   </data>
   <data name="SendFax_Description" xml:space="preserve">
@@ -2434,7 +2434,7 @@
     <comment>property description</comment>
   </data>
   <data name="CancelFax_DisplayName" xml:space="preserve">
-    <value>CancelFax</value>
+    <value>Cancel Fax</value>
     <comment>activity name</comment>
   </data>
   <data name="CancelFax_Description" xml:space="preserve">
@@ -2458,7 +2458,7 @@
     <comment>property description</comment>
   </data>
   <data name="DeleteFax_DisplayName" xml:space="preserve">
-    <value>DeleteFax</value>
+    <value>Delete Fax</value>
     <comment>activity name</comment>
   </data>
   <data name="DeleteFax_Description" xml:space="preserve">
@@ -2490,7 +2490,7 @@
     <comment>property description</comment>
   </data>
   <data name="DeleteFaxMedia_DisplayName" xml:space="preserve">
-    <value>DeleteFaxMedia</value>
+    <value>Delete Fax Media</value>
     <comment>activity name</comment>
   </data>
   <data name="DeleteFaxMedia_Description" xml:space="preserve">
@@ -2522,7 +2522,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetFaxes_DisplayName" xml:space="preserve">
-    <value>GetFaxes</value>
+    <value>Get Faxes</value>
     <comment>activity name</comment>
   </data>
   <data name="GetFaxes_Description" xml:space="preserve">
@@ -2578,7 +2578,7 @@
     <comment>property description</comment>
   </data>
   <data name="SendMessage_DisplayName" xml:space="preserve">
-    <value>SendMessage</value>
+    <value>Send Message</value>
     <comment>activity name</comment>
   </data>
   <data name="SendMessage_Description" xml:space="preserve">
@@ -2690,11 +2690,11 @@
     <comment>property description</comment>
   </data>
   <data name="CancelMessage_DisplayName" xml:space="preserve">
-    <value>CancelMessage</value>
+    <value>Redact Message Content</value>
     <comment>activity name</comment>
   </data>
   <data name="CancelMessage_Description" xml:space="preserve">
-    <value>Cancels a queued Message</value>
+    <value>Redact Message Content</value>
     <comment>activity description</comment>
   </data>
   <data name="CancelMessage_MessageSid_DisplayName" xml:space="preserve">
@@ -2702,7 +2702,7 @@
     <comment>property name</comment>
   </data>
   <data name="CancelMessage_MessageSid_Description" xml:space="preserve">
-    <value>The ID of the message to cancel.</value>
+    <value>The ID of the message to redact</value>
     <comment>property description</comment>
   </data>
   <data name="CancelMessage_AccountSid_DisplayName" xml:space="preserve">
@@ -2710,19 +2710,19 @@
     <comment>property name</comment>
   </data>
   <data name="CancelMessage_AccountSid_Description" xml:space="preserve">
-    <value>The ID of the account containing the message to cancel.</value>
+    <value>The ID of the account containing the message to redact.</value>
     <comment>property description</comment>
   </data>
   <data name="CancelMessage_Message_DisplayName" xml:space="preserve">
-    <value>Cancelled</value>
+    <value>Redacted Message</value>
     <comment>property name</comment>
   </data>
   <data name="CancelMessage_Message_Description" xml:space="preserve">
-    <value>Whether the message was cancelled.</value>
+    <value>The Redacted Message</value>
     <comment>property description</comment>
   </data>
   <data name="UpdateMessage_DisplayName" xml:space="preserve">
-    <value>UpdateMessage</value>
+    <value>Update Message</value>
     <comment>activity name</comment>
   </data>
   <data name="UpdateMessage_Description" xml:space="preserve">
@@ -2762,7 +2762,7 @@
     <comment>property description</comment>
   </data>
   <data name="DeleteMessage_DisplayName" xml:space="preserve">
-    <value>DeleteMessage</value>
+    <value>Delete Message</value>
     <comment>activity name</comment>
   </data>
   <data name="DeleteMessage_Description" xml:space="preserve">
@@ -2802,7 +2802,7 @@
     <comment>property description</comment>
   </data>
   <data name="GetMessages_DisplayName" xml:space="preserve">
-    <value>GetMessages</value>
+    <value>Get Messages</value>
     <comment>activity name</comment>
   </data>
   <data name="GetMessages_Description" xml:space="preserve">
@@ -2872,5 +2872,69 @@
   <data name="GetMessages_Messages_Description" xml:space="preserve">
     <value>The retrieved messagees.</value>
     <comment>property description</comment>
+  </data>
+  <data name="DownloadFaxMedia_Description" xml:space="preserve">
+    <value>Download the PDF from a FaxResource and save to a local file.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="DownloadFaxMedia_DisplayName" xml:space="preserve">
+    <value>Download Fax Media</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="DownloadFaxMedia_FaxMediaPDF_Description" xml:space="preserve">
+    <value>FileInfo of the downloaded PDF File</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DownloadFaxMedia_FaxMediaPDF_DisplayName" xml:space="preserve">
+    <value>Fax Media PDF</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DownloadFaxMedia_Fax_Description" xml:space="preserve">
+    <value>The FaxResource containing the Media to download</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DownloadFaxMedia_Fax_DisplayName" xml:space="preserve">
+    <value>Fax</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DownloadFaxMedia_Path_Description" xml:space="preserve">
+    <value>The file path to save the fax media PDF.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DownloadFaxMedia_Path_DisplayName" xml:space="preserve">
+    <value>Path</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxMedias_Description" xml:space="preserve">
+    <value>Fetches multiple FaxMedias from Twilio</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetFaxMedias_DisplayName" xml:space="preserve">
+    <value>Get Fax Medias</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetFaxMedias_FaxMedia_Description" xml:space="preserve">
+    <value>The set of retrieved fax media.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxMedias_FaxMedia_DisplayName" xml:space="preserve">
+    <value>FaxMedia</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxMedias_FaxSid_Description" xml:space="preserve">
+    <value>The ID of the fax containing the media.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxMedias_FaxSid_DisplayName" xml:space="preserve">
+    <value>FaxSid</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetFaxMedias_Limit_Description" xml:space="preserve">
+    <value>The number of available phone numbers to return</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetFaxMedias_Limit_DisplayName" xml:space="preserve">
+    <value>Limit</value>
+    <comment>property name</comment>
   </data>
 </root>
