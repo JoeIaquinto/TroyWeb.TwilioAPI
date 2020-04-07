@@ -3868,7 +3868,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A Twilio API Scope.
+        ///   Looks up a localized string similar to Opens a Twilio API Connection with account id and auth token. Provides ability to send and retrieve SMS, Fax, and Account information to the Twilio API..
         /// </summary>
         public static string TwilioApiScope_Description {
             get {
@@ -3877,7 +3877,7 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TwilioApiScope.
+        ///   Looks up a localized string similar to Twilio Scope.
         /// </summary>
         public static string TwilioApiScope_DisplayName {
             get {

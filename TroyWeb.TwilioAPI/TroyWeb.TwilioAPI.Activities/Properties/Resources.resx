@@ -178,11 +178,11 @@
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
   <data name="TwilioApiScope_DisplayName" xml:space="preserve">
-    <value>TwilioApiScope</value>
+    <value>Twilio Scope</value>
     <comment>activity name</comment>
   </data>
   <data name="TwilioApiScope_Description" xml:space="preserve">
-    <value>A Twilio API Scope</value>
+    <value>Opens a Twilio API Connection with account id and auth token. Provides ability to send and retrieve SMS, Fax, and Account information to the Twilio API.</value>
     <comment>activity description</comment>
   </data>
   <data name="TwilioApiScope_AccountSid_DisplayName" xml:space="preserve">
