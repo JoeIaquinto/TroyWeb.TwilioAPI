@@ -9,14 +9,14 @@
   <PropertyGroup>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <Description>This package was generated using the UiPath VS Extension.</Description>
-    <Authors>Company</Authors>
-    <Company>Company</Company>
-    <Copyright>@ 2020 Company</Copyright>
-    <PackageTags>UiPath Activit𝗒</PackageTags>
-    <PackageProjectUrl>https://docs.uipath.com/integrations/docs/how-to-create-activities</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</PackageIconUrl>
-    <PackageIcon>packageIcon.png</PackageIcon>
+    <Description>This package is a UiPath Activity package to connect to Twilio via the C# SDK to allow UiPath RPA Robots to send and retrieve SMS messages, MMS messages, and Faxes via the Twilio API. Additionally, activities are included to allow retrieving pricing information, manage Twilio accounts, and look-up caller ID and carrier information. This package was generated using the UiPath VS Extension.</Description>
+    <Authors>Erik Saulnier, Joseph Iaquinto</Authors>
+    <Company>Troy Web Consulting</Company>
+    <Copyright>@ 2020 Troy Web Consulting</Copyright>
+    <PackageTags>UiPath Activit𝗒 Twilio SMS MMS Fax Caller Carrier Phone Number</PackageTags>
+    <PackageProjectUrl>https://github.com/JosephIaquinto/TroyWeb.TwilioAPI</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/JosephIaquinto/TroyWeb.TwilioAPI/master/TroyWeb.TwilioAPI/TroyWeb.TwilioAPI.Activities.Design/PackageIcon.png</PackageIconUrl>
+    <PackageIcon>PackageIcon.png</PackageIcon>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
@@ -24,10 +24,10 @@
   </PropertyGroup>
   <!-- Package Versions -->
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <PackageVersion>0.1.1.$([System.DateTime]::UtcNow.ToString(MMddHmmss))</PackageVersion>
+    <PackageVersion>1.0.0.$([System.DateTime]::UtcNow.ToString(MMddHmmss))</PackageVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageVersion>0.1.1</PackageVersion>
+    <PackageVersion>1.0.0</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Designers\DownloadFaxMediaDesigner.xaml" />
@@ -35,7 +35,7 @@
   </ItemGroup>
   <!-- Package Icon -->
   <ItemGroup>
-    <None Include="packageIcon.png" Pack="true" Visible="false" PackagePath="" />
+    <None Include="app.ico" Pack="true" Visible="false" PackagePath="" />
   </ItemGroup>
   <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="BuildOnlySettings;ResolveReferences">
     <ItemGroup>
