@@ -48,6 +48,7 @@
         <GeometryDrawing Brush="#FFFA4616" Geometry="{StaticResource PaperclipGeometry}" />
     </DrawingGroup>
     <DrawingBrush x:Key="DownloadFaxMediaIcon" Drawing="{StaticResource PaperclipDrawingGroup}" />
+    <DrawingBrush x:Key="DeleteFaxMediaIcon" Drawing="{StaticResource PaperclipDrawingGroup}" />
     <DrawingBrush x:Key="GetFaxMediaIcon" Drawing="{StaticResource PaperclipDrawingGroup}" />
     <DrawingBrush x:Key="GetFaxMediasIcon" Drawing="{StaticResource PaperclipDrawingGroup}" />
 
@@ -70,6 +71,8 @@
     <DrawingGroup x:Key="MessageTextDrawingGroup" ClipGeometry="M0,0 V50 H50 V0 H0 Z">
         <GeometryDrawing Brush="#FFFA4616" Geometry="{StaticResource MessageTextGeometry}" />
     </DrawingGroup>
+    <DrawingBrush x:Key="GetShortCodeIcon" Drawing="{StaticResource MessageTextDrawingGroup}" />
+    <DrawingBrush x:Key="GetAlphaSenderIcon" Drawing="{StaticResource MessageTextDrawingGroup}" />
     <DrawingBrush x:Key="GetMessageIcon" Drawing="{StaticResource MessageTextDrawingGroup}" />
     <DrawingBrush x:Key="GetMessagesIcon" Drawing="{StaticResource MessageTextDrawingGroup}" />
     <DrawingBrush x:Key="SendMessageIcon" Drawing="{StaticResource MessageTextDrawingGroup}" />
