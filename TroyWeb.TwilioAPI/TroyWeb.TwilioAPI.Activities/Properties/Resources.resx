@@ -177,6 +177,10 @@
     <value>Please provide values for both {0} and {1}.</value>
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
+  <data name="ValidationGroupDependant_Error" xml:space="preserve">
+    <value>To use {0}, {1}</value>
+    <comment>error message; {0} depends on a validation "{1}"</comment>
+  </data>
   <data name="TwilioApiScope_DisplayName" xml:space="preserve">
     <value>Twilio Scope</value>
     <comment>activity name</comment>

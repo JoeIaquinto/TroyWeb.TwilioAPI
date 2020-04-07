@@ -109,7 +109,10 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-            if (To == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(To)));
+            metadata.AddRequiredArgument(To, nameof(To));
+            metadata.AddMutuallyExclusiveArguments(Body, nameof(Body), MediaUrls, nameof(MediaUrls));
+            metadata.AddMutuallyExclusiveArguments(From, nameof(From), MessagingServiceSid, nameof(MessagingServiceSid));
+            metadata.AddMutuallyExclusiveArguments(ApplicationSid, nameof(ApplicationSid), StatusCallback, nameof(StatusCallback));
 
             base.CacheMetadata(metadata);
         }

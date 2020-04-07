@@ -64,7 +64,7 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-            if (AccountSid == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(AccountSid)));
+            metadata.AddRequiredArgument(AccountSid, nameof(AccountSid));
 
             base.CacheMetadata(metadata);
         }

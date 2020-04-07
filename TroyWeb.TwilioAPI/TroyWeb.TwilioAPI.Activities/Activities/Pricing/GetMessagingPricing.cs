@@ -56,8 +56,6 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-            
-
             base.CacheMetadata(metadata);
         }
 

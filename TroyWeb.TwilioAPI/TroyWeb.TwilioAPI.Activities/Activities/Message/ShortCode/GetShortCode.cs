@@ -58,7 +58,8 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-
+            metadata.AddRequiredArgument(AccountSid, nameof(AccountSid));
+            metadata.AddRequiredArgument(ShortCodeSid, nameof(ShortCodeSid));
             base.CacheMetadata(metadata);
         }
 

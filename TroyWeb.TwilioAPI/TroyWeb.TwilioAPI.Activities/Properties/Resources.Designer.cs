@@ -4111,6 +4111,15 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to To use {0}, {1}.
+        /// </summary>
+        public static string ValidationGroupDependant_Error {
+            get {
+                return ResourceManager.GetString("ValidationGroupDependant_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please provide values for both {0} and {1}..
         /// </summary>
         public static string ValidationOverloadGroup_Error {

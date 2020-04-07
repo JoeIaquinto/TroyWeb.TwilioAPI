@@ -1,7 +1,6 @@
 using System;
 using System.Activities;
 using System.ComponentModel;
-using System.Resources;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
@@ -158,7 +157,7 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-            
+            metadata.AddComplementaryArguments(Distance, nameof(Distance), NearLatLong, nameof(NearLatLong), NearNumber, nameof(NearNumber));
 
             base.CacheMetadata(metadata);
         }

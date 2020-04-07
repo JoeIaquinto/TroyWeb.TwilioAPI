@@ -60,7 +60,7 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-            if (FaxSid == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(FaxSid)));
+            metadata.AddRequiredArgument(FaxSid, nameof(FaxSid));
 
             base.CacheMetadata(metadata);
         }

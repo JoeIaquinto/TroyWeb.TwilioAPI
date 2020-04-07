@@ -58,8 +58,8 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-            if (MessageSid == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(MessageSid)));
-            if (MessageMediaSid == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(MessageMediaSid)));
+            metadata.AddRequiredArgument(MessageSid, nameof(MessageSid));
+            metadata.AddRequiredArgument(MessageMediaSid, nameof(MessageMediaSid));
             base.CacheMetadata(metadata);
         }
 

@@ -1,6 +1,5 @@
 using System;
 using System.Activities;
-using System.ComponentModel;
 using System.Threading;
 using System.Threading.Tasks;
 using TroyWeb.TwilioAPI.Activities.Properties;
@@ -95,11 +94,12 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-            if (To == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(To)));
-            if (MediaUrl == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(MediaUrl)));
-            if (From == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(From)));
-            if (Quality == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(Quality)));
-
+            metadata.AddRequiredArgument(To, nameof(To));
+            metadata.AddRequiredArgument(MediaUrl, nameof(MediaUrl));
+            metadata.AddRequiredArgument(Quality, nameof(Quality));
+            metadata.AddMutuallyExclusiveArguments(From, nameof(From), SipAuthUsername, nameof(SipAuthUsername));
+            metadata.AddMutuallyExclusiveArguments(From, nameof(From), SipAuthPassword, nameof(SipAuthPassword));
+            metadata.AddComplementaryArguments(SipAuthUsername, nameof(SipAuthUsername), SipAuthPassword, nameof(SipAuthPassword));
             base.CacheMetadata(metadata);
         }
 

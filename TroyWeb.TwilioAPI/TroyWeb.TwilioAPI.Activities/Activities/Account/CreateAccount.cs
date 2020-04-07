@@ -53,7 +53,7 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-            if (FriendlyName == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(FriendlyName)));
+            metadata.AddRequiredArgument(FriendlyName, nameof(FriendlyName));
 
             base.CacheMetadata(metadata);
         }

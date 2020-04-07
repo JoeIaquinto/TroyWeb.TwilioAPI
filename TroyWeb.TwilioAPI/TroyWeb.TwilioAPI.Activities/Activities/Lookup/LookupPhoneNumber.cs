@@ -82,9 +82,9 @@ namespace TroyWeb.TwilioAPI.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-            if (Number == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(Number)));
-            if (IncludeCallerName == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(IncludeCallerName)));
-            if (IncludeCarrier == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(IncludeCarrier)));
+            metadata.AddRequiredArgument(Number, nameof(Number));
+            metadata.AddRequiredArgument(IncludeCallerName, nameof(IncludeCallerName));
+            metadata.AddRequiredArgument(IncludeCarrier, nameof(IncludeCarrier));
 
             base.CacheMetadata(metadata);
         }
