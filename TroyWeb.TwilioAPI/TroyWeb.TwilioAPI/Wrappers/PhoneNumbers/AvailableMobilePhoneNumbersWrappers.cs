@@ -37,20 +37,5 @@
             };
             return await MobileResource.ReadAsync(options, client);
         }
-
-        public static Page<MobileResource> GetAvailableMobilePhoneNumberPage(ITwilioRestClient client, string targetUrl)
-        {
-            return MobileResource.GetPage(targetUrl, client);
-        }
-
-        public static Page<MobileResource> GetNextAvailableMobilePhoneNumberPage(ITwilioRestClient client, Page<MobileResource> page)
-        {
-            return MobileResource.NextPage(page, client);
-        }
-
-        public static Page<MobileResource> GetPreviousAvailableMobilePhoneNumberPage(ITwilioRestClient client, Page<MobileResource> page)
-        {
-            return MobileResource.PreviousPage(page, client);
-        }
     }
 }

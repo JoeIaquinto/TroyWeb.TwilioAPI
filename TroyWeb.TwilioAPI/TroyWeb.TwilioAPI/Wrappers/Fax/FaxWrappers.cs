@@ -73,20 +73,5 @@
             }
             return new FileInfo(path);
         }
-
-        public static Page<FaxResource> GetFaxPage(ITwilioRestClient client, string targetUrl)
-        {
-            return FaxResource.GetPage(targetUrl, client);
-        }
-
-        public static Page<FaxResource> GetNextFaxPage(ITwilioRestClient client, Page<FaxResource> page)
-        {
-            return FaxResource.NextPage(page, client);
-        }
-
-        public static Page<FaxResource> GetPreviousFaxPage(ITwilioRestClient client, Page<FaxResource> page)
-        {
-            return FaxResource.PreviousPage(page, client);
-        }
     }
 }

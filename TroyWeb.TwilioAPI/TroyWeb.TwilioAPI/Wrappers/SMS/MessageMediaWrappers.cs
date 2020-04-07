@@ -20,7 +20,7 @@
             return await MediaResource.FetchAsync(options, client);
         }
 
-        public static async Task<ResourceSet<MediaResource>> GetSMSMediumAsync(ITwilioRestClient client, string messageSid, long? limit = null)
+        public static async Task<ResourceSet<MediaResource>> GetSMSMediasAsync(ITwilioRestClient client, string messageSid, long? limit = null)
         {
             var options = new ReadMediaOptions(messageSid)
             {
@@ -28,21 +28,6 @@
                 PageSize = null
             };
             return await MediaResource.ReadAsync(options, client);
-        }
-
-        public static Page<MediaResource> GetSMSMediaPage(ITwilioRestClient client, string targetUrl)
-        {
-            return MediaResource.GetPage(targetUrl, client);
-        }
-
-        public static Page<MediaResource> GetNextSMSMediaPage(ITwilioRestClient client, Page<MediaResource> page)
-        {
-            return MediaResource.NextPage(page, client);
-        }
-
-        public static Page<MediaResource> GetPreviousSMSMediaPage(ITwilioRestClient client, Page<MediaResource> page)
-        {
-            return MediaResource.PreviousPage(page, client);
         }
     }
 }

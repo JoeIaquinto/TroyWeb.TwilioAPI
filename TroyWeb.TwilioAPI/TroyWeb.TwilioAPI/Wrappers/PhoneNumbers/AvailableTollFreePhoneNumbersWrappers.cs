@@ -37,20 +37,5 @@
             };
             return await TollFreeResource.ReadAsync(options, client);
         }
-
-        public static Page<TollFreeResource> GetAvailableTollFreePhoneNumberPage(ITwilioRestClient client, string targetUrl)
-        {
-            return TollFreeResource.GetPage(targetUrl, client);
-        }
-
-        public static Page<TollFreeResource> GetNextAvailableTollFreePhoneNumberPage(ITwilioRestClient client, Page<TollFreeResource> page)
-        {
-            return TollFreeResource.NextPage(page, client);
-        }
-
-        public static Page<TollFreeResource> GetPreviousAvailableTollFreePhoneNumberPage(ITwilioRestClient client, Page<TollFreeResource> page)
-        {
-            return TollFreeResource.PreviousPage(page, client);
-        }
     }
 }

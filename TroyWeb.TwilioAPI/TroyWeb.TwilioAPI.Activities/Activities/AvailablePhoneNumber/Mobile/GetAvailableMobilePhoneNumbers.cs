@@ -34,7 +34,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDescription(nameof(Resources.GetAvailableMobilePhoneNumbers_CountryCode_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
         [TypeConverter(typeof(EnumNameConverter<CountryCode>))]
-        public CountryCode CountryCode { get; set; }
+        public CountryCode CountryCode { get; set; } = CountryCode.GB;
 
         [LocalizedDisplayName(nameof(Resources.GetAvailableMobilePhoneNumbers_AccountSid_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetAvailableMobilePhoneNumbers_AccountSid_Description))]

@@ -38,20 +38,5 @@
             };
             return await LocalResource.ReadAsync(options, client);
         }
-
-        public static Page<LocalResource> GetAvailableLocalPhoneNumberPage(ITwilioRestClient client, string targetUrl)
-        {
-            return LocalResource.GetPage(targetUrl, client);
-        }
-
-        public static Page<LocalResource> GetNextAvailableLocalPhoneNumberPage(ITwilioRestClient client, Page<LocalResource> page)
-        {
-            return LocalResource.NextPage(page, client);
-        }
-
-        public static Page<LocalResource> GetPreviousAvailableLocalPhoneNumberPage(ITwilioRestClient client, Page<LocalResource> page)
-        {
-            return LocalResource.PreviousPage(page, client);
-        }
     }
 }

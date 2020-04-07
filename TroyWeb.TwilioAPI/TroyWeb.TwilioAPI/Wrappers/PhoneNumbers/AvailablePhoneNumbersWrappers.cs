@@ -27,20 +27,5 @@
             };
             return await AvailablePhoneNumberCountryResource.ReadAsync(options, client);
         }
-
-        public static Page<AvailablePhoneNumberCountryResource> GetAvailablePhoneNumberPage(ITwilioRestClient client, string targetUrl)
-        {
-            return AvailablePhoneNumberCountryResource.GetPage(targetUrl, client);
-        }
-
-        public static Page<AvailablePhoneNumberCountryResource> GetNextAvailablePhoneNumberPage(ITwilioRestClient client, Page<AvailablePhoneNumberCountryResource> page)
-        {
-            return AvailablePhoneNumberCountryResource.NextPage(page, client);
-        }
-
-        public static Page<AvailablePhoneNumberCountryResource> GetPreviousAvailablePhoneNumberPage(ITwilioRestClient client, Page<AvailablePhoneNumberCountryResource> page)
-        {
-            return AvailablePhoneNumberCountryResource.PreviousPage(page, client);
-        }
     }
 }

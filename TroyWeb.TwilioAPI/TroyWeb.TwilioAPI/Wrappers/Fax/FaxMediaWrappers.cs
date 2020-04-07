@@ -34,20 +34,5 @@
             };
             return await FaxMediaResource.ReadAsync(options, client);
         }
-
-        public static Page<FaxMediaResource> GetFaxMediaPage(ITwilioRestClient client, string targetUrl)
-        {
-            return FaxMediaResource.GetPage(targetUrl, client);
-        }
-
-        public static Page<FaxMediaResource> GetNextFaxMediaPage(ITwilioRestClient client, Page<FaxMediaResource> page)
-        {
-            return FaxMediaResource.NextPage(page, client);
-        }
-
-        public static Page<FaxMediaResource> GetPreviousFaxMediaPage(ITwilioRestClient client, Page<FaxMediaResource> page)
-        {
-            return FaxMediaResource.PreviousPage(page, client);
-        }
     }
 }

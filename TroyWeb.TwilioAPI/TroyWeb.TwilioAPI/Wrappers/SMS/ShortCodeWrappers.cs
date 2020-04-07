@@ -42,20 +42,5 @@
             };
             return await ShortCodeResource.ReadAsync(options, client);
         }
-
-        public static Page<ShortCodeResource> GetShortCodePage(ITwilioRestClient client, string targetUrl)
-        {
-            return ShortCodeResource.GetPage(targetUrl, client);
-        }
-
-        public static Page<ShortCodeResource> GetNextShortCodePage(ITwilioRestClient client, Page<ShortCodeResource> page)
-        {
-            return ShortCodeResource.NextPage(page, client);
-        }
-
-        public static Page<ShortCodeResource> GetPreviousShortCodePage(ITwilioRestClient client, Page<ShortCodeResource> page)
-        {
-            return ShortCodeResource.PreviousPage(page, client);
-        }
     }
 }

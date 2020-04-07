@@ -32,7 +32,7 @@ namespace TroyWeb.TwilioAPI.Activities
         [LocalizedDescription(nameof(Resources.GetPhoneNumberPricing_CountryCode_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
         [TypeConverter(typeof(EnumNameConverter<CountryCode>))]
-        public CountryCode CountryCode { get; set; }
+        public CountryCode CountryCode { get; set; } = CountryCode.US;
 
         [LocalizedDisplayName(nameof(Resources.GetPhoneNumberPricing_CountryResource_DisplayName))]
         [LocalizedDescription(nameof(Resources.GetPhoneNumberPricing_CountryResource_Description))]

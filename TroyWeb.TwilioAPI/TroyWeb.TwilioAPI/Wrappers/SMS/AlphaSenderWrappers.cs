@@ -34,20 +34,5 @@
             };
             return await AlphaSenderResource.ReadAsync(options, client);
         }
-
-        public static Page<AlphaSenderResource> GetAlphaSenderPage(ITwilioRestClient client, string targetUrl)
-        {
-            return AlphaSenderResource.GetPage(targetUrl, client);
-        }
-
-        public static Page<AlphaSenderResource> GetNextAlphaSenderPage(ITwilioRestClient client, Page<AlphaSenderResource> page)
-        {
-            return AlphaSenderResource.NextPage(page, client);
-        }
-
-        public static Page<AlphaSenderResource> GetPreviousAlphaSenderPage(ITwilioRestClient client, Page<AlphaSenderResource> page)
-        {
-            return AlphaSenderResource.PreviousPage(page, client);
-        }
     }
 }

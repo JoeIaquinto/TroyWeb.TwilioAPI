@@ -47,20 +47,5 @@
             };
             return await AccountResource.ReadAsync(options, client);
         }
-
-        public static Page<AccountResource> GetAccountPage(ITwilioRestClient client, string targetUrl)
-        {
-            return AccountResource.GetPage(targetUrl, client);
-        }
-
-        public static Page<AccountResource> GetNextAccountPage(ITwilioRestClient client, Page<AccountResource> page)
-        {
-            return AccountResource.NextPage(page, client);
-        }
-
-        public static Page<AccountResource> GetPreviousAccountPage(ITwilioRestClient client, Page<AccountResource> page)
-        {
-            return AccountResource.PreviousPage(page, client);
-        }
     }
 }

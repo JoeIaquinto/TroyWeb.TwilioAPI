@@ -22,20 +22,5 @@
             };
             return await CountryResource.ReadAsync(options, client);
         }
-
-        public static Page<CountryResource> GetMessagingPricingPage(ITwilioRestClient client, string targetUrl)
-        {
-            return CountryResource.GetPage(targetUrl, client);
-        }
-
-        public static Page<CountryResource> GetNextMessagingPricingPage(ITwilioRestClient client, Page<CountryResource> page)
-        {
-            return CountryResource.NextPage(page, client);
-        }
-
-        public static Page<CountryResource> GetPreviousMessagingPricingPage(ITwilioRestClient client, Page<CountryResource> page)
-        {
-            return CountryResource.PreviousPage(page, client);
-        }
     }
 }
