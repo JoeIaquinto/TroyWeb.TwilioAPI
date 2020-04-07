@@ -21,7 +21,4 @@
     <sap:ActivityDesigner.Icon>
         <DrawingBrush Stretch="Uniform" Drawing="{Binding Path=ModelItem, Converter={StaticResource ActivityIconConverter}, ConverterParameter=pack://application:\,\,\,/TroyWeb.TwilioAPI.Activities.Design;component/themes/icons.xaml}" />
     </sap:ActivityDesigner.Icon>
-
-    <uip:ActivityDecoratorControl Style="{StaticResource ActivityDecoratorStyle}">
-    </uip:ActivityDecoratorControl>
 </sap:ActivityDesigner>

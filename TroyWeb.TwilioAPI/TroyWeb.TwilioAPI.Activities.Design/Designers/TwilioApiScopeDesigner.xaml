@@ -3,8 +3,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:sa="http://schemas.microsoft.com/netfx/2009/xaml/activities"
     xmlns:p="clr-namespace:TroyWeb.TwilioAPI.Activities.Design.Properties"
+    xmlns:activity="clr-namespace:TroyWeb.TwilioAPI.Activities.Properties;assembly=TroyWeb.TwilioAPI.Activities"
     xmlns:sharedres="clr-namespace:UiPath.Shared.Localization"
     xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
+    xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation"
     xmlns:converters="clr-namespace:UiPath.Shared.Activities.Design.Converters"
     xmlns:uip="clr-namespace:UiPath.Shared.Activities.Design.Controls" >
 
@@ -15,15 +18,45 @@
                 <ResourceDictionary Source="..\Themes\Generic.xaml" />
             </ResourceDictionary.MergedDictionaries>
             <converters:ActivityIconConverter x:Key="ActivityIconConverter" />
+            <sapc:ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter" />
         </ResourceDictionary>
     </sap:ActivityDesigner.Resources>
  
     <sap:ActivityDesigner.Icon>
         <DrawingBrush Stretch="Uniform" Drawing="{Binding Path=ModelItem, Converter={StaticResource ActivityIconConverter}, ConverterParameter=pack://application:\,\,\,/TroyWeb.TwilioAPI.Activities.Design;component/themes/icons.xaml}" />
     </sap:ActivityDesigner.Icon>
- 
+
     <uip:ActivityDecoratorControl Style="{StaticResource ActivityDecoratorStyle}">
-        <DockPanel LastChildFill="True">
+        <DockPanel LastChildFill="True" >
+            <Grid DockPanel.Dock="Top" HorizontalAlignment="Stretch">
+                <Grid.Resources>
+                    <Style TargetType="{x:Type sapv:ExpressionTextBox}">
+                        <Setter Property="Margin" Value="5 0"/>
+                    </Style>
+                </Grid.Resources>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Content="{x:Static activity:Resources.TwilioApiScope_AccountSid_DisplayName}" Grid.Row="0" Grid.Column="0" />
+                <sapv:ExpressionTextBox Grid.Row="1" Grid.Column="0" ExpressionType="{Binding ModelItem.Properties[AccountSid].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.TwilioApiScope_AccountSid_Description}" UseLocationExpression="False">
+                    <sapv:ExpressionTextBox.Expression>
+                        <Binding Path="ModelItem.AccountSid" Converter="{StaticResource ArgumentToExpressionConverter}" Mode="TwoWay" ConverterParameter="In" UpdateSourceTrigger="PropertyChanged" />
+                    </sapv:ExpressionTextBox.Expression>
+                </sapv:ExpressionTextBox>
+
+                <Label Content="{x:Static activity:Resources.TwilioApiScope_AuthToken_DisplayName}" Grid.Row="0" Grid.Column="1" />
+                <sapv:ExpressionTextBox Grid.Row="1" Grid.Column="1" ExpressionType="{Binding ModelItem.Properties[AuthToken].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.TwilioApiScope_AuthToken_Description}" UseLocationExpression="False">
+                    <sapv:ExpressionTextBox.Expression>
+                        <Binding Path="ModelItem.AuthToken" Converter="{StaticResource ArgumentToExpressionConverter}" Mode="TwoWay" ConverterParameter="In" UpdateSourceTrigger="PropertyChanged" />
+                    </sapv:ExpressionTextBox.Expression>
+                </sapv:ExpressionTextBox>
+            </Grid>
             <sap:WorkflowItemPresenter x:Uid="sad:WorkflowItemPresenter_1"
                                        AutomationProperties.AutomationId="Activity"
                                        DockPanel.Dock="Bottom"
