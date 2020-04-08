@@ -35,7 +35,7 @@
   </ItemGroup>
   <!-- Package Icon -->
   <ItemGroup>
-    <None Include="app.ico" Pack="true" Visible="false" PackagePath="" />
+    <None Include="PackageIcon.png" Pack="true" Visible="false" PackagePath="" />
   </ItemGroup>
   <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="BuildOnlySettings;ResolveReferences">
     <ItemGroup>
