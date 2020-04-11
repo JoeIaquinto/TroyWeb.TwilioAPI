@@ -30,6 +30,7 @@
     <DrawingGroup x:Key="PhoneSettingsDrawingGroup" ClipGeometry="M0,0 V50 H50 V0 H0 Z">
         <GeometryDrawing Brush="#FFFA4616" Geometry="{StaticResource PhoneSettingsGeometry}" />
     </DrawingGroup>
+    <DrawingBrush x:Key="FormatPhoneNumberIcon" Drawing="{StaticResource PhoneSettingsDrawingGroup}" />
     <DrawingBrush x:Key="GetAvailableLocalPhoneNumbersIcon" Drawing="{StaticResource PhoneSettingsDrawingGroup}" />
     <DrawingBrush x:Key="GetAvailableMobilePhoneNumbersIcon" Drawing="{StaticResource PhoneSettingsDrawingGroup}" />
     <DrawingBrush x:Key="GetAvailableTollFreePhoneNumbersIcon" Drawing="{StaticResource PhoneSettingsDrawingGroup}" />

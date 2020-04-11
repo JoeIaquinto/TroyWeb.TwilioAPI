@@ -1933,4 +1933,48 @@
     <value>Limit</value>
     <comment>property name</comment>
   </data>
+  <data name="ValidationOneRequiredProperties_Error" xml:space="preserve">
+    <value>Please provide a value for either {0} or {1}.</value>
+    <comment>error message; either {0} or {1} are required arguments</comment>
+  </data>
+  <data name="FormatPhoneNumber_DisplayName" xml:space="preserve">
+    <value>Format Phone Number</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="FormatPhoneNumber_Description" xml:space="preserve">
+    <value>Format a phone number to E.164 Format as well as check validity of provided phone number (e.g. it can exist in the specified region)</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="FormatPhoneNumber_PhoneNumber_DisplayName" xml:space="preserve">
+    <value>Phone Number</value>
+    <comment>property name</comment>
+  </data>
+  <data name="FormatPhoneNumber_PhoneNumber_Description" xml:space="preserve">
+    <value>Number that we are attempting to parse. This can contain formatting such as +, ( and -, as well as a phone number extension. It can also be provided in RFC3966 format.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="FormatPhoneNumber_CountryCode_DisplayName" xml:space="preserve">
+    <value>Country Code</value>
+    <comment>property name</comment>
+  </data>
+  <data name="FormatPhoneNumber_CountryCode_Description" xml:space="preserve">
+    <value>Region that we are expecting the number to be from. This is only used if the number being parsed is not written in international format. The CountryCode for the number in this case would be stored as that of the default region supplied. If the number is guaranteed to start with a '+' followed by the country calling code, then null can be supplied.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="FormatPhoneNumber_FormattedNumber_Description" xml:space="preserve">
+    <value>The provided phone number and country code formatted to E.164 Standards, if possible</value>
+    <comment>property description</comment>
+  </data>
+  <data name="FormatPhoneNumber_FormattedNumber_DisplayName" xml:space="preserve">
+    <value>Formatted Phone Number</value>
+    <comment>property name</comment>
+  </data>
+  <data name="FormatPhoneNumber_IsValidNumber_Description" xml:space="preserve">
+    <value>Boolean value of whether the provided phone number is valid and can exist in the specified region</value>
+    <comment>property description</comment>
+  </data>
+  <data name="FormatPhoneNumber_IsValidNumber_DisplayName" xml:space="preserve">
+    <value>Is Valid Number</value>
+    <comment>property name</comment>
+  </data>
 </root>

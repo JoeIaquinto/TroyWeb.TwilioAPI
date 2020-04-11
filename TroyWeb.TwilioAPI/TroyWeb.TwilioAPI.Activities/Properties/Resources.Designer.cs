@@ -556,6 +556,96 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Region that we are expecting the number to be from. This is only used if the number being parsed is not written in international format. The CountryCode for the number in this case would be stored as that of the default region supplied. If the number is guaranteed to start with a &apos;+&apos; followed by the country calling code, then null can be supplied..
+        /// </summary>
+        public static string FormatPhoneNumber_CountryCode_Description {
+            get {
+                return ResourceManager.GetString("FormatPhoneNumber_CountryCode_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country Code.
+        /// </summary>
+        public static string FormatPhoneNumber_CountryCode_DisplayName {
+            get {
+                return ResourceManager.GetString("FormatPhoneNumber_CountryCode_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Format a phone number to E.164 Format as well as check validity of provided phone number (e.g. it can exist in the specified region).
+        /// </summary>
+        public static string FormatPhoneNumber_Description {
+            get {
+                return ResourceManager.GetString("FormatPhoneNumber_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Format Phone Number.
+        /// </summary>
+        public static string FormatPhoneNumber_DisplayName {
+            get {
+                return ResourceManager.GetString("FormatPhoneNumber_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The provided phone number and country code formatted to E.164 Standards, if possible.
+        /// </summary>
+        public static string FormatPhoneNumber_FormattedNumber_Description {
+            get {
+                return ResourceManager.GetString("FormatPhoneNumber_FormattedNumber_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Formatted Phone Number.
+        /// </summary>
+        public static string FormatPhoneNumber_FormattedNumber_DisplayName {
+            get {
+                return ResourceManager.GetString("FormatPhoneNumber_FormattedNumber_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Boolean value of whether the provided phone number is valid and can exist in the specified region.
+        /// </summary>
+        public static string FormatPhoneNumber_IsValidNumber_Description {
+            get {
+                return ResourceManager.GetString("FormatPhoneNumber_IsValidNumber_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is Valid Number.
+        /// </summary>
+        public static string FormatPhoneNumber_IsValidNumber_DisplayName {
+            get {
+                return ResourceManager.GetString("FormatPhoneNumber_IsValidNumber_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number that we are attempting to parse. This can contain formatting such as +, ( and -, as well as a phone number extension. It can also be provided in RFC3966 format..
+        /// </summary>
+        public static string FormatPhoneNumber_PhoneNumber_Description {
+            get {
+                return ResourceManager.GetString("FormatPhoneNumber_PhoneNumber_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone Number.
+        /// </summary>
+        public static string FormatPhoneNumber_PhoneNumber_DisplayName {
+            get {
+                return ResourceManager.GetString("FormatPhoneNumber_PhoneNumber_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The AccountResource returned by the Twilio API..
         /// </summary>
         public static string GetAccount_Account_Description {
@@ -4116,6 +4206,15 @@ namespace TroyWeb.TwilioAPI.Activities.Properties {
         public static string ValidationGroupDependant_Error {
             get {
                 return ResourceManager.GetString("ValidationGroupDependant_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please provide a value for either {0} or {1}..
+        /// </summary>
+        public static string ValidationOneRequiredProperties_Error {
+            get {
+                return ResourceManager.GetString("ValidationOneRequiredProperties_Error", resourceCulture);
             }
         }
         

@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Designers\DownloadFaxMediaDesigner.xaml" />
+    <None Remove="Designers\FormatPhoneNumberDesigner.xaml" />
     <None Remove="Designers\TwilioApiScopeDesigner.xaml" />
   </ItemGroup>
   <!-- Package Icon -->
@@ -55,6 +56,10 @@
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <DocumentationFile>bin\$(Configuration)\TroyWeb.TwilioAPI.Activities.Design.xml</DocumentationFile>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="libphonenumber-csharp" Version="8.12.1" />
+    <PackageReference Include="Twilio" Version="5.39.0" />
+  </ItemGroup>
 	<ItemGroup>
 		<Reference Include="System" />
     <Reference Include="System.Core" />
@@ -95,6 +100,9 @@
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Designers\DeleteMessageDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\FormatPhoneNumberDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Designers\GetAccountDesigner.xaml">

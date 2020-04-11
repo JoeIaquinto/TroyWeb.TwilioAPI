@@ -10,6 +10,7 @@
     <DocumentationFile>bin\$(Configuration)\TroyWeb.TwilioAPI.Activities.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="libphonenumber-csharp" Version="8.12.1" />
     <PackageReference Include="Twilio" Version="5.39.0" />
   </ItemGroup>
 	<ItemGroup>

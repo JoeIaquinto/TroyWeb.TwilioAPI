@@ -111,7 +111,9 @@ namespace TroyWeb.TwilioAPI.Activities
         {
             metadata.AddRequiredArgument(To, nameof(To));
             metadata.AddMutuallyExclusiveArguments(Body, nameof(Body), MediaUrls, nameof(MediaUrls));
+            metadata.AddOneOfRequiredArguments(Body, nameof(Body), MediaUrls, nameof(MediaUrls));
             metadata.AddMutuallyExclusiveArguments(From, nameof(From), MessagingServiceSid, nameof(MessagingServiceSid));
+            metadata.AddOneOfRequiredArguments(From, nameof(From), MessagingServiceSid, nameof(MessagingServiceSid));
             metadata.AddMutuallyExclusiveArguments(ApplicationSid, nameof(ApplicationSid), StatusCallback, nameof(StatusCallback));
 
             base.CacheMetadata(metadata);

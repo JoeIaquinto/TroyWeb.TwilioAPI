@@ -182,6 +182,10 @@ namespace TroyWeb.TwilioAPI.Activities.Design
             builder.AddCustomAttributes(typeof(DownloadFaxMedia), faxcmediaategoryAttribute);
             builder.AddCustomAttributes(typeof(DownloadFaxMedia), new DesignerAttribute(typeof(DownloadFaxMediaDesigner)));
             builder.AddCustomAttributes(typeof(DownloadFaxMedia), new HelpKeywordAttribute(""));
+            builder.AddCustomAttributes(typeof(FormatPhoneNumber), phonecategoryAttribute);
+            builder.AddCustomAttributes(typeof(FormatPhoneNumber), new DesignerAttribute(typeof(FormatPhoneNumberDesigner)));
+            builder.AddCustomAttributes(typeof(FormatPhoneNumber), new HelpKeywordAttribute(""));
+
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }
