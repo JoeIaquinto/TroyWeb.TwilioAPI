@@ -17,17 +17,17 @@
     <PackageProjectUrl>https://github.com/JosephIaquinto/TroyWeb.TwilioAPI</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/JosephIaquinto/TroyWeb.TwilioAPI/master/TroyWeb.TwilioAPI/TroyWeb.TwilioAPI.Activities.Design/PackageIcon.png</PackageIconUrl>
     <PackageIcon>PackageIcon.png</PackageIcon>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
   <!-- Package Versions -->
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <PackageVersion>1.0.0.$([System.DateTime]::UtcNow.ToString(MMddHmmss))</PackageVersion>
+    <PackageVersion>1.1.0.$([System.DateTime]::UtcNow.ToString(MMddHmmss))</PackageVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.1.0</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Designers\DownloadFaxMediaDesigner.xaml" />
