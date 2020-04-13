@@ -29,6 +29,8 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
             <Label Content="{x:Static activity:Resources.SendMessage_To_DisplayName}" Grid.Row="0" />
@@ -38,8 +40,15 @@
                 </sapv:ExpressionTextBox.Expression>
             </sapv:ExpressionTextBox>
 
-            <Label Content="{x:Static activity:Resources.SendMessage_Body_DisplayName}" Grid.Row="2" />
-            <sapv:ExpressionTextBox Grid.Row="3" ExpressionType="{Binding ModelItem.Properties[Body].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.SendMessage_Body_Description}" UseLocationExpression="False">
+            <Label Content="{x:Static activity:Resources.SendMessage_From_DisplayName}" Grid.Row="2" />
+            <sapv:ExpressionTextBox Grid.Row="3" ExpressionType="{Binding ModelItem.Properties[From].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.SendMessage_From_Description}" UseLocationExpression="False">
+                <sapv:ExpressionTextBox.Expression>
+                    <Binding Path="ModelItem.From" Converter="{StaticResource ArgumentToExpressionConverter}" Mode="TwoWay" ConverterParameter="In" UpdateSourceTrigger="PropertyChanged" />
+                </sapv:ExpressionTextBox.Expression>
+            </sapv:ExpressionTextBox>
+
+            <Label Content="{x:Static activity:Resources.SendMessage_Body_DisplayName}" Grid.Row="4" />
+            <sapv:ExpressionTextBox Grid.Row="5" ExpressionType="{Binding ModelItem.Properties[Body].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.SendMessage_Body_Description}" UseLocationExpression="False">
                 <sapv:ExpressionTextBox.Expression>
                     <Binding Path="ModelItem.Body" Converter="{StaticResource ArgumentToExpressionConverter}" Mode="TwoWay" ConverterParameter="In" UpdateSourceTrigger="PropertyChanged" />
                 </sapv:ExpressionTextBox.Expression>
